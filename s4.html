@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>连续流固定床加氢反应器工作台</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230e7490'/%3E%3Ctext x='32' y='46' font-size='42' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAC6ElEQVR4nO3cwQ3CQBAEQUdAtARCxpCE4VBPrVT/86jfvh7P1xsqrtMPgDsJmhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpx4P+5p3+tn9V3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F/Sg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F/Sg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oEes3HX6Ab+600GdtnKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHlTe2X85BpU3F/Sg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F/Sg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qb348aLiToEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSPn91pB7hkU57AAAAAElFTkSuQmCC">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="加氢工作台">
+  <meta name="theme-color" content="#0e7490">
+  <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22%E8%BF%9E%E7%BB%AD%E6%B5%81%E5%9B%BA%E5%AE%9A%E5%BA%8A%E5%8A%A0%E6%B0%A2%E5%8F%8D%E5%BA%94%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8F%B0%22%2C%22short_name%22%3A%22%E5%8A%A0%E6%B0%A2%E5%B7%A5%E4%BD%9C%E5%8F%B0%22%2C%22start_url%22%3A%22.%2F%22%2C%22scope%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait%22%2C%22background_color%22%3A%22%230e7490%22%2C%22theme_color%22%3A%22%230e7490%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAC6ElEQVR4nO3cwQ3CQBAEQUdAtARCxpCE4VBPrVT%2F86jfvh7P1xsqrtMPgDsJmhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpx4P%2B5p3%2Btn9V3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F%2FSg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F%2FSg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oEes3HX6Ab%2B600GdtnKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHlTe2X85BpU3F%2FSg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F%2FSg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qb348aLiToEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSPn91pB7hkU57AAAAAElFTkSuQmCC%22%2C%22sizes%22%3A%22180x180%22%2C%22type%22%3A%22image%2Fpng%22%7D%2C%7B%22src%22%3A%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAC6ElEQVR4nO3cwQ3CQBAEQUdAtARCxpCE4VBPrVT%2F86jfvh7P1xsqrtMPgDsJmhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUgRNiqBJETQpx4P%2B5p3%2Btn9V3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F%2FSg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F%2FSg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oEes3HX6Ab%2B600GdtnKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHrFygh6xcoIesXKCHlTe2X85BpU3F%2FSg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qby7oQeXNBT2ovLmgB5U3F%2FSg8uaCHlTeXNCDypsLelB5c0EPKm8u6EHlzQU9qLy5oAeVNxf0oPLmgh5U3lzQg8qbC3pQeXNBDypvLuhB5c0FPai8uaAHlTcX9KDy5oIeVN5c0IPKmwt6UHlzQQ8qb348aLiToEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSPn91pB7hkU57AAAAAElFTkSuQmCC%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fpng%22%7D%5D%7D">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+  :root{
+    --bg:#f5f7fa; --panel:#ffffff; --ink:#1f2a37; --muted:#6b7280;
+    --line:#e5e7eb; --accent:#0e7490; --accent2:#0d9488; --warn:#b45309;
+    --danger:#b91c1c; --ok:#15803d; --chip:#eef2f7; --side:#0f2942; --side2:#13354f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5}
+  header{background:linear-gradient(135deg,#0e7490,#0d9488);color:#fff;padding:14px 20px;display:flex;align-items:center;gap:12px;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+  header .logo{width:38px;height:38px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--accent);font-size:22px;flex:0 0 auto}
+  header h1{margin:0;font-size:18px;font-weight:650;letter-spacing:.3px}
+  header p{margin:2px 0 0;font-size:12px;opacity:.9}
+  #connBadge{margin-left:auto;font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:20px;white-space:nowrap}
+  .b-ok{background:#dcfce7;color:var(--ok)} .b-off{background:#fef3c7;color:var(--warn)}
+  .b-err{background:#fee2e2;color:var(--danger)} .b-gray{background:#e5e7eb;color:#475569}
+  .app{display:flex;align-items:flex-start;max-width:1280px;margin:0 auto}
+  .sidebar{width:228px;flex:0 0 228px;background:var(--side);color:#dbe7f1;min-height:calc(100vh - 66px);padding:14px 10px;position:sticky;top:66px}
+  .sidebar h3{font-size:11px;letter-spacing:1px;color:#7fa8c9;margin:14px 8px 6px;font-weight:700}
+  .navitem{display:flex;align-items:center;gap:6px;padding:9px 10px;border-radius:9px;cursor:pointer;font-size:13.5px;margin:3px 0;color:#dbe7f1;user-select:none}
+  .navitem:hover{background:var(--side2)}
+  .navitem.active{background:var(--accent);color:#fff;font-weight:700}
+  .navitem .rm{margin-left:auto;color:#9fb6c9;font-weight:700;padding:0 4px;border-radius:5px}
+  .navitem .rm:hover{background:#b91c1c;color:#fff}
+  .navitem.locked{cursor:default}
+  .addbtn{margin:6px 6px 0;width:calc(100% - 12px);background:transparent;border:1px dashed #4b7395;color:#9fc3e0;padding:7px;border-radius:8px;cursor:pointer;font-size:12.5px}
+  .addbtn:hover{background:var(--side2)}
+  main{flex:1;padding:18px 18px 60px;min-width:0}
+  .section{display:none} .section.active{display:block}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:980px){.app{flex-direction:column}.sidebar{width:100%;flex:none;position:static;min-height:auto}.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 1px 3px rgba(16,24,40,.04);margin-bottom:16px}
+  .card h2{margin:0 0 12px;font-size:15px;color:var(--accent);display:flex;align-items:center;gap:8px}
+  .card h2 .n{background:var(--accent);color:#fff;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px}
+  .row{display:flex;align-items:center;gap:10px;margin:9px 0}
+  .row label{flex:0 0 190px;font-size:13px;color:var(--ink)}
+  .row .inp{flex:1;display:flex;align-items:center;gap:6px}
+  input[type=number],textarea,input[type=text]{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:8px;font-size:13px;color:var(--ink);background:#fff;font-family:inherit}
+  textarea{resize:vertical;min-height:60px}
+  input[type=number]:focus,textarea:focus,input[type=text]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px rgba(14,116,144,.15)}
+  select.unit{flex:0 0 108px;padding:7px 6px;border:1px solid var(--line);border-radius:8px;font-size:12px;color:var(--ink);background:#fff;cursor:pointer}
+  .results{background:linear-gradient(180deg,#f8fafc,#fff);border:1px dashed #cbd5e1;border-radius:14px;padding:14px 16px}
+  .res-row{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-bottom:1px dashed #eef2f7}
+  .res-row:last-child{border-bottom:none}
+  .res-row .k{color:var(--muted);font-size:13px}
+  .res-row .v{font-weight:700;font-size:15px;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
+  .res-row .v small{font-weight:500;color:var(--muted);font-size:11.5px;margin-left:4px}
+  .hl{background:#ecfeff;border:1px solid #a5f3fc;border-radius:10px;padding:10px 12px;margin-bottom:10px}
+  .hl .v{color:var(--accent);font-size:18px;font-weight:800}
+  .note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
+  .subhead{margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-weight:700;color:var(--accent);font-size:13.5px}
+  .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:600;margin-left:6px}
+  .badge.ok{background:#dcfce7;color:var(--ok)} .badge.warn{background:#fef3c7;color:var(--warn)} .badge.danger{background:#fee2e2;color:var(--danger)}
+  details{margin-top:14px;background:var(--chip);border-radius:10px;padding:6px 14px}
+  summary{cursor:pointer;font-weight:600;color:var(--accent);padding:6px 0;font-size:13px}
+  .expert{margin-top:12px;border:1px dashed var(--border);background:linear-gradient(180deg,#f7fbff,#fff)}
+  .expert>summary{color:#1d6fd6;background:#eef5ff;margin:-6px -14px 8px;padding:8px 14px;border-radius:10px 10px 0 0}
+  .formula{font-family:"SFMono-Regular",Consolas,monospace;font-size:12.5px;background:#0f172a;color:#e2e8f0;padding:10px 12px;border-radius:8px;margin:6px 0;overflow-x:auto;white-space:pre}
+  .actions{display:flex;gap:10px;margin:10px 0;flex-wrap:wrap}
+  button{font-family:inherit;font-size:13px;padding:8px 14px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;font-weight:600}
+  button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  button.ghost{background:#eef2f7}
+  button:hover{filter:brightness(.97)}
+  .saved{font-size:12px;color:var(--ok);margin-left:4px}
+  footer{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}
+  /* history */
+  .hday{margin-bottom:10px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .hday>summary{padding:11px 14px;background:#f1f5f9;font-weight:700;cursor:pointer}
+  .hcard{border-top:1px solid var(--line);padding:11px 14px}
+  .hcard .hmeta{font-size:12px;color:var(--muted);display:flex;gap:10px;align-items:center}
+  .hcard .hres{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:6px;font-size:12.5px}
+  .hcard .hres b{color:var(--accent)}
+  .hcard .del{float:right;color:var(--danger);cursor:pointer;font-size:12px;border:1px solid #fecaca;background:#fff5f5;padding:2px 8px;border-radius:6px}
+  /* research */
+  .lit-day{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:14px;overflow:hidden}
+  .lit-day>summary{padding:11px 14px;background:#eef6ff;font-weight:700;cursor:pointer}
+  .art{padding:13px 15px;border-top:1px solid var(--line)}
+  .art h4{margin:0 0 6px;font-size:14px;line-height:1.4}
+  .art .links a{color:var(--accent);text-decoration:none;font-size:12.5px;margin-right:12px;border-bottom:1px solid #bae6fd}
+  .art .links a:hover{color:#0369a1}
+  .art .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:10px;background:#dcfce7;color:var(--ok);margin-right:6px}
+  .art .kw{display:inline-block;font-size:11px;padding:1px 7px;border-radius:10px;background:#e0f2fe;color:#0369a1;margin:2px 4px 0 0}
+  .art .blk{margin-top:8px;font-size:13px}
+  .art .blk .lab{font-weight:700;color:var(--accent2)}
+  .art textarea{margin-top:6px;font-size:12.5px}
+  .empty{color:var(--muted);padding:20px;text-align:center}
+  /* modal */
+  .mask{position:fixed;inset:0;background:rgba(15,23,42,.5);display:none;align-items:center;justify-content:center;z-index:50}
+  .mask.show{display:flex}
+  .modal{background:#fff;border-radius:14px;width:min(560px,92vw);max-height:88vh;overflow:auto;padding:20px 22px}
+  .modal h3{margin:0 0 12px;color:var(--accent)}
+  .modal label{font-size:12.5px;color:var(--muted);display:block;margin:10px 0 4px}
+  .modal pre{background:#0f172a;color:#e2e8f0;padding:10px;border-radius:8px;font-size:11.5px;overflow:auto}
+  .modal .row2{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
+
+  a.navitem{text-decoration:none;color:inherit}
+  .section{display:block}
+</style>
+<script>/*LIT-FALLBACK*/
+
+// 连续流固定床加氢 · 每日文献推送（由每日 0:00 自动化检索并覆写此文件）
+// window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
+window.LIT = [
+  {
+    date: "2026-07-28",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed）",
+    articles: [
+      {
+        id: "pmid-38390498",
+        title: "Enhancing continuous-flow reactions via compression-molding of solid catalysts and dilutants in packed-bed systems",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/38390498/",
+        doi: "https://doi.org/10.1039/d3ra08088a",
+        journal: "RSC Advances (2024), open access (PMC10882219)",
+        verified: true,
+        verifiedAt: "2026-07-28",
+        highlights: "将 Pt-black 粉末与 SiO2 通过压片成型后填入固定床，显著抑制金属浸出；并在大尺寸柱上完成放大实验，保持优异收率。对连续流固定床的催化剂成型与装填工程有实用价值。",
+        shortcomings: "以 Pt-black 为模型体系，未系统量化加氢转化率和选择性；成型对床层压降/传质的影响缺少 CFD 或实验压降数据的支撑。",
+        oneliner: "用压片成型把粉体催化剂固化为固定床填料，解决连续流中催化剂流失问题，实现了可放大的连续反应。",
+        keywords: ["固定床", "压片成型", "催化剂装填", "放大", "Pt", "连续流", "催化剂流失"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 催化剂 压片成型 连续反应")
+      },
+      {
+        id: "doi-10.3390-pr11041074",
+        title: "Continuous-Flow Hydrogenation of Nitroaromatics in Microreactor with Mesoporous Pd@SBA-15",
+        pubmed: "https://doi.org/10.3390/pr11041074",
+        doi: "https://doi.org/10.3390/pr11041074",
+        journal: "Processes (2023), open access (MDPI)",
+        verified: true,
+        verifiedAt: "2026-07-28",
+        highlights: "介孔 Pd@SBA-15 装入微填充床（MPBR），硝基芳烃 1 分钟内转化率 99%；连续运行 24 h 活性几乎不衰减，解决了传统 Pd/C 易团聚失活的问题。",
+        shortcomings: "仅在模型底物（硝基苯类）验证；Pd 负载量、>24 h 长期稳定性及工业放大下的床层压降与热点问题未充分讨论。",
+        oneliner: "以介孔 Pd@SBA-15 为固定床催化剂实现硝基芳烃连续流加氢，1 分钟近完全转化且可长时间稳定运行。",
+        keywords: ["硝基芳烃", "加氢", "Pd", "SBA-15", "微填充床", "微反应器", "选择性", "连续流", "稳定性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 加氢 硝基芳烃 Pd SBA-15 微反应器")
+      }
+    ]
+  }
+];
+
+
+</script>
+</head>
+<body>
+<header>
+  <div class="logo">H</div>
+  <div>
+    <h1>连续流固定床加氢反应器工作台</h1>
+    <p>氢气当量 · 反应器体积 · 催化剂单耗 · 绝热温升（含氢气成本 / 床层压降）— 输入自动保存 · 可云端同步</p>
+  </div>
+  <span id="connBadge" class="b-gray">检测中…</span>
+</header>
+<div class="app">
+<aside class="sidebar">
+    <h3>基础计算（固定）</h3>
+    <div id="navBase"></div>
+    <h3>工作台</h3>
+    <div id="navCore"></div>
+    <h3>我的面板</h3>
+    <div id="navCustom"></div>
+    <button class="addbtn" onclick="addCustom()">＋ 添加自定义面板</button>
+  </aside>
+  <main>
+<section class="section" id="s4">
+      <div class="grid">
+        <div class="card">
+          <h2><span class="n">④</span>绝热温升（输入参数）</h2>
+          <div class="row"><label>原料分子量 M<sub>原料</sub></label>
+            <div class="inp"><input type="number" id="s4_Mraw" value="100" step="any">
+              <select class="unit" id="u_s4_Mraw"><option value="1">g/mol</option><option value="1">kg/kmol</option></select></div></div>
+          <div class="row"><label>产品分子量 M<sub>产品</sub></label>
+            <div class="inp"><input type="number" id="s4_Mprod" value="102" step="any">
+              <select class="unit" id="u_s4_Mprod"><option value="1">g/mol</option><option value="1">kg/kmol</option></select></div></div>
+          <div class="row"><label>原料质量浓度 w</label>
+            <div class="inp"><input type="number" id="s4_w" value="20" step="any">
+              <select class="unit" id="u_s4_w"><option value="0.01">% (质量)</option><option value="1">质量分数</option></select></div></div>
+          <div class="row"><label>原料液密度 ρ<sub>液</sub></label>
+            <div class="inp"><input type="number" id="s4_rho" value="0.90" step="any">
+              <select class="unit" id="u_s4_rho"><option value="1">kg/L</option><option value="1">g/mL</option><option value="0.001">kg/m³</option></select></div></div>
+          <div class="row"><label>催化剂装填质量 m<sub>cat</sub></label>
+            <div class="inp"><input type="number" id="s4_mcat" value="5" step="any">
+              <select class="unit" id="u_s4_mcat"><option value="1">kg</option><option value="0.001">g</option><option value="1000">t</option></select></div></div>
+          <div class="row"><label>催化剂堆密度 ρ<sub>b</sub></label>
+            <div class="inp"><input type="number" id="s4_rhob" value="0.70" step="any">
+              <select class="unit" id="u_s4_rhob"><option value="1">kg/L</option><option value="1">g/mL</option><option value="0.001">kg/m³</option></select></div></div>
+          <div class="row"><label>液体进料流速 F</label>
+            <div class="inp"><input type="number" id="s4_F" value="5" step="any">
+              <select class="unit" id="u_s4_F"><option value="0.06">mL/min</option><option value="1" selected>L/h</option><option value="0.001">mL/h</option><option value="60">L/min</option></select></div></div>
+          <div class="row"><label>转化率 X</label>
+            <div class="inp"><input type="number" id="s4_X" value="100" step="any">
+              <select class="unit" id="u_s4_X"><option value="0.01">%</option><option value="1">小数</option></select></div></div>
+          <div class="row"><label>产品选择性 S</label>
+            <div class="inp"><input type="number" id="s4_S" value="100" step="any">
+              <select class="unit" id="u_s4_S"><option value="0.01">%</option><option value="1">小数</option></select></div></div>
+          <div class="note">本模块复制「反应器体积」模块的共享反应参数（分子量 / 浓度 / 密度 / 装填质量 / 堆密度 / 进料流速 / 转化率 / 选择性），再补充评估所需的安全经济参数（氢气成本 / 绝热温升 / 床层压降）。与「催化剂单耗」互相独立。</div>
+          <div class="subhead">🔬 评估参数（氢气成本 / 绝热温升 / 床层压降）</div>
+            <div class="note">连续流固定床加氢放大的关键安全/经济参数。留空或 0 则不计算对应项；以下为常见估算占位，请按真实体系替换。</div>
+            <div class="row"><label>氢气当量系数 ν（H₂/原料）</label>
+              <div class="inp"><input type="number" id="s4_nu" value="1" step="any">
+                <select class="unit" id="u_s4_nu"><option value="1">mol H₂/mol 原料</option><option value="mass">kg H₂/kg 原料</option></select></div></div>
+            <div class="row"><label>氢气价格</label>
+              <div class="inp"><input type="number" id="s4_H2price" value="2.0" step="any">
+                <select class="unit" id="u_s4_H2price"><option value="Nm3">元/Nm³</option><option value="kg">元/kg</option></select></div></div>
+            <div class="row"><label>反应热 ΔH<sub>rxn</sub></label>
+              <div class="inp"><input type="number" id="s4_dH" value="60" step="any">
+                <select class="unit" id="u_s4_dH"><option value="1">kJ/mol</option><option value="4.184">kcal/mol</option></select></div></div>
+            <div class="row"><label>进料液比热容 C<sub>p</sub></label>
+              <div class="inp"><input type="number" id="s4_Cp" value="2.0" step="any">
+                <select class="unit" id="u_s4_Cp"><option value="1">kJ/(kg·K)</option></select></div></div>
+            <div class="row"><label>反应器内径 D</label>
+              <div class="inp"><input type="number" id="s4_D" value="10" step="any">
+                <select class="unit" id="u_s4_D"><option value="1">mm</option><option value="10">cm</option></select></div></div>
+            <div class="row"><label>催化剂颗粒直径 d<sub>p</sub></label>
+              <div class="inp"><input type="number" id="s4_dp" value="1.0" step="any">
+                <select class="unit" id="u_s4_dp"><option value="1">mm</option><option value="0.001">µm</option></select></div></div>
+            <div class="row"><label>床层空隙率 ε</label>
+              <div class="inp"><input type="number" id="s4_eps" value="0.40" step="any">
+                <select class="unit" id="u_s4_eps"><option value="1">—（无量纲）</option></select></div></div>
+            <div class="row"><label>进料液粘度 μ</label>
+              <div class="inp"><input type="number" id="s4_mu" value="0.5" step="any">
+                <select class="unit" id="u_s4_mu"><option value="1">cP (mPa·s)</option></select></div></div>
+          <div class="actions">
+            <button class="primary" onclick="calcS4()">计算</button>
+            <button onclick="copyFromReactor('s4')" title="把「反应器体积」模块的共享参数（分子量/浓度/密度/装填质量/堆密度/进料流速/转化率/选择性）连同单位一键复制到此，免重复输入">① 从反应器体积复制</button>
+            <button onclick="loadCatEx()" title="填入催化剂放大算例到反应器体积/催化剂单耗，并同步共享参数到本模块">催化剂算例</button>
+            <button onclick="resetSec('s4')">重置</button>
+            <button class="ghost" onclick="snapshot('绝热温升','s4')">保存为任务</button>
+            <span class="saved" id="s4_saved"></span>
+          </div>
+        </div>
+        <div class="card">
+          <h2><span class="n">🧪</span>计算结果（氢气成本 / 绝热温升 / 床层压降）</h2>
+          <div class="results">
+            <div class="res-row"><span class="k">氢气质量流量</span><span class="v" id="s4_mH2">— <small>kg/h</small></span></div>
+            <div class="res-row"><span class="k">氢气体积流量（标况）</span><span class="v" id="s4_VH2">— <small>Nm³/h</small></span></div>
+            <div class="hl"><div class="k" style="color:var(--muted);font-size:12.5px">氢气成本（元/t 产品）</div><div class="v" id="s4_H2cost">— <small>元/t</small></div></div>
+            <div class="res-row"><span class="k">绝热温升 ΔT<sub>ad</sub></span><span class="v" id="s4_dTad">— <small>K</small></span></div>
+            <div class="res-row"><span class="k">床层压降 ΔP（Ergun）</span><span class="v" id="s4_dP">— <small>bar</small></span></div>
+            <div class="note" id="s4_dP_warn" style="color:#c0392b;font-weight:600"></div>
+          </div>
+          <details>
+            <summary>公式说明（输入自动换算到基准单位）</summary>
+            <div class="formula">基准单位：质量 kg · 体积 L · 流速 L/h · 时间 h · 分子量 g/mol
+—— 氢气成本 ——
+n_原料 = ṁ_原料·1000 / M_原料           [mol/h]   (ṁ_原料 = F·ρ_液·w)
+ṁ_产   = ṁ_原料 · X · S · (M_产/M_原料)  [kg/h]
+n_H₂  = ν · n_原料 · X                   [mol/h]
+ṁ_H₂  = n_H₂ · 2.016/1000                [kg/h]
+V_H₂  = n_H₂ · 22.414/1000               [Nm³/h]
+H₂成本 = ṁ_H₂(质量或体积)×价格 / ṁ_产 ×1000   [元/t 产品]
+—— 绝热温升 ——
+ΔT_ad = |ΔH_rxn|·n_原料·X / (ṁ_液·C_p)    [K]   (ṁ_液 = F·ρ_液)
+—— 床层压降（Ergun）——
+V_R = m_cat/ρ_b              [L → m³/1000]   (L = 床层高度)
+A   = πD²/4                  [m²]   (D = 反应器内径)
+L   = V_R / A                [m]
+u   = Q / A                  [m/s]  (Q = F/1000/3600)
+μ'  = μ(cP)·1e-3             [Pa·s]   ρ_液' = ρ_液·1000   [kg/m³]
+ΔP  = L·[ 150(1-ε)²/ε³·μ'u/dp²  +  1.75(1-ε)/ε³·ρ_液'u²/dp ]   [Pa → bar/1e5]</div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script>
+/* ============ 基础工具 ============ */
+const M_H2=2.016, VM=22.414;
+function val(id){const v=parseFloat(document.getElementById(id).value);return isNaN(v)?NaN:v;}
+function ufactor(id){return parseFloat(document.getElementById('u_'+id).value);}
+function fmt(x,d=4){if(!isFinite(x))return '—';if(x!==0&&Math.abs(x)<1e-4)return x.toExponential(2);return x.toLocaleString('zh-CN',{maximumFractionDigits:d});}
+function setTxt(id,t){document.getElementById(id).innerHTML=t;}
+function getNu(prefix){
+  const raw=val(prefix+'_nu'); const mode=document.getElementById('u_'+prefix+'_nu').value;
+  const Mraw=val(prefix+'_Mraw')*ufactor(prefix+'_Mraw');
+  return mode==='mol'? raw : raw*Mraw/M_H2;
+}
+
+/* ============ 模块1 计算 ============ */
+function calcS1(){
+  const Mraw=val('s1_Mraw')*ufactor('s1_Mraw');
+  const w=val('s1_w')*ufactor('s1_w');
+  const rho=val('s1_rho')*ufactor('s1_rho');
+  const VR=val('s1_VR')*ufactor('s1_VR');
+  const F=val('s1_F')*ufactor('s1_F');
+  const nu=getNu('s1');
+  if([Mraw,w,rho,VR,F,nu].some(v=>!isFinite(v)||v<=0)){setTxt('s1_H2mass','请输入有效正数');return;}
+  const mfeed=F*rho, mraw=mfeed*w;
+  const nraw=mraw*1000/Mraw, nH2=nu*nraw;
+  const mH2=nH2*M_H2/1000, VH2=nH2*VM/1000, VH2_mLmin=VH2*1e6/60;
+  const eq=nu*M_H2/Mraw, LHSV=F/VR, tau=1/LHSV;
+  setTxt('s1_H2mass',fmt(mH2,5)+' <small>kg/h</small>');
+  setTxt('s1_nH2',fmt(nH2,3)+' <small>mol/h</small>');
+  setTxt('s1_VH2',fmt(VH2,4)+' <small>Nm³/h · '+fmt(VH2_mLmin,1)+' mL(标况)/min</small>');
+  setTxt('s1_mraw',fmt(mraw,4)+' <small>kg/h</small>');
+  setTxt('s1_eq',fmt(eq,5)+' <small>kg H₂/kg 原料</small>');
+  setTxt('s1_LHSV',fmt(LHSV,3)+' <small>h⁻¹</small>');
+  setTxt('s1_tau',fmt(tau,4)+' <small>h</small>');
+  saveInputs('s1');
+}
+
+/* ============ 模块2 计算（反应器体积 / 放大） ============ */
+function calcS2(){
+  const Mraw=val('s2_Mraw')*ufactor('s2_Mraw');
+  const Mprod=val('s2_Mprod')*ufactor('s2_Mprod');
+  const w=val('s2_w')*ufactor('s2_w');
+  const rho=val('s2_rho')*ufactor('s2_rho');
+  const mcat=val('s2_mcat')*ufactor('s2_mcat');
+  const rhob=val('s2_rhob')*ufactor('s2_rhob');
+  const F=val('s2_F')*ufactor('s2_F');
+  const Pyear=val('s2_Pyear')*ufactor('s2_Pyear');
+  const H=val('s2_H')*ufactor('s2_H');
+  const X=val('s2_X')*ufactor('s2_X');
+  const S=val('s2_S')*ufactor('s2_S');
+  if([Mraw,Mprod,w,rho,mcat,rhob,F,Pyear,H,X,S].some(v=>!isFinite(v)||v<=0)){setTxt('s2_VR','请输入有效正数');return;}
+  const mfeed=F*rho, mraw=mfeed*w;
+  const mprod=mraw*X*S*(Mprod/Mraw);
+  const Pcap=mprod*H/1000;
+  const VR=mcat/rhob;
+  const WHSV=mfeed/mcat, LHSV=F/VR, STY=mprod/mcat;
+  const STYvol=mprod/VR;
+  const Ptarget_rate=Pyear*1000/H;
+  const mcat_req=Ptarget_rate/STY;
+  const Vreq=mcat_req/rhob;
+  const Freq=(Pyear*1000/H)/(X*S*(Mprod/Mraw))/w/rho;
+  setTxt('s2_VR',fmt(VR,4)+' <small>L</small>');
+  setTxt('s2_Vreq',fmt(Vreq,2)+' <small>L ('+fmt(Vreq/1000,4)+' m³)</small>');
+  setTxt('s2_WHSV',fmt(WHSV,3)+' <small>h⁻¹</small>');
+  setTxt('s2_LHSV',fmt(LHSV,3)+' <small>h⁻¹</small>');
+  setTxt('s2_STY',fmt(STY,4)+' <small>kg产/(kg·h)</small>');
+  setTxt('s2_STYvol',fmt(STYvol,3)+' <small>kg产/(L·h)</small>');
+  setTxt('s2_Pcap',fmt(Pcap,4)+' <small>t/a</small>');
+  setTxt('s2_Freq',fmt(Freq,2)+' <small>L/h</small>');
+  const ratio=Pcap/Pyear;
+  let badge,txt;
+  if(ratio>=0.999){badge='ok';txt='达标 ✓ ('+(ratio*100).toFixed(1)+'%)';}
+  else if(ratio>=0.8){badge='warn';txt='偏低 ('+(ratio*100).toFixed(1)+'%)';}
+  else{badge='danger';txt='不足 ('+(ratio*100).toFixed(1)+'%)';}
+  setTxt('s2_match','<span class="badge '+badge+'">'+txt+'</span>');
+  saveInputs('s2');
+}
+
+/* ============ 模块3 计算（催化剂单耗 / 成本） ============ */
+function calcS3(){
+  const Mraw=val('s3_Mraw')*ufactor('s3_Mraw');
+  const Mprod=val('s3_Mprod')*ufactor('s3_Mprod');
+  const w=val('s3_w')*ufactor('s3_w');
+  const rho=val('s3_rho')*ufactor('s3_rho');
+  const mcat=val('s3_mcat')*ufactor('s3_mcat');
+  const rhob=val('s3_rhob')*ufactor('s3_rhob');
+  const F=val('s3_F')*ufactor('s3_F');
+  const Pyear=val('s3_Pyear')*ufactor('s3_Pyear');
+  const H=val('s3_H')*ufactor('s3_H');
+  const X=val('s3_X')*ufactor('s3_X');
+  const S=val('s3_S')*ufactor('s3_S');
+  const life=val('s3_life')*ufactor('s3_life');
+  const price=val('s3_price')*ufactor('s3_price');
+  if([Mraw,Mprod,w,rho,mcat,rhob,F,Pyear,H,life,X,S].some(v=>!isFinite(v)||v<=0)){setTxt('s3_cons','请输入有效正数');return;}
+  const mfeed=F*rho, mraw=mfeed*w;
+  const mprod=mraw*X*S*(Mprod/Mraw);
+  const STY=mprod/mcat, STYvol=mprod/(mcat/rhob);
+  const life_h=life*8760;
+  const charges=8760/life_h;
+  const Ptarget_rate=Pyear*1000/H;
+  const mcat_req=Ptarget_rate/STY;
+  const consYear=mcat_req/life;            // 年催化剂消耗（日历年）kg/a
+  const cons=consYear/Pyear;              // 催化剂单耗（日历更换基准）= 年消耗/年产 (kg/t)
+  const cons_op=1/(STY*life_h)*1000;       // 催化剂单耗（操作小时基准）= 1/(STY·寿命_h)·1000 (kg/t)
+  const cost=isFinite(price)&&price>0 ? consYear*price/Pyear : NaN;
+  setTxt('s3_cons',fmt(cons,3)+' <small>kg 催化剂 / t 产品</small>');
+  setTxt('s3_cons_op',fmt(cons_op,3)+' <small>kg 催化剂 / t 产品</small>');
+  setTxt('s3_charges',fmt(charges,2)+' <small>次</small>');
+  setTxt('s3_mcatreq',fmt(mcat_req,2)+' <small>kg</small>');
+  setTxt('s3_consYear',fmt(consYear,1)+' <small>kg/a</small>');
+  setTxt('s3_cost',isFinite(cost)?fmt(cost,1)+' <small>元/t</small>':'— <small>元/t</small>');
+  setTxt('s3_STY',fmt(STY,4)+' <small>kg产/(kg·h)</small>');
+  setTxt('s3_STYvol',fmt(STYvol,3)+' <small>kg产/(L·h)</small>');
+  saveInputs('s3');
+}
+
+/* ============ 模块4 计算（绝热温升：氢气成本 / 绝热温升 / 床层压降） ============ */
+function calcS4(){
+  const Mraw=val('s4_Mraw')*ufactor('s4_Mraw');
+  const Mprod=val('s4_Mprod')*ufactor('s4_Mprod');
+  const w=val('s4_w')*ufactor('s4_w');
+  const rho=val('s4_rho')*ufactor('s4_rho');
+  const mcat=val('s4_mcat')*ufactor('s4_mcat');
+  const rhob=val('s4_rhob')*ufactor('s4_rhob');
+  const F=val('s4_F')*ufactor('s4_F');
+  const X=val('s4_X')*ufactor('s4_X');
+  const S=val('s4_S')*ufactor('s4_S');
+  if([Mraw,Mprod,w,rho,mcat,rhob,F,X,S].some(v=>!isFinite(v)||v<=0)){setTxt('s4_H2cost','请输入有效正数');return;}
+  const mfeed=F*rho, mraw=mfeed*w;
+  const mprod=mraw*X*S*(Mprod/Mraw);
+  // —— 绝热温升评估：氢气成本 / 绝热温升 / 床层压降（Ergun）——
+  const nuSel=document.getElementById('u_s4_nu').value;
+  let nu=val('s4_nu'); if(nuSel!=='1') nu=nu*Mraw/2.016;     // 质量比 → 摩尔比
+  const dH=val('s4_dH')*ufactor('s4_dH');
+  const Cp=val('s4_Cp')*ufactor('s4_Cp');
+  const Dmm=val('s4_D')*ufactor('s4_D');
+  const dpm=val('s4_dp')*ufactor('s4_dp');
+  const eps=val('s4_eps')*ufactor('s4_eps');
+  const mu_cP=val('s4_mu')*ufactor('s4_mu');
+  const h2u=document.getElementById('u_s4_H2price').value;
+  const h2p=val('s4_H2price');
+  let m_H2=NaN,V_H2=NaN,H2cost=NaN,dTad=NaN,dP=NaN;
+  if(isFinite(nu)&&nu>0&&isFinite(mraw)&&mraw>0){
+    const n_raw=mraw*1000/Mraw;            // mol/h 原料
+    const n_H2=nu*n_raw*X;                  // mol/h H2 消耗（含转化率）
+    m_H2=n_H2*2.016/1000;                    // kg/h
+    V_H2=n_H2*22.414/1000;                   // Nm³/h
+    if(isFinite(h2p)&&h2p>0&&isFinite(mprod)&&mprod>0)
+      H2cost=(h2u==='kg'? m_H2*h2p : V_H2*h2p)/mprod*1000;  // 元/t 产品
+  }
+  if(isFinite(dH)&&dH>0&&isFinite(Cp)&&Cp>0&&isFinite(mfeed)&&mfeed>0){
+    const n_raw=mraw*1000/Mraw;
+    dTad=Math.abs(dH)*n_raw*X/(mfeed*Cp);    // K（按主反应转化率放热估算）
+  }
+  if(isFinite(Dmm)&&Dmm>0&&isFinite(dpm)&&dpm>0&&isFinite(eps)&&eps>0&&isFinite(mu_cP)&&mu_cP>0){
+    const D=Dmm/1000, dp=dpm/1000, mu=mu_cP*1e-3, rho_kgm3=rho*1000;
+    const VR_m3=mcat/rhob/1000, A=Math.PI*D*D/4, L=VR_m3/A;
+    const Q=F/1000/3600, u=Q/A;              // m³/s, m/s
+    const e=eps;
+    const term1=150*(1-e)*(1-e)/(e*e*e)*(mu*u)/(dp*dp);
+    const term2=1.75*(1-e)/(e*e*e)*(rho_kgm3*u*u)/dp;
+    dP=(L*(term1+term2))/1e5;                 // bar
+  }
+  setTxt('s4_mH2',isFinite(m_H2)?fmt(m_H2,5)+' <small>kg/h</small>':'— <small>kg/h</small>');
+  setTxt('s4_VH2',isFinite(V_H2)?fmt(V_H2,4)+' <small>Nm³/h</small>':'— <small>Nm³/h</small>');
+  setTxt('s4_H2cost',isFinite(H2cost)?fmt(H2cost,1)+' <small>元/t</small>':'— <small>元/t</small>');
+  setTxt('s4_dTad',isFinite(dTad)?fmt(dTad,1)+' <small>K</small>':'— <small>K</small>');
+  setTxt('s4_dP',isFinite(dP)?fmt(dP,3)+' <small>bar</small>':'— <small>bar</small>');
+  document.getElementById('s4_dP_warn').textContent=(isFinite(dP)&&dP>5)?'⚠ 压降偏大（>5 bar）：注意泵/压缩机能力与床层偏流、沟流风险。':'';
+  saveInputs('s4');
+}
+
+/* ============ 保存/恢复输入（自动保存，动态读取） ============ */
+function saveInputs(prefix){
+  const o={};
+  document.querySelectorAll('input[id^="'+prefix+'_"], select[id^="'+prefix+'_"]').forEach(el=>{ o[el.id]=el.value; });
+  localStorage.setItem('h2wb_'+prefix,JSON.stringify(o));
+  const s=document.getElementById(prefix+'_saved');if(s){s.textContent='已记忆 ✓';setTimeout(()=>s.textContent='',1500);}
+  schedulePush();
+}
+function restoreInputs(prefix){
+  try{const o=JSON.parse(localStorage.getItem('h2wb_'+prefix));if(!o)return;
+    Object.keys(o).forEach(k=>{const el=document.getElementById(k);if(el)el.value=o[k];});}catch(e){}
+}
+
+/* ============ 预设示例 ============ */
+function loadExample(p){
+  const ex={s1:{Mraw:100,w:20,rho:0.90,VR:10,F:5,nu:1}};
+  const def={s1:{Mraw:'1',w:'0.01',rho:'1',VR:'1',F:'1',nu:'mol'}};
+  const o=ex[p];Object.keys(o).forEach(k=>{document.getElementById(p+'_'+k).value=o[k];
+    const u=document.getElementById('u_'+p+'_'+k);if(u)u.value=def[p][k];});
+  if(p==='s1')calcS1();
+}
+function resetSec(prefix){
+  document.querySelectorAll('#'+prefix+' input[id^="'+prefix+'_"]').forEach(el=>{el.value='';});
+  document.querySelectorAll('#'+prefix+' .results .v').forEach(v=>v.innerHTML='—');
+  const s=document.getElementById(prefix+'_saved');if(s)s.textContent='';
+}
+function load2Butanone(){
+  const set=(id,v)=>document.getElementById(id).value=v;
+  set('s1_Mraw',72.11); set('u_s1_Mraw','1');
+  set('s1_w',20);       set('u_s1_w','0.01');
+  set('s1_rho',0.81);   set('u_s1_rho','1');
+  set('s1_VR',5);       set('u_s1_VR','0.001');
+  set('s1_F',1);        set('u_s1_F','0.06');
+  set('s1_nu',1);       set('u_s1_nu','mol');
+  calcS1(); setTxt('s1_saved','已载入 2-丁酮加氢示例');
+}
+function loadCatEx(){
+  const data={Mraw:150,u_Mraw:'1',Mprod:140,u_Mprod:'1',w:20,u_w:'0.01',rho:0.8,u_rho:'1',
+    mcat:10,u_mcat:'0.001',rhob:2,u_rhob:'1',F:0.3,u_F:'0.06',Pyear:1000,u_Pyear:'1',
+    H:300,u_H:'24',life:3,u_life:'0.0833333',X:100,u_X:'0.01',S:97,u_S:'0.01',price:200,u_price:'1'};
+  ['s2','s3','s4'].forEach(p=>{
+    Object.keys(data).forEach(k=>{const el=document.getElementById(p+'_'+k); if(el) el.value=data[k];});
+  });
+  calcS2(); calcS3(); calcS4();
+  setTxt('s2_saved','已载入 催化剂算例'); setTxt('s3_saved','已载入 催化剂算例'); setTxt('s4_saved','已载入 催化剂算例');
+}
+/* 模块 → 从「反应器体积」模块复制共享参数（含单位），target 可为 's3' 或 's4' */
+function copyFromReactor(target){
+  const shared=['Mraw','Mprod','w','rho','mcat','rhob','F','X','S'];
+  let n=0;
+  shared.forEach(k=>{
+    const s=document.getElementById('s2_'+k), sU=document.getElementById('u_s2_'+k);
+    const d=document.getElementById(target+'_'+k), dU=document.getElementById('u_'+target+'_'+k);
+    if(s&&d){d.value=s.value; n++;}
+    if(sU&&dU){dU.value=sU.value;}
+  });
+  if(target==='s3') calcS3();
+  else if(target==='s4') calcS4();
+  setTxt(target+'_saved','已从「反应器体积」复制 '+n+' 项共享参数');
+}
+
+/* ============ 历史记录 ============ */
+let state={ history:JSON.parse(localStorage.getItem('h2wb_history')||'[]'),
+  reflections:JSON.parse(localStorage.getItem('h2wb_reflections')||'{}'),
+  sidebar:JSON.parse(localStorage.getItem('h2wb_sidebar')||'[]'),
+  LIT:(window.LIT||[]) };
+
+function snapshot(moduleLabel, sectionId){
+  const sec=document.getElementById(sectionId);
+  const results=[];
+  sec.querySelectorAll('.results .hl, .results .res-row').forEach(r=>{
+    const k=r.querySelector('.k')&&r.querySelector('.k').textContent||'';
+    const v=r.querySelector('.v')&&r.querySelector('.v').textContent||'';
+    if(k&&v) results.push({k,v});
+  });
+  const inputs={};
+  sec.querySelectorAll('input[id^="'+sectionId+'_"], select[id^="'+sectionId+'_"]').forEach(el=>{
+    inputs[el.id]=el.value;
+  });
+  const rec={id:'h_'+Date.now(), ts:new Date().toISOString(), module:moduleLabel, results, inputs};
+  state.history.unshift(rec);
+  localStorage.setItem('h2wb_history',JSON.stringify(state.history));
+  renderHistory(); schedulePush();
+  flashSaved(sectionId);
+}
+function flashSaved(sectionId){
+  const s=document.getElementById(sectionId+'_saved'); if(s){s.textContent='已存档 ✓';setTimeout(()=>s.textContent='',1500);}
+}
+function renderHistory(){
+  const host=document.getElementById('historyList'); if(!host)return;
+  if(!state.history.length){host.innerHTML='<div class="empty">暂无记录。在任意模块点击「保存为任务」即可存档。</div>';return;}
+  const byDate={};
+  state.history.forEach(r=>{const d=r.ts.slice(0,10);(byDate[d]=byDate[d]||[]).push(r);});
+  const dates=Object.keys(byDate).sort().reverse();
+  host.innerHTML=dates.map(d=>{
+    const cards=byDate[d].map(r=>{
+      const res=r.results.map(x=>'<span><b>'+x.k+'：</b>'+x.v+'</span>').join('');
+      const time=r.ts.slice(11,16);
+      return '<div class="hcard"><span class="del" onclick="delHistory(\''+r.id+'\')">删除</span>'+
+        '<div class="hmeta"><b>'+r.module+'</b><span>'+time+'</span></div>'+
+        '<div class="hres">'+res+'</div></div>';
+    }).join('');
+    return '<details class="hday" open><summary>📅 '+d+' （'+byDate[d].length+' 条）</summary>'+cards+'</details>';
+  }).join('');
+}
+function delHistory(id){
+  state.history=state.history.filter(r=>r.id!==id);
+  localStorage.setItem('h2wb_history',JSON.stringify(state.history));
+  renderHistory(); schedulePush();
+}
+
+/* ============ 历史导出 Excel ============ */
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function exportHistoryXLS(){
+  if(!state.history.length){alert('暂无历史记录可导出。请先在模块中点击「保存为任务」。');return;}
+  let rows='<tr><th>存档日期</th><th>时间</th><th>模块</th><th>指标</th><th>数值</th></tr>';
+  state.history.forEach(r=>{
+    const d=r.ts.slice(0,10), t=r.ts.slice(11,16);
+    (r.results||[]).forEach(x=>{
+      rows+='<tr><td>'+d+'</td><td>'+t+'</td><td>'+esc(r.module)+'</td><td>'+esc(x.k)+'</td><td>'+esc(x.v)+'</td></tr>';
+    });
+  });
+  const html='<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"></head><body><table border="1">'+rows+'</table></body></html>';
+  const blob=new Blob(['﻿'+html],{type:'application/vnd.ms-excel;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='加氢工作台_历史记录_'+new Date().toISOString().slice(0,10)+'.xls';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+
+/* ============ 科研学习 ============ */
+function renderResearch(){
+  const host=document.getElementById('litList'); if(!host)return;
+  const lit=state.LIT||[];
+  const filterEl=document.getElementById('litFilter');
+  const q=filterEl? (filterEl.value||'').trim().toLowerCase() : '';
+  if(!lit.length){host.innerHTML='<div class="empty">暂无文献。每日 0:00 自动推送；或点「从云端刷新」。</div>';return;}
+  const out=lit.map(day=>{
+    let arts=day.articles||[];
+    if(q){
+      arts=arts.filter(a=>{
+        const blob=[a.title,a.highlights,a.shortcomings,a.oneliner,(a.keywords||[]).join(' ')].join(' ').toLowerCase();
+        return blob.includes(q);
+      });
+    }
+    if(arts.length===0) return '';
+    const cards=arts.map(a=>{
+      const rid='ref_'+a.id;
+      const ref=state.reflections[a.id]||'';
+      const kws=(a.keywords||[]).map(k=>'<span class="kw">'+esc(k)+'</span>').join('');
+      return '<div class="art">'+
+        '<h4>'+esc(a.title)+'</h4>'+
+        '<div class="links">'+
+          '<a href="'+a.pubmed+'" target="_blank" rel="noopener">🔗 原文/PubMed</a>'+
+          (a.doi?'<a href="'+a.doi+'" target="_blank" rel="noopener">📄 DOI</a>':'')+
+          (a.wechat?'<a href="'+a.wechat+'" target="_blank" rel="noopener">💬 公众号解读</a>':'')+
+        '</div>'+
+        '<div style="margin-top:5px"><span class="tag">'+(a.verified?'链接已校验 ✓':'待校验')+'</span><span style="font-size:12px;color:var(--muted)">'+esc(a.journal)+'</span></div>'+
+        (kws?'<div style="margin-top:6px">'+kws+'</div>':'')+
+        '<div class="blk"><span class="lab">核心亮点：</span>'+esc(a.highlights)+'</div>'+
+        '<div class="blk"><span class="lab">不足/局限：</span>'+esc(a.shortcomings)+'</div>'+
+        '<div class="blk"><span class="lab">一句话：</span>'+esc(a.oneliner)+'</div>'+
+        '<div class="blk"><span class="lab">我的阅读感受与收获：</span>'+
+          '<textarea id="'+rid+'" placeholder="写下你的阅读感受、启发或疑问…" oninput="saveReflection(\''+a.id+'\',this.value)">'+esc(ref)+'</textarea></div>'+
+      '</div>';
+    }).join('');
+    return '<details class="lit-day" open><summary>📅 '+day.date+' · 每日推送（'+arts.length+' 篇）</summary>'+cards+'</details>';
+  }).filter(Boolean);
+  if(out.length===0){host.innerHTML='<div class="empty">未找到与「'+esc(q)+'」匹配的文献。换个关键词试试。</div>';return;}
+  host.innerHTML=out.join('');
+}
+function saveReflection(id,val){state.reflections[id]=val;localStorage.setItem('h2wb_reflections',JSON.stringify(state.reflections));schedulePush();}
+function litTopDate(arr){ if(!Array.isArray(arr)||!arr.length) return ''; return arr.map(d=>d.date||'').sort().pop(); }
+function setLitSrc(t){const e=document.getElementById('litSrc'); if(e) e.textContent='文献来源：'+t;}
+async function loadLiterature(){
+  const localLit=window.LIT||[];
+  if(sbConnected){
+    try{
+      const {data,error}=await sb.from('h2wb_lit').select('payload').eq('id','daily').single();
+      if(!error && data && data.payload){
+        const cloudLit=Array.isArray(data.payload)?data.payload:(data.payload.LIT||[]);
+        const lt=litTopDate(localLit), ct=litTopDate(cloudLit);
+        if(ct && ct>=lt){ state.LIT=cloudLit; setLitSrc('云端（'+ct+'）'); }
+        else { state.LIT=localLit; setLitSrc('本地（'+lt+'，已是最新，已上传云端）'); await pushLiterature(true); }
+      } else { state.LIT=localLit; setLitSrc('本地（云端暂无数据）'); }
+    }catch(e){ state.LIT=localLit; setLitSrc('本地（云端拉取失败）'); }
+  } else { state.LIT=localLit; setLitSrc('本地（未连接）'); }
+  renderResearch();
+}
+async function pushLiterature(silent){
+  const localLit=window.LIT||[];
+  if(!sbConnected){ if(!silent) alert('未连接云端，无法上传。请先在「设置 / 云端同步」填写 Supabase 并连接。'); return; }
+  try{
+    const {error}=await sb.from('h2wb_lit').upsert({id:'daily', payload:{LIT:localLit}, updated_at:new Date().toISOString()});
+    if(error) throw error;
+    setLitSrc('云端（已上传 '+litTopDate(localLit)+'）');
+    if(!silent) alert('已上传本地文献到云端（共 '+localLit.length+' 天）。');
+  }catch(e){ if(!silent) alert('上传失败：'+(e.message||e)); }
+}
+function refreshLiterature(){
+  if(sbConnected){ loadLiterature().then(()=>alert('已从云端刷新文献。')); }
+  else { state.LIT=window.LIT||state.LIT; renderResearch(); setLitSrc('本地（未连接）'); alert('已重载本地文献（未连接云端）。'); }
+}
+
+/* ============ 侧边栏 ============ */
+const baseItems=[
+  {key:'s1',label:'① 理论氢气量',type:'section',lock:true},
+  {key:'s2',label:'② 反应器体积',type:'section',lock:true},
+  {key:'s3',label:'③ 催化剂单耗',type:'section',lock:true},
+  {key:'s4',label:'④ 绝热温升',type:'section',lock:true}
+];
+const coreItems=[
+  {key:'history',label:'📚 历史记录',type:'section',lock:true},
+  {key:'research',label:'🔬 科研学习',type:'section',lock:true},
+  {key:'settings',label:'⚙ 设置/云端',type:'section',lock:true}
+];
+let activeKey='s1';
+function renderSidebar(){
+  const pageFor={s1:'index.html',s2:'s2.html',s3:'s3.html',s4:'s4.html',history:'history.html',research:'research.html',settings:'settings.html'};
+  document.getElementById('navBase').innerHTML=baseItems.map(it=>
+    '<a class="navitem locked '+(activeKey===it.key?'active':'')+'" href="'+pageFor[it.key]+'">'+it.label+'</a>').join('');
+  document.getElementById('navCore').innerHTML=coreItems.map(it=>
+    '<a class="navitem locked '+(activeKey===it.key?'active':'')+'" href="'+pageFor[it.key]+'">'+it.label+'</a>').join('');
+  document.getElementById('navCustom').innerHTML=state.sidebar.map(c=>
+    '<a class="navitem '+(activeKey==='custom_'+c.id?'active':'')+'" href="settings.html">'+c.label+
+    '<span class="rm" onclick="event.stopPropagation();removeCustom(\''+c.id+'\')">×</span></a>').join('');
+}
+function showSection(key,anchor,navKey){
+  activeKey=navKey||key;
+  document.querySelectorAll('main > .section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('#customHost .section').forEach(s=>s.classList.remove('active'));
+  const target=document.getElementById(key);
+  if(target) target.classList.add('active');
+  if(anchor){const a=document.getElementById(anchor);if(a)a.scrollIntoView({behavior:'smooth',block:'start'});}
+  renderSidebar();
+}
+function addCustom(){
+  const name=prompt('自定义面板名称：');
+  if(!name)return;
+  const id='c'+Date.now();
+  state.sidebar.push({id,label:name,note:''});
+  localStorage.setItem('h2wb_sidebar',JSON.stringify(state.sidebar));
+  renderCustomSections(); renderSidebar(); schedulePush();
+}
+function removeCustom(id){
+  if(!confirm('删除该自定义面板？'))return;
+  state.sidebar=state.sidebar.filter(c=>c.id!==id);
+  localStorage.setItem('h2wb_sidebar',JSON.stringify(state.sidebar));
+  const el=document.getElementById('custom_'+id); if(el)el.remove();
+  renderSidebar(); schedulePush();
+}
+function renderCustomSections(){ if(!document.getElementById('customHost'))return;
+  const host=document.getElementById('customHost');
+  host.innerHTML=state.sidebar.map(c=>
+    '<section class="section" id="custom_'+c.id+'"><div class="card"><h2><span class="n">📝</span>'+c.label+'</h2>'+
+    '<textarea placeholder="在此记录笔记、公式、链接…" oninput="saveCustomNote(\''+c.id+'\',this.value)">'+ (c.note||'') +'</textarea>'+
+    '</div></section>').join('');
+}
+function saveCustomNote(id,val){const c=state.sidebar.find(x=>x.id===id);if(c){c.note=val;localStorage.setItem('h2wb_sidebar',JSON.stringify(state.sidebar));schedulePush();}}
+
+/* ============ Supabase 云端同步 ============ */
+let sb=null, sbConnected=false;
+let sbCfg=JSON.parse(localStorage.getItem('h2wb_sb')||'null');
+function setBadge(cls,txt){const b=document.getElementById('connBadge');b.className=cls;b.textContent=txt;}
+function gatherPayload(){
+  const inp={};['s1','s2','s3','s4'].forEach(p=>{try{inp[p]=JSON.parse(localStorage.getItem('h2wb_'+p));}catch(e){}});
+  return {deviceId, inputs:inp, history:state.history, reflections:state.reflections, sidebar:state.sidebar, LIT:state.LIT, updated_at:new Date().toISOString()};
+}
+function schedulePush(){
+  if(!sbConnected)return;
+  if(pushTimer)clearTimeout(pushTimer);
+  pushTimer=setTimeout(pushState,1500);
+}
+async function pushState(){
+  if(!sbConnected)return;
+  try{const {error}=await sb.from('h2wb_data').upsert({id:deviceId, payload:gatherPayload(), updated_at:new Date().toISOString()});
+    if(error)throw error; setBadge('b-ok','☁ 已连接云端（已同步）');}
+  catch(e){setBadge('b-err','✕ 同步失败');}
+}
+async function pullState(){
+  if(!sbConnected)return;
+  try{const {data,error}=await sb.from('h2wb_data').select('payload').eq('id',deviceId).single();
+    if(error&&error.code!=='PGRST116')throw error;
+    if(data&&data.payload)applyPayload(data.payload);}
+  catch(e){}
+}
+function applyPayload(p){
+  if(!p)return;
+  if(p.history){state.history=p.history;localStorage.setItem('h2wb_history',JSON.stringify(state.history));renderHistory();}
+  if(p.reflections){state.reflections=p.reflections;localStorage.setItem('h2wb_reflections',JSON.stringify(state.reflections));}
+  if(p.sidebar){state.sidebar=p.sidebar;localStorage.setItem('h2wb_sidebar',JSON.stringify(state.sidebar));renderCustomSections();renderSidebar();}
+  if(p.inputs){['s1','s2','s3','s4'].forEach(k=>{if(p.inputs[k])localStorage.setItem('h2wb_'+k,JSON.stringify(p.inputs[k]));});
+    ['s1','s2','s3','s4'].forEach(p=>{ if(document.getElementById(p)) restoreInputs(p); });['s1','s2','s3','s4'].forEach(p=>{ if(document.getElementById(p)){ if(p==='s1')calcS1(); else if(p==='s2')calcS2(); else if(p==='s3')calcS3(); else calcS4(); } });}
+}
+function saveAndConnect(){
+  const url=document.getElementById('sb_url').value.trim();
+  const key=document.getElementById('sb_key').value.trim();
+  if(!url||!key){alert('请填写 URL 与 key');return;}
+  sbCfg={url,key};localStorage.setItem('h2wb_sb',JSON.stringify(sbCfg));
+  initSupabase();
+}
+function disconnectCloud(){
+  sbCfg=null;sb=null;sbConnected=false;localStorage.removeItem('h2wb_sb');
+  setBadge('b-gray','本地模式');
+  (document.getElementById('sbStatus')||{textContent:''}).textContent='当前：本地模式（数据仅存本机）';
+  state.LIT=window.LIT||[]; renderResearch(); setLitSrc('本地（未连接）');
+}
+async function initSupabase(){
+  if(sbCfg&&sbCfg.url&&sbCfg.key&&typeof supabase!=='undefined'){
+    try{
+      sb=supabase.createClient(sbCfg.url,sbCfg.key);
+      setBadge('b-gray','连接中…');
+      const {error}=await sb.from('h2wb_data').select('id').limit(1);
+      if(error)throw error;
+      sbConnected=true; setBadge('b-ok','☁ 已连接云端');
+      (document.getElementById('sbStatus')||{textContent:''}).textContent='当前：已连接 ✓（多设备同步开启）';
+      await pullState();
+      await loadLiterature();
+    }catch(e){sbConnected=false; setBadge('b-err','✕ 连接失败');
+      (document.getElementById('sbStatus')||{textContent:''}).textContent='连接失败：'+ (e.message||e)+'（请检查 URL/key 与表权限）';}
+  }else if(typeof supabase==='undefined'){
+    setBadge('b-gray','○ 离线（无 CDN）');
+    (document.getElementById('sbStatus')||{textContent:''}).textContent='未能加载 Supabase 库（可能无网络）；当前为本地模式。';
+  }else{
+    setBadge('b-gray','本地模式');
+    (document.getElementById('sbStatus')||{textContent:''}).textContent='未配置云端：在上方填写 URL 与 key 后点「保存并连接」。';
+  }
+}
+
+/* ============ 启动 ============ */
+const deviceId=(localStorage.getItem('h2wb_device')||'dev_'+Math.random().toString(36).slice(2,10));
+localStorage.setItem('h2wb_device',deviceId);
+let pushTimer=null;
+function bindInputs(){
+  ['s1','s2','s3','s4'].forEach(p=>{
+    document.querySelectorAll('#'+p+' input, #'+p+' select').forEach(el=>{
+      el.addEventListener('input',()=>{ if(p==='s1')calcS1(); else if(p==='s2')calcS2(); else if(p==='s3')calcS3(); else calcS4(); });
+      el.addEventListener('change',()=>{ if(p==='s1')calcS1(); else if(p==='s2')calcS2(); else if(p==='s3')calcS3(); else calcS4(); });
+    });
+  });
+}
+function boot(){
+  if(sbCfg && document.getElementById('sb_url')){document.getElementById('sb_url').value=sbCfg.url||'';document.getElementById('sb_key').value=sbCfg.key||'';}
+  restoreInputs('s1');restoreInputs('s2');restoreInputs('s3');restoreInputs('s4');
+  renderCustomSections();renderSidebar();if(document.getElementById('history'))renderHistory(); if(document.getElementById('research'))renderResearch();
+  bindInputs();calcS1();calcS2();calcS3();calcS4();
+  initSupabase();
+}
+activeKey='s4'; boot();</script>
+</body>
+</html>
