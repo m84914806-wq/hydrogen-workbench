@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>连续流固定床加氢反应器工作台</title>
@@ -63,6 +64,7 @@
   .hl{background:#ecfeff;border:1px solid #a5f3fc;border-radius:10px;padding:10px 12px;margin-bottom:10px}
   .hl .v{color:var(--accent);font-size:18px;font-weight:800}
   .note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
+  .subhead{margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-weight:700;color:var(--accent);font-size:13.5px}
   .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:600;margin-left:6px}
   .badge.ok{background:#dcfce7;color:var(--ok)} .badge.warn{background:#fef3c7;color:var(--warn)} .badge.danger{background:#fee2e2;color:var(--danger)}
   details{margin-top:14px;background:var(--chip);border-radius:10px;padding:6px 14px}
@@ -106,20 +108,65 @@
   .modal label{font-size:12.5px;color:var(--muted);display:block;margin:10px 0 4px}
   .modal pre{background:#0f172a;color:#e2e8f0;padding:10px;border-radius:8px;font-size:11.5px;overflow:auto}
   .modal .row2{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
+
+  a.navitem{text-decoration:none;color:inherit}
+  .section{display:block}
 </style>
+<script>/*LIT-FALLBACK*/
+
+// 连续流固定床加氢 · 每日文献推送（由每日 0:00 自动化检索并覆写此文件）
+// window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
+window.LIT = [
+  {
+    date: "2026-07-28",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed）",
+    articles: [
+      {
+        id: "pmid-38390498",
+        title: "Enhancing continuous-flow reactions via compression-molding of solid catalysts and dilutants in packed-bed systems",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/38390498/",
+        doi: "https://doi.org/10.1039/d3ra08088a",
+        journal: "RSC Advances (2024), open access (PMC10882219)",
+        verified: true,
+        verifiedAt: "2026-07-28",
+        highlights: "将 Pt-black 粉末与 SiO2 通过压片成型后填入固定床，显著抑制金属浸出；并在大尺寸柱上完成放大实验，保持优异收率。对连续流固定床的催化剂成型与装填工程有实用价值。",
+        shortcomings: "以 Pt-black 为模型体系，未系统量化加氢转化率和选择性；成型对床层压降/传质的影响缺少 CFD 或实验压降数据的支撑。",
+        oneliner: "用压片成型把粉体催化剂固化为固定床填料，解决连续流中催化剂流失问题，实现了可放大的连续反应。",
+        keywords: ["固定床", "压片成型", "催化剂装填", "放大", "Pt", "连续流", "催化剂流失"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 催化剂 压片成型 连续反应")
+      },
+      {
+        id: "doi-10.3390-pr11041074",
+        title: "Continuous-Flow Hydrogenation of Nitroaromatics in Microreactor with Mesoporous Pd@SBA-15",
+        pubmed: "https://doi.org/10.3390/pr11041074",
+        doi: "https://doi.org/10.3390/pr11041074",
+        journal: "Processes (2023), open access (MDPI)",
+        verified: true,
+        verifiedAt: "2026-07-28",
+        highlights: "介孔 Pd@SBA-15 装入微填充床（MPBR），硝基芳烃 1 分钟内转化率 99%；连续运行 24 h 活性几乎不衰减，解决了传统 Pd/C 易团聚失活的问题。",
+        shortcomings: "仅在模型底物（硝基苯类）验证；Pd 负载量、>24 h 长期稳定性及工业放大下的床层压降与热点问题未充分讨论。",
+        oneliner: "以介孔 Pd@SBA-15 为固定床催化剂实现硝基芳烃连续流加氢，1 分钟近完全转化且可长时间稳定运行。",
+        keywords: ["硝基芳烃", "加氢", "Pd", "SBA-15", "微填充床", "微反应器", "选择性", "连续流", "稳定性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 加氢 硝基芳烃 Pd SBA-15 微反应器")
+      }
+    ]
+  }
+];
+
+
+</script>
 </head>
 <body>
 <header>
   <div class="logo">H</div>
   <div>
     <h1>连续流固定床加氢反应器工作台</h1>
-    <p>氢气当量 · 反应器体积 · 催化剂单耗 · 专家评估（氢气成本 / 绝热温升 / 床层压降）— 输入自动保存 · 可云端同步</p>
+    <p>氢气当量 · 反应器体积 · 催化剂单耗 · 绝热温升（含氢气成本 / 床层压降）— 输入自动保存 · 可云端同步</p>
   </div>
   <span id="connBadge" class="b-gray">检测中…</span>
 </header>
-
 <div class="app">
-  <aside class="sidebar">
+<aside class="sidebar">
     <h3>基础计算（固定）</h3>
     <div id="navBase"></div>
     <h3>工作台</h3>
@@ -128,10 +175,8 @@
     <div id="navCustom"></div>
     <button class="addbtn" onclick="addCustom()">＋ 添加自定义面板</button>
   </aside>
-
   <main>
-    <!-- ============ 模块1 理论氢气量 ============ -->
-    <section class="section active" id="s1">
+<section class="section active" id="s1">
       <div class="grid">
         <div class="card">
           <h2><span class="n">1</span>输入参数（理论氢气量）</h2>
@@ -191,398 +236,8 @@ LHSV = F / V_R   ;   τ = 1/LHSV</div>
         </div>
       </div>
     </section>
-
-    <!-- ============ 模块2 反应器体积 ============ -->
-    <section class="section" id="s2">
-      <div class="grid">
-        <div class="card">
-          <h2><span class="n">2</span>输入参数（反应器体积）</h2>
-          <div class="row"><label>原料分子量 M<sub>原料</sub></label>
-            <div class="inp"><input type="number" id="s2_Mraw" value="100" step="any">
-              <select class="unit" id="u_s2_Mraw"><option value="1">g/mol</option><option value="1">kg/kmol</option></select></div></div>
-          <div class="row"><label>产品分子量 M<sub>产品</sub></label>
-            <div class="inp"><input type="number" id="s2_Mprod" value="102" step="any">
-              <select class="unit" id="u_s2_Mprod"><option value="1">g/mol</option><option value="1">kg/kmol</option></select></div></div>
-          <div class="row"><label>原料质量浓度 w</label>
-            <div class="inp"><input type="number" id="s2_w" value="20" step="any">
-              <select class="unit" id="u_s2_w"><option value="0.01">% (质量)</option><option value="1">质量分数</option></select></div></div>
-          <div class="row"><label>原料液密度 ρ<sub>液</sub></label>
-            <div class="inp"><input type="number" id="s2_rho" value="0.90" step="any">
-              <select class="unit" id="u_s2_rho"><option value="1">kg/L</option><option value="1">g/mL</option><option value="0.001">kg/m³</option></select></div></div>
-          <div class="row"><label>催化剂装填质量 m<sub>cat</sub></label>
-            <div class="inp"><input type="number" id="s2_mcat" value="5" step="any">
-              <select class="unit" id="u_s2_mcat"><option value="1">kg</option><option value="0.001">g</option><option value="1000">t</option></select></div></div>
-          <div class="row"><label>催化剂堆密度 ρ<sub>b</sub></label>
-            <div class="inp"><input type="number" id="s2_rhob" value="0.70" step="any">
-              <select class="unit" id="u_s2_rhob"><option value="1">kg/L</option><option value="1">g/mL</option><option value="0.001">kg/m³</option></select></div></div>
-          <div class="row"><label>液体进料流速 F</label>
-            <div class="inp"><input type="number" id="s2_F" value="5" step="any">
-              <select class="unit" id="u_s2_F"><option value="0.06">mL/min</option><option value="1" selected>L/h</option><option value="0.001">mL/h</option><option value="60">L/min</option></select></div></div>
-          <div class="row"><label>目标年产量 P<sub>年</sub></label>
-            <div class="inp"><input type="number" id="s2_Pyear" value="70" step="any">
-              <select class="unit" id="u_s2_Pyear"><option value="1">t/a</option><option value="0.001">kg/a</option></select></div></div>
-          <div class="row"><label>年操作时间</label>
-            <div class="inp"><input type="number" id="s2_H" value="8000" step="any">
-              <select class="unit" id="u_s2_H"><option value="1">h/a</option><option value="24">天/年</option></select></div></div>
-          <div class="row"><label>转化率 X</label>
-            <div class="inp"><input type="number" id="s2_X" value="100" step="any">
-              <select class="unit" id="u_s2_X"><option value="0.01">%</option><option value="1">小数</option></select></div></div>
-          <div class="row"><label>产品选择性 S</label>
-            <div class="inp"><input type="number" id="s2_S" value="100" step="any">
-              <select class="unit" id="u_s2_S"><option value="0.01">%</option><option value="1">小数</option></select></div></div>
-          <div class="note">反应器体积由催化剂装填质量与堆密度换算；时空收率按质量空速 WHSV 计算。本模块只算体积/空速/产能，与「催化剂单耗」互相独立。</div>
-          <div class="actions">
-            <button class="primary" onclick="calcS2()">计算</button>
-            <button onclick="loadCatEx()" title="填入你之前提供的催化剂放大算例（150→140，溶剂甲醇20%，0.3 mL/min，目标1000 t/a，年操作300天，寿命3个月）：一键同时填充本模块与「催化剂单耗」模块">催化剂算例</button>
-            <button onclick="resetSec('s2')">重置</button>
-            <button class="ghost" onclick="snapshot('反应器体积','s2')">保存为任务</button>
-            <span class="saved" id="s2_saved"></span>
-          </div>
-        </div>
-        <div class="card">
-          <h2><span class="n">📐</span>反应器体积与放大</h2>
-          <div class="results">
-            <div class="hl"><div class="k" style="color:var(--muted);font-size:12.5px">当前装填反应器体积 V_R</div>
-              <div class="v" id="s2_VR">— <small>L</small></div></div>
-            <div class="hl"><div class="k" style="color:var(--muted);font-size:12.5px">所需反应器体积（达产 P_年）</div>
-              <div class="v" id="s2_Vreq">— <small>L</small></div></div>
-            <div class="res-row"><span class="k">质量空速 WHSV = ṁ_液/m_cat</span><span class="v" id="s2_WHSV">— <small>h⁻¹</small></span></div>
-            <div class="res-row"><span class="k">液时空速 LHSV</span><span class="v" id="s2_LHSV">— <small>h⁻¹</small></span></div>
-            <div class="res-row"><span class="k">催化剂时空收率 STY（质量基准）</span><span class="v" id="s2_STY">— <small>kg产/(kg·h)</small></span></div>
-            <div class="res-row"><span class="k">STY（体积基准）</span><span class="v" id="s2_STYvol">— <small>kg产/(L·h)</small></span></div>
-            <div class="res-row"><span class="k">当前配置年产量</span><span class="v" id="s2_Pcap">— <small>t/a</small></span></div>
-            <div class="res-row"><span class="k">达产所需进料流速</span><span class="v" id="s2_Freq">— <small>L/h</small></span></div>
-            <div class="res-row"><span class="k">产能匹配</span><span class="v" id="s2_match">—</span></div>
-          </div>
-          <details>
-            <summary>公式说明（输入自动换算到基准单位）</summary>
-            <div class="formula">基准单位：质量 kg · 体积 L · 流速 L/h · 时间 h
-V_R = m_cat / ρ_b                     [L]  (当前装填床层体积)
-WHSV = ṁ_液 / m_cat = F·ρ_液 / m_cat      [h⁻¹]   ← 质量空速（已校对）
-LHSV = F / V_R = F·ρ_b / m_cat            [h⁻¹]
-STY = ṁ_产 / m_cat = WHSV·w·X·S·(M_产/M_原料)   [kg产/(kg·h)]
-STY(体积) = ṁ_产 / V_R                   [kg产/(L·h)]
-ṁ_产 = ṁ_原料 · X · S · (M_产/M_原料)      (X=转化率, S=选择性)
-P_产能 = ṁ_产 · H / 1000                 [t/a]
-—— 放大设计（按目标年产量 P_年 反算）——
-m_cat(所需) = (P_年·1000/H) / STY        [kg]
-V_R(所需) = m_cat(所需) / ρ_b            [L]
-F_达产 = (P_年·1000/H) / (X·S·M_产/M_原料) / w / ρ_液</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 模块3 催化剂单耗 ============ -->
-    <section class="section" id="s3">
-      <div class="grid">
-        <div class="card">
-          <h2><span class="n">3</span>输入参数（催化剂单耗）</h2>
-          <div class="row"><label>原料分子量 M<sub>原料</sub></label>
-            <div class="inp"><input type="number" id="s3_Mraw" value="100" step="any">
-              <select class="unit" id="u_s3_Mraw"><option value="1">g/mol</option><option value="1">kg/kmol</option></select></div></div>
-          <div class="row"><label>产品分子量 M<sub>产品</sub></label>
-            <div class="inp"><input type="number" id="s3_Mprod" value="102" step="any">
-              <select class="unit" id="u_s3_Mprod"><option value="1">g/mol</option><option value="1">kg/kmol</option></select></div></div>
-          <div class="row"><label>原料质量浓度 w</label>
-            <div class="inp"><input type="number" id="s3_w" value="20" step="any">
-              <select class="unit" id="u_s3_w"><option value="0.01">% (质量)</option><option value="1">质量分数</option></select></div></div>
-          <div class="row"><label>原料液密度 ρ<sub>液</sub></label>
-            <div class="inp"><input type="number" id="s3_rho" value="0.90" step="any">
-              <select class="unit" id="u_s3_rho"><option value="1">kg/L</option><option value="1">g/mL</option><option value="0.001">kg/m³</option></select></div></div>
-          <div class="row"><label>催化剂装填质量 m<sub>cat</sub></label>
-            <div class="inp"><input type="number" id="s3_mcat" value="5" step="any">
-              <select class="unit" id="u_s3_mcat"><option value="1">kg</option><option value="0.001">g</option><option value="1000">t</option></select></div></div>
-          <div class="row"><label>催化剂堆密度 ρ<sub>b</sub></label>
-            <div class="inp"><input type="number" id="s3_rhob" value="0.70" step="any">
-              <select class="unit" id="u_s3_rhob"><option value="1">kg/L</option><option value="1">g/mL</option><option value="0.001">kg/m³</option></select></div></div>
-          <div class="row"><label>液体进料流速 F</label>
-            <div class="inp"><input type="number" id="s3_F" value="5" step="any">
-              <select class="unit" id="u_s3_F"><option value="0.06">mL/min</option><option value="1" selected>L/h</option><option value="0.001">mL/h</option><option value="60">L/min</option></select></div></div>
-          <div class="row"><label>目标年产量 P<sub>年</sub></label>
-            <div class="inp"><input type="number" id="s3_Pyear" value="70" step="any">
-              <select class="unit" id="u_s3_Pyear"><option value="1">t/a</option><option value="0.001">kg/a</option></select></div></div>
-          <div class="row"><label>年操作时间</label>
-            <div class="inp"><input type="number" id="s3_H" value="8000" step="any">
-              <select class="unit" id="u_s3_H"><option value="1">h/a</option><option value="24">天/年</option></select></div></div>
-          <div class="row"><label>转化率 X</label>
-            <div class="inp"><input type="number" id="s3_X" value="100" step="any">
-              <select class="unit" id="u_s3_X"><option value="0.01">%</option><option value="1">小数</option></select></div></div>
-          <div class="row"><label>产品选择性 S</label>
-            <div class="inp"><input type="number" id="s3_S" value="100" step="any">
-              <select class="unit" id="u_s3_S"><option value="0.01">%</option><option value="1">小数</option></select></div></div>
-          <div class="row"><label>催化剂寿命</label>
-            <div class="inp"><input type="number" id="s3_life" value="1" step="any">
-              <select class="unit" id="u_s3_life"><option value="1">年</option><option value="0.0833333">月</option><option value="0.0027397">天</option><option value="0.000114155">小时</option></select></div></div>
-          <div class="row"><label>催化剂价格</label>
-            <div class="inp"><input type="number" id="s3_price" value="200" step="any">
-              <select class="unit" id="u_s3_price"><option value="1">元/kg</option><option value="1000">元/t</option></select></div></div>
-          <div class="note">催化剂单耗按「寿命」与「价格」独立计算，与本工作台中「反应器体积」模块的输入互不联动，可单独填写。专家补充（氢气成本 / 绝热温升 / 床层压降）已拆分为独立模块「④ 专家补充评估」。</div>
-          <div class="actions">
-            <button class="primary" onclick="calcS3()">计算</button>
-            <button onclick="copyFromReactor('s3')" title="把「反应器体积」模块里的共享参数（分子量/浓度/密度/装填质量/堆密度/进料流速/年产/年操作时间/转化率/选择性）连同单位一键复制到此，免重复输入">① 从反应器体积复制</button>
-            <button onclick="loadCatEx()" title="填入你之前提供的催化剂放大算例（150→140，溶剂甲醇20%，0.3 mL/min，目标1000 t/a，年操作300天，寿命3个月，价格200）：一键同时填充本模块与「反应器体积」模块">催化剂算例</button>
-            <button onclick="resetSec('s3')">重置</button>
-            <button class="ghost" onclick="snapshot('催化剂单耗','s3')">保存为任务</button>
-            <span class="saved" id="s3_saved"></span>
-          </div>
-        </div>
-        <div class="card">
-          <h2><span class="n">💰</span>催化剂单耗与成本</h2>
-          <div class="results">
-            <div class="hl"><div class="k" style="color:var(--muted);font-size:12.5px">催化剂单耗（日历更换基准）</div>
-              <div class="v" id="s3_cons">— <small>kg 催化剂 / t 产品</small></div></div>
-            <div class="hl"><div class="k" style="color:var(--muted);font-size:12.5px">催化剂单耗（操作小时基准）</div>
-              <div class="v" id="s3_cons_op">— <small>kg 催化剂 / t 产品</small></div></div>
-            <div class="res-row"><span class="k">催化剂更换次数/年（日历年）</span><span class="v" id="s3_charges">— <small>次</small></span></div>
-            <div class="res-row"><span class="k">所需催化剂质量（达产）</span><span class="v" id="s3_mcatreq">— <small>kg</small></div></div>
-            <div class="res-row"><span class="k">年催化剂消耗量（日历年）</span><span class="v" id="s3_consYear">— <small>kg/a</small></div></div>
-            <div class="hl"><div class="k" style="color:var(--muted);font-size:12.5px">催化剂成本（元/t 产品）</div>
-              <div class="v" id="s3_cost">— <small>元/t</small></div></div>
-            <div class="res-row"><span class="k">STY（质量基准）</span><span class="v" id="s3_STY">— <small>kg产/(kg·h)</small></span></div>
-            <div class="res-row"><span class="k">STY（体积基准）</span><span class="v" id="s3_STYvol">— <small>kg产/(L·h)</small></span></div>
-            <div class="note">两种口径：<b>日历更换基准</b>按 8760 h/年（含停机）折算更换次数；<b>操作小时基准</b>仅按催化剂连续运行寿命（STY×寿命_h）折算，不含停机。两者比值 = 8760 / H（年操作时间）。年操作越接近 8760 h，两者越接近。专家补充（氢气成本 / 绝热温升 / 床层压降）见独立模块「④ 专家补充评估」。</div>
-          </div>
-          <details>
-            <summary>公式说明（输入自动换算到基准单位）</summary>
-            <div class="formula">基准单位：质量 kg · 体积 L · 流速 L/h · 时间 h
-STY = ṁ_产 / m_cat = WHSV·w·X·S·(M_产/M_原料)   [kg产/(kg·h)]
-ṁ_产 = ṁ_原料 · X · S · (M_产/M_原料)      (X=转化率, S=选择性)
-寿命_h = 寿命(年) × 8760
-【催化剂单耗 · 两种口径】
- 日历更换基准 = (m_cat(所需)/寿命年) / P_年 = 1/(STY·寿命_h)·(8760/H)·1000   [kg/t]  ← 主显示，含停机
- 操作小时基准 = 1 / (STY·寿命_h)·1000                                       [kg/t]  ← 仅连续运行
- 两者比值 = 8760 / H（年操作时间）
-催化剂更换次数/年 = 8760 / 寿命_h = 1 / 寿命(年)
-m_cat(所需) = (P_年·1000/H) / STY        [kg]
-年催化剂消耗（日历年） = m_cat(所需) / 寿命(年)   [kg/a]
-催化剂成本 = 年催化剂消耗 × 价格 / P_年        [元/t]</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 模块4 专家补充：氢气成本 · 绝热温升 · 床层压降 ============ -->
-    <section class="section" id="s4">
-      <div class="grid">
-        <div class="card">
-          <h2><span class="n">4</span>输入参数（专家补充评估）</h2>
-          <div class="row"><label>原料分子量 M<sub>原料</sub></label>
-            <div class="inp"><input type="number" id="s4_Mraw" value="100" step="any">
-              <select class="unit" id="u_s4_Mraw"><option value="1">g/mol</option><option value="1">kg/kmol</option></select></div></div>
-          <div class="row"><label>产品分子量 M<sub>产品</sub></label>
-            <div class="inp"><input type="number" id="s4_Mprod" value="102" step="any">
-              <select class="unit" id="u_s4_Mprod"><option value="1">g/mol</option><option value="1">kg/kmol</option></select></div></div>
-          <div class="row"><label>原料质量浓度 w</label>
-            <div class="inp"><input type="number" id="s4_w" value="20" step="any">
-              <select class="unit" id="u_s4_w"><option value="0.01">% (质量)</option><option value="1">质量分数</option></select></div></div>
-          <div class="row"><label>原料液密度 ρ<sub>液</sub></label>
-            <div class="inp"><input type="number" id="s4_rho" value="0.90" step="any">
-              <select class="unit" id="u_s4_rho"><option value="1">kg/L</option><option value="1">g/mL</option><option value="0.001">kg/m³</option></select></div></div>
-          <div class="row"><label>催化剂装填质量 m<sub>cat</sub></label>
-            <div class="inp"><input type="number" id="s4_mcat" value="5" step="any">
-              <select class="unit" id="u_s4_mcat"><option value="1">kg</option><option value="0.001">g</option><option value="1000">t</option></select></div></div>
-          <div class="row"><label>催化剂堆密度 ρ<sub>b</sub></label>
-            <div class="inp"><input type="number" id="s4_rhob" value="0.70" step="any">
-              <select class="unit" id="u_s4_rhob"><option value="1">kg/L</option><option value="1">g/mL</option><option value="0.001">kg/m³</option></select></div></div>
-          <div class="row"><label>液体进料流速 F</label>
-            <div class="inp"><input type="number" id="s4_F" value="5" step="any">
-              <select class="unit" id="u_s4_F"><option value="0.06">mL/min</option><option value="1" selected>L/h</option><option value="0.001">mL/h</option><option value="60">L/min</option></select></div></div>
-          <div class="row"><label>转化率 X</label>
-            <div class="inp"><input type="number" id="s4_X" value="100" step="any">
-              <select class="unit" id="u_s4_X"><option value="0.01">%</option><option value="1">小数</option></select></div></div>
-          <div class="row"><label>产品选择性 S</label>
-            <div class="inp"><input type="number" id="s4_S" value="100" step="any">
-              <select class="unit" id="u_s4_S"><option value="0.01">%</option><option value="1">小数</option></select></div></div>
-          <div class="note">本模块复制「反应器体积」模块的共享反应参数（分子量 / 浓度 / 密度 / 装填质量 / 堆密度 / 进料流速 / 转化率 / 选择性），再补充专家评估所需的安全经济参数。与「催化剂单耗」互相独立。</div>
-          <details class="expert">
-            <summary>🔬 专家评估参数（氢气成本 / 绝热温升 / 床层压降）</summary>
-            <div class="note">连续流固定床加氢放大的关键安全/经济参数。留空或 0 则不计算对应项；以下为常见估算占位，请按真实体系替换。</div>
-            <div class="row"><label>氢气当量系数 ν（H₂/原料）</label>
-              <div class="inp"><input type="number" id="s4_nu" value="1" step="any">
-                <select class="unit" id="u_s4_nu"><option value="1">mol H₂/mol 原料</option><option value="mass">kg H₂/kg 原料</option></select></div></div>
-            <div class="row"><label>氢气价格</label>
-              <div class="inp"><input type="number" id="s4_H2price" value="2.0" step="any">
-                <select class="unit" id="u_s4_H2price"><option value="Nm3">元/Nm³</option><option value="kg">元/kg</option></select></div></div>
-            <div class="row"><label>反应热 ΔH<sub>rxn</sub></label>
-              <div class="inp"><input type="number" id="s4_dH" value="60" step="any">
-                <select class="unit" id="u_s4_dH"><option value="1">kJ/mol</option><option value="4.184">kcal/mol</option></select></div></div>
-            <div class="row"><label>进料液比热容 C<sub>p</sub></label>
-              <div class="inp"><input type="number" id="s4_Cp" value="2.0" step="any">
-                <select class="unit" id="u_s4_Cp"><option value="1">kJ/(kg·K)</option></select></div></div>
-            <div class="row"><label>反应器内径 D</label>
-              <div class="inp"><input type="number" id="s4_D" value="10" step="any">
-                <select class="unit" id="u_s4_D"><option value="1">mm</option><option value="10">cm</option></select></div></div>
-            <div class="row"><label>催化剂颗粒直径 d<sub>p</sub></label>
-              <div class="inp"><input type="number" id="s4_dp" value="1.0" step="any">
-                <select class="unit" id="u_s4_dp"><option value="1">mm</option><option value="0.001">µm</option></select></div></div>
-            <div class="row"><label>床层空隙率 ε</label>
-              <div class="inp"><input type="number" id="s4_eps" value="0.40" step="any">
-                <select class="unit" id="u_s4_eps"><option value="1">—（无量纲）</option></select></div></div>
-            <div class="row"><label>进料液粘度 μ</label>
-              <div class="inp"><input type="number" id="s4_mu" value="0.5" step="any">
-                <select class="unit" id="u_s4_mu"><option value="1">cP (mPa·s)</option></select></div></div>
-          </details>
-          <div class="actions">
-            <button class="primary" onclick="calcS4()">计算</button>
-            <button onclick="copyFromReactor('s4')" title="把「反应器体积」模块的共享参数（分子量/浓度/密度/装填质量/堆密度/进料流速/转化率/选择性）连同单位一键复制到此，免重复输入">① 从反应器体积复制</button>
-            <button onclick="loadCatEx()" title="填入催化剂放大算例到反应器体积/催化剂单耗，并同步共享参数到本模块">催化剂算例</button>
-            <button onclick="resetSec('s4')">重置</button>
-            <button class="ghost" onclick="snapshot('专家补充评估','s4')">保存为任务</button>
-            <span class="saved" id="s4_saved"></span>
-          </div>
-        </div>
-        <div class="card">
-          <h2><span class="n">🧪</span>专家评估（氢气成本 / 绝热温升 / 压降）</h2>
-          <div class="results">
-            <div class="res-row"><span class="k">氢气质量流量</span><span class="v" id="s4_mH2">— <small>kg/h</small></span></div>
-            <div class="res-row"><span class="k">氢气体积流量（标况）</span><span class="v" id="s4_VH2">— <small>Nm³/h</small></span></div>
-            <div class="hl"><div class="k" style="color:var(--muted);font-size:12.5px">氢气成本（元/t 产品）</div><div class="v" id="s4_H2cost">— <small>元/t</small></div></div>
-            <div class="res-row"><span class="k">绝热温升 ΔT<sub>ad</sub></span><span class="v" id="s4_dTad">— <small>K</small></span></div>
-            <div class="res-row"><span class="k">床层压降 ΔP（Ergun）</span><span class="v" id="s4_dP">— <small>bar</small></span></div>
-            <div class="note" id="s4_dP_warn" style="color:#c0392b;font-weight:600"></div>
-          </div>
-          <details>
-            <summary>公式说明（输入自动换算到基准单位）</summary>
-            <div class="formula">基准单位：质量 kg · 体积 L · 流速 L/h · 时间 h · 分子量 g/mol
-—— 氢气成本 ——
-n_原料 = ṁ_原料·1000 / M_原料           [mol/h]   (ṁ_原料 = F·ρ_液·w)
-ṁ_产   = ṁ_原料 · X · S · (M_产/M_原料)  [kg/h]
-n_H₂  = ν · n_原料 · X                   [mol/h]
-ṁ_H₂  = n_H₂ · 2.016/1000                [kg/h]
-V_H₂  = n_H₂ · 22.414/1000               [Nm³/h]
-H₂成本 = ṁ_H₂(质量或体积)×价格 / ṁ_产 ×1000   [元/t 产品]
-—— 绝热温升 ——
-ΔT_ad = |ΔH_rxn|·n_原料·X / (ṁ_液·C_p)    [K]   (ṁ_液 = F·ρ_液)
-—— 床层压降（Ergun）——
-V_R = m_cat/ρ_b              [L → m³/1000]   (L = 床层高度)
-A   = πD²/4                  [m²]   (D = 反应器内径)
-L   = V_R / A                [m]
-u   = Q / A                  [m/s]  (Q = F/1000/3600)
-μ'  = μ(cP)·1e-3             [Pa·s]   ρ_液' = ρ_液·1000   [kg/m³]
-ΔP  = L·[ 150(1-ε)²/ε³·μ'u/dp²  +  1.75(1-ε)/ε³·ρ_液'u²/dp ]   [Pa → bar/1e5]</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 历史记录 ============ -->
-    <section class="section" id="history">
-      <div class="card">
-        <h2><span class="n">📚</span>历史记录（按日期折叠）</h2>
-        <div class="note">在任意计算模块点击「保存为任务」即可把当前输入与结果存档；关闭再打开不会丢失（已自动保存至本地/云端）。</div>
-        <div class="actions">
-          <button class="primary" onclick="exportHistoryXLS()">⬇ 导出 Excel</button>
-        </div>
-        <div id="historyList" style="margin-top:10px"></div>
-      </div>
-    </section>
-
-    <!-- ============ 科研学习 ============ -->
-    <section class="section" id="research">
-      <div class="card">
-        <h2><span class="n">🔬</span>科研学习 · 每日文献推送</h2>
-        <div class="note">每日 0:00 自动从 PubMed 检索连续流固定床加氢方向高质量文献 2 篇（链接均经检索确认可打开），并附公众号解读入口与一句话总结。点击链接自动跳转；底部可填写你的阅读感受与收获。支持按关键词筛选。<b>文献走云端读取</b>：已连接云端时从 Supabase 拉取最新推送，未连接时回退到本地 literature.js。本地文献若比云端新，会自动上传到云端（以最新日期为准）。</div>
-        <div class="row" style="margin:10px 0">
-          <label style="flex:0 0 auto">🔎 关键词筛选</label>
-          <div class="inp"><input type="text" id="litFilter" placeholder="输入关键词，如：固定床 / 硝基 / 选择性 / 微反应器 / 稳定性" oninput="renderResearch()"></div>
-        </div>
-        <div class="actions">
-          <button class="ghost" onclick="refreshLiterature()">📥 从云端刷新 / 重载本地</button>
-          <button class="ghost" onclick="pushLiterature()">📤 上传本地文献到云端</button>
-          <span class="saved" id="litSrc">文献来源：本地</span>
-        </div>
-        <div id="litList" style="margin-top:6px"></div>
-      </div>
-    </section>
-
-    <!-- ============ 设置 / 云端 ============ -->
-    <section class="section" id="settings">
-      <div class="card">
-        <h2><span class="n">⚙</span>设置 · 云端同步（Supabase）</h2>
-        <div class="note">填入你的 Supabase 项目 URL 与 anon/public key 即可开启多设备云端同步；未配置时为「本地模式」，数据仅存本机浏览器。</div>
-        <div id="sbStatus" style="margin:8px 0;font-weight:700"></div>
-        <label style="font-size:12.5px;color:var(--muted)">Supabase URL</label>
-        <input type="text" id="sb_url" placeholder="https://xxxx.supabase.co">
-        <label style="font-size:12.5px;color:var(--muted)">Supabase anon key（公开，非 service_role）</label>
-        <input type="text" id="sb_key" placeholder="eyJhbGciOi...">
-        <div class="actions">
-          <button class="primary" onclick="saveAndConnect()">保存并连接</button>
-          <button class="ghost" onclick="disconnectCloud()">断开 / 仅本地</button>
-        </div>
-        <details>
-          <summary>建表 SQL（在 Supabase SQL Editor 执行）</summary>
-          <pre>create table h2wb_data (
-  id text primary key,
-  payload jsonb not null,
-  updated_at timestamptz default now()
-);
-create table h2wb_lit (
-  id text primary key default 'daily',
-  payload jsonb not null,
-  updated_at timestamptz default now()
-);
--- 开启 RLS 后，为 anon 角色添加对上述两表的 select/insert/update 策略</pre>
-        </details>
-        <details>
-          <summary>关于链接验证</summary>
-          <div class="formula">PubMed 对机器人有 reCAPTCHA 限制，自动化改用 NCBI E-utilities / 检索结果中的 pubmed 直链确认文章存在；
-公众号解析统一使用「微信搜狗」搜索直链（weixin.sogou.com），点击即跳转搜索页，稳定可打开。</div>
-        </details>
-      </div>
-    </section>
-
-    <!-- 自定义面板容器 -->
-    <div id="customHost"></div>
-
-    <footer>连续流固定床加氢反应器工作台 · 公式基于质量守恒与空速定义 · 输入单位可切换 · 自动保存 · 可云端同步</footer>
   </main>
 </div>
-
-<!-- 设置弹窗（备用，主要用内联设置面板） -->
-<div class="mask" id="mask"><div class="modal" id="modal"></div></div>
-
-<script>/*LIT-FALLBACK*/
-// 连续流固定床加氢 · 每日文献推送（由每日 0:00 自动化检索并覆写此文件）
-// window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
-window.LIT = [
-  {
-    date: "2026-07-28",
-    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed）",
-    articles: [
-      {
-        id: "pmid-38390498",
-        title: "Enhancing continuous-flow reactions via compression-molding of solid catalysts and dilutants in packed-bed systems",
-        pubmed: "https://pubmed.ncbi.nlm.nih.gov/38390498/",
-        doi: "https://doi.org/10.1039/d3ra08088a",
-        journal: "RSC Advances (2024), open access (PMC10882219)",
-        verified: true,
-        verifiedAt: "2026-07-28",
-        highlights: "将 Pt-black 粉末与 SiO2 通过压片成型后填入固定床，显著抑制金属浸出；并在大尺寸柱上完成放大实验，保持优异收率。对连续流固定床的催化剂成型与装填工程有实用价值。",
-        shortcomings: "以 Pt-black 为模型体系，未系统量化加氢转化率和选择性；成型对床层压降/传质的影响缺少 CFD 或实验压降数据的支撑。",
-        oneliner: "用压片成型把粉体催化剂固化为固定床填料，解决连续流中催化剂流失问题，实现了可放大的连续反应。",
-        keywords: ["固定床", "压片成型", "催化剂装填", "放大", "Pt", "连续流", "催化剂流失"],
-        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 催化剂 压片成型 连续反应")
-      },
-      {
-        id: "doi-10.3390-pr11041074",
-        title: "Continuous-Flow Hydrogenation of Nitroaromatics in Microreactor with Mesoporous Pd@SBA-15",
-        pubmed: "https://doi.org/10.3390/pr11041074",
-        doi: "https://doi.org/10.3390/pr11041074",
-        journal: "Processes (2023), open access (MDPI)",
-        verified: true,
-        verifiedAt: "2026-07-28",
-        highlights: "介孔 Pd@SBA-15 装入微填充床（MPBR），硝基芳烃 1 分钟内转化率 99%；连续运行 24 h 活性几乎不衰减，解决了传统 Pd/C 易团聚失活的问题。",
-        shortcomings: "仅在模型底物（硝基苯类）验证；Pd 负载量、>24 h 长期稳定性及工业放大下的床层压降与热点问题未充分讨论。",
-        oneliner: "以介孔 Pd@SBA-15 为固定床催化剂实现硝基芳烃连续流加氢，1 分钟近完全转化且可长时间稳定运行。",
-        keywords: ["硝基芳烃", "加氢", "Pd", "SBA-15", "微填充床", "微反应器", "选择性", "连续流", "稳定性"],
-        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 加氢 硝基芳烃 Pd SBA-15 微反应器")
-      }
-    ]
-  }
-];
-
-</script>
 <script>
 /* ============ 基础工具 ============ */
 const M_H2=2.016, VM=22.414;
@@ -698,7 +353,7 @@ function calcS3(){
   saveInputs('s3');
 }
 
-/* ============ 模块4 计算（专家补充：氢气成本 / 绝热温升 / 床层压降） ============ */
+/* ============ 模块4 计算（绝热温升：氢气成本 / 绝热温升 / 床层压降） ============ */
 function calcS4(){
   const Mraw=val('s4_Mraw')*ufactor('s4_Mraw');
   const Mprod=val('s4_Mprod')*ufactor('s4_Mprod');
@@ -712,7 +367,7 @@ function calcS4(){
   if([Mraw,Mprod,w,rho,mcat,rhob,F,X,S].some(v=>!isFinite(v)||v<=0)){setTxt('s4_H2cost','请输入有效正数');return;}
   const mfeed=F*rho, mraw=mfeed*w;
   const mprod=mraw*X*S*(Mprod/Mraw);
-  // —— 专家评估：氢气成本 / 绝热温升 / 床层压降（Ergun）——
+  // —— 绝热温升评估：氢气成本 / 绝热温升 / 床层压降（Ergun）——
   const nuSel=document.getElementById('u_s4_nu').value;
   let nu=val('s4_nu'); if(nuSel!=='1') nu=nu*Mraw/2.016;     // 质量比 → 摩尔比
   const dH=val('s4_dH')*ufactor('s4_dH');
@@ -843,7 +498,7 @@ function flashSaved(sectionId){
   const s=document.getElementById(sectionId+'_saved'); if(s){s.textContent='已存档 ✓';setTimeout(()=>s.textContent='',1500);}
 }
 function renderHistory(){
-  const host=document.getElementById('historyList');
+  const host=document.getElementById('historyList'); if(!host)return;
   if(!state.history.length){host.innerHTML='<div class="empty">暂无记录。在任意模块点击「保存为任务」即可存档。</div>';return;}
   const byDate={};
   state.history.forEach(r=>{const d=r.ts.slice(0,10);(byDate[d]=byDate[d]||[]).push(r);});
@@ -887,7 +542,7 @@ function exportHistoryXLS(){
 
 /* ============ 科研学习 ============ */
 function renderResearch(){
-  const host=document.getElementById('litList');
+  const host=document.getElementById('litList'); if(!host)return;
   const lit=state.LIT||[];
   const filterEl=document.getElementById('litFilter');
   const q=filterEl? (filterEl.value||'').trim().toLowerCase() : '';
@@ -964,7 +619,7 @@ const baseItems=[
   {key:'s1',label:'① 理论氢气量',type:'section',lock:true},
   {key:'s2',label:'② 反应器体积',type:'section',lock:true},
   {key:'s3',label:'③ 催化剂单耗',type:'section',lock:true},
-  {key:'s4',label:'④ 专家补充评估',type:'section',lock:true}
+  {key:'s4',label:'④ 绝热温升',type:'section',lock:true}
 ];
 const coreItems=[
   {key:'history',label:'📚 历史记录',type:'section',lock:true},
@@ -973,13 +628,14 @@ const coreItems=[
 ];
 let activeKey='s1';
 function renderSidebar(){
+  const pageFor={s1:'index.html',s2:'s2.html',s3:'s3.html',s4:'s4.html',history:'history.html',research:'research.html',settings:'settings.html'};
   document.getElementById('navBase').innerHTML=baseItems.map(it=>
-    '<div class="navitem locked '+(activeKey===it.key?'active':'')+'" onclick="showSection(\''+it.key+'\',\'\',\''+it.key+'\')">'+it.label+'</div>').join('');
+    '<a class="navitem locked '+(activeKey===it.key?'active':'')+'" href="'+pageFor[it.key]+'">'+it.label+'</a>').join('');
   document.getElementById('navCore').innerHTML=coreItems.map(it=>
-    '<div class="navitem locked '+(activeKey===it.key?'active':'')+'" onclick="showSection(\''+it.key+'\',\'\',\''+it.key+'\')">'+it.label+'</div>').join('');
+    '<a class="navitem locked '+(activeKey===it.key?'active':'')+'" href="'+pageFor[it.key]+'">'+it.label+'</a>').join('');
   document.getElementById('navCustom').innerHTML=state.sidebar.map(c=>
-    '<div class="navitem '+(activeKey==='custom_'+c.id?'active':'')+'" onclick="showSection(\'custom_'+c.id+'\',\'\',\'custom_'+c.id+'\')">'+c.label+
-    '<span class="rm" onclick="event.stopPropagation();removeCustom(\''+c.id+'\')">×</span></div>').join('');
+    '<a class="navitem '+(activeKey==='custom_'+c.id?'active':'')+'" href="settings.html">'+c.label+
+    '<span class="rm" onclick="event.stopPropagation();removeCustom(\''+c.id+'\')">×</span></a>').join('');
 }
 function showSection(key,anchor,navKey){
   activeKey=navKey||key;
@@ -997,7 +653,6 @@ function addCustom(){
   state.sidebar.push({id,label:name,note:''});
   localStorage.setItem('h2wb_sidebar',JSON.stringify(state.sidebar));
   renderCustomSections(); renderSidebar(); schedulePush();
-  showSection('custom_'+id,'','custom_'+id);
 }
 function removeCustom(id){
   if(!confirm('删除该自定义面板？'))return;
@@ -1006,7 +661,7 @@ function removeCustom(id){
   const el=document.getElementById('custom_'+id); if(el)el.remove();
   renderSidebar(); schedulePush();
 }
-function renderCustomSections(){
+function renderCustomSections(){ if(!document.getElementById('customHost'))return;
   const host=document.getElementById('customHost');
   host.innerHTML=state.sidebar.map(c=>
     '<section class="section" id="custom_'+c.id+'"><div class="card"><h2><span class="n">📝</span>'+c.label+'</h2>'+
@@ -1047,7 +702,7 @@ function applyPayload(p){
   if(p.reflections){state.reflections=p.reflections;localStorage.setItem('h2wb_reflections',JSON.stringify(state.reflections));}
   if(p.sidebar){state.sidebar=p.sidebar;localStorage.setItem('h2wb_sidebar',JSON.stringify(state.sidebar));renderCustomSections();renderSidebar();}
   if(p.inputs){['s1','s2','s3','s4'].forEach(k=>{if(p.inputs[k])localStorage.setItem('h2wb_'+k,JSON.stringify(p.inputs[k]));});
-    restoreInputs('s1');restoreInputs('s2');restoreInputs('s3');restoreInputs('s4');calcS1();calcS2();calcS3();calcS4();}
+    ['s1','s2','s3','s4'].forEach(p=>{ if(document.getElementById(p)) restoreInputs(p); });['s1','s2','s3','s4'].forEach(p=>{ if(document.getElementById(p)){ if(p==='s1')calcS1(); else if(p==='s2')calcS2(); else if(p==='s3')calcS3(); else calcS4(); } });}
 }
 function saveAndConnect(){
   const url=document.getElementById('sb_url').value.trim();
@@ -1059,7 +714,7 @@ function saveAndConnect(){
 function disconnectCloud(){
   sbCfg=null;sb=null;sbConnected=false;localStorage.removeItem('h2wb_sb');
   setBadge('b-gray','本地模式');
-  document.getElementById('sbStatus').textContent='当前：本地模式（数据仅存本机）';
+  (document.getElementById('sbStatus')||{textContent:''}).textContent='当前：本地模式（数据仅存本机）';
   state.LIT=window.LIT||[]; renderResearch(); setLitSrc('本地（未连接）');
 }
 async function initSupabase(){
@@ -1070,17 +725,17 @@ async function initSupabase(){
       const {error}=await sb.from('h2wb_data').select('id').limit(1);
       if(error)throw error;
       sbConnected=true; setBadge('b-ok','☁ 已连接云端');
-      document.getElementById('sbStatus').textContent='当前：已连接 ✓（多设备同步开启）';
+      (document.getElementById('sbStatus')||{textContent:''}).textContent='当前：已连接 ✓（多设备同步开启）';
       await pullState();
       await loadLiterature();
     }catch(e){sbConnected=false; setBadge('b-err','✕ 连接失败');
-      document.getElementById('sbStatus').textContent='连接失败：'+ (e.message||e)+'（请检查 URL/key 与表权限）';}
+      (document.getElementById('sbStatus')||{textContent:''}).textContent='连接失败：'+ (e.message||e)+'（请检查 URL/key 与表权限）';}
   }else if(typeof supabase==='undefined'){
     setBadge('b-gray','○ 离线（无 CDN）');
-    document.getElementById('sbStatus').textContent='未能加载 Supabase 库（可能无网络）；当前为本地模式。';
+    (document.getElementById('sbStatus')||{textContent:''}).textContent='未能加载 Supabase 库（可能无网络）；当前为本地模式。';
   }else{
     setBadge('b-gray','本地模式');
-    document.getElementById('sbStatus').textContent='未配置云端：在上方填写 URL 与 key 后点「保存并连接」。';
+    (document.getElementById('sbStatus')||{textContent:''}).textContent='未配置云端：在上方填写 URL 与 key 后点「保存并连接」。';
   }
 }
 
@@ -1097,13 +752,12 @@ function bindInputs(){
   });
 }
 function boot(){
-  if(sbCfg){document.getElementById('sb_url').value=sbCfg.url||'';document.getElementById('sb_key').value=sbCfg.key||'';}
+  if(sbCfg && document.getElementById('sb_url')){document.getElementById('sb_url').value=sbCfg.url||'';document.getElementById('sb_key').value=sbCfg.key||'';}
   restoreInputs('s1');restoreInputs('s2');restoreInputs('s3');restoreInputs('s4');
-  renderCustomSections();renderSidebar();renderHistory();renderResearch();
+  renderCustomSections();renderSidebar();if(document.getElementById('history'))renderHistory(); if(document.getElementById('research'))renderResearch();
   bindInputs();calcS1();calcS2();calcS3();calcS4();
   initSupabase();
 }
-boot();
-</script>
+activeKey='s1'; boot();</script>
 </body>
 </html>
