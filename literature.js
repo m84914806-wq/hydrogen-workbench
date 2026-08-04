@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-04",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41432202",
+        title: "Unlocking the Continuous Flow Asymmetric Hydrogenation of Olefins Through the Development of a Non-Deactivating Immobilized Iridium Catalyst",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41432202/",
+        doi: "https://doi.org/10.1002/anie.202521508",
+        journal: "Angewandte Chemie International Edition (2026), 65(6), e21508, open access (PMC12865244)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-04",
+        highlights: "把 Ir-P,S 手性催化剂通过共价键固载到聚苯乙烯树脂上，且不增加合成步骤即可得到空气稳定的固载催化剂；固载后完全保留了均相 Ir 配合物的催化性能（ee 最高 99%）。装填成固定床用于烯烃的连续流不对称加氢，底物范围远超常规基准底物，可在低停留时间、远低于间歇釜的氢压下长时间连续产出高收率高对映选择性产物。最关键的是全程未观察到 Ir 失活或浸出，并给出了流动加氢后催化剂储存与再利用的简易实操流程。发表于 Angew Chem Int Ed，直击连续流不对称加氢长期无法工业化的痛点。",
+        shortcomings: "载体为聚苯乙烯树脂，溶胀性与机械强度限制了可用溶剂体系和床层压降耐受，长周期高通量下的树脂形变与压降演化未充分给出；仍依赖贵金属 Ir 与手性配体，成本敏感；实验为实验室级柱床，缺少工业放大所需的传热、径向分布与放大倍数验证数据。",
+        oneliner: "用一步共价固载法把 Ir-P,S 手性催化剂锚定在聚苯乙烯树脂上装填固定床，实现烯烃连续流不对称加氢在低压低停留时间下长期稳定产出（ee 达 99%）且无失活与金属浸出，解决了固载手性催化剂在连续流中易失活、易浸出而无法工业化的核心难题。",
+        keywords: ["固定床", "连续流", "不对称加氢", "铱催化剂", "催化剂固载", "选择性", "金属浸出", "催化剂失活"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 不对称加氢 固载 铱催化剂 固定床")
+      },
+      {
+        id: "pmid-41757500",
+        title: "Pd\u03b4+ Formation Induced by Electronic Metal-Support Interaction Enables Efficient Continuous-Flow Hydrogenation of Pyridine to Piperidine",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41757500/",
+        doi: "https://doi.org/10.1002/smll.202514352",
+        journal: "Small (2026), 22(24), e14352, DOI 10.1002/smll.202514352 (Wiley)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-04",
+        highlights: "用液相还原法制备 Pd/θ-Al2O3 催化剂，Pd 纳米颗粒在 θ-Al2O3 纳米片上均匀分散，用于吡啶连续流加氢制哌啶。表征证实 Pd 与 θ-Al2O3 间存在强电子金属-载体相互作用（EMSI），界面电子转移生成 Pd δ+ 物种，该电子调控的活性位点优化了吡啶吸附并促进哌啶脱附，因而显著提升活性并抵抗含氮化合物导致的中毒失活。在 150 °C、3 MPa、氢油比 300 的连续流条件下，吡啶近乎完全转化、哌啶选择性 >99%，25 个循环保持良好稳定性；DFT 计算佐证 EMSI 增强底物吸附、改善加氢动力学，底物谱宽、官能团兼容性好。",
+        shortcomings: "反应条件仍偏苛刻（150 °C、3 MPa），能耗与设备压力等级要求较高；稳定性以 25 个循环表征，缺少数百小时级连续在线运行的失活曲线与积碳/烧结分析；床层压降、气液分布与放大传热等反应器工程数据未展开，且依赖贵金属 Pd，未讨论回收与经济性。",
+        oneliner: "通过电子金属-载体相互作用在 Pd/θ-Al2O3 上构筑 Pd δ+ 活性位，在连续流固定床中实现吡啶近全转化、哌啶选择性 >99% 并稳定 25 个循环，以电子结构调控解决含氮芳烃加氢的氮中毒失活难题，为医药中间体哌啶的安全可放大连续制备提供方案。",
+        keywords: ["固定床", "连续流", "加氢", "吡啶", "哌啶", "钯催化剂", "金属载体相互作用", "选择性", "抗中毒"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流加氢 吡啶 哌啶 钯催化剂 金属载体相互作用")
+      }
+    ]
+  },
+  {
     date: "2026-07-31",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
