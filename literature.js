@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-05",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41354632",
+        title: "ZIF-67-Confined Pd Single-Atom Catalysts Implanted Into Polydopamine-Modified Bamboo Microchannels for Robust Continuous-Flow Hydrogenation",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41354632/",
+        doi: "https://doi.org/10.1002/advs.202513960",
+        journal: "Advanced Science (2026), 13(11), e13960, open access (PMC12931216)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-05",
+        highlights: "直接以天然竹材的维管束微通道作为结构化连续流反应器骨架：先用聚多巴胺（PDA）改性竹微通道并预锚定 Co2+ 晶种，再在流动条件下于通道内原位生长 ZIF-67，并以室温方法把 Pd 单原子在 ZIF-67 成核过程中限域稳定，形成 Pd@Z-P/b 催化微反应器。Pd 负载量低至 0.0014 wt.%，却因原子级分散的 Pd-N4 位点而显著优于负载量更高（0.0035 wt.%）的 Pd 纳米颗粒对照件：饱和浓度 4-硝基苯胺连续加氢 10 天保持 94.3% 转化率，克级亚甲基蓝（1.0 g/L）连续运行 5 天保持 97.5%，且在真实环境水样中性能稳定。XAFS 与 DFT 表明 Pd-N4 构型促进电子转移并优化氢结合能，是活性跃升的根源；文章还给出了再生性能评估。发表于 Adv Sci，把「贵金属极限减量 + 天然结构化载体 + 单原子限域」三者整合进连续流加氢反应器设计。",
+        shortcomings: "目标反应集中在硝基芳烃/染料的水相还原脱色（偏环境修复场景），并非高压 H2 气液固三相的工业加氢工艺，反应压力、温度、气液分布等关键反应器参数未按化工加氢工况考察；竹材作为载体的耐温、耐溶剂与长期机械/化学稳定性存疑，难以直接迁移到有机溶剂高压体系；通道尺寸与床层结构受天然竹材固有形貌限制，放大时难以精确设计与复制，压降和放大倍数数据缺失；超低 Pd 负载下的活性位密度上限也限制了体积生产强度。",
+        oneliner: "用聚多巴胺改性竹微通道原位生长 ZIF-67 并室温限域 Pd 单原子，构建超低载量（0.0014 wt.%）的连续流加氢催化微反应器，实现饱和 4-硝基苯胺 10 天 94.3% 转化、克级亚甲基蓝 5 天 97.5% 转化，以天然结构化载体加单原子限域同时解决贵金属用量与流动条件下催化剂稳定性两大难题。",
+        keywords: ["连续流", "微反应器", "加氢", "单原子催化剂", "钯催化剂", "MOF", "结构化载体", "催化剂稳定性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流加氢 单原子催化剂 微反应器 ZIF-67 竹微通道")
+      },
+      {
+        id: "pmid-41983171",
+        title: "Efficient selective hydrogenation of N,N-dimethylaniline in a continuous fixed-bed reactor over a Cu/Ni-Al2O3 catalyst",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41983171/",
+        doi: "https://doi.org/10.1039/d6ra01119e",
+        journal: "RSC Advances (2026), DOI 10.1039/d6ra01119e, open access (PMC13075126)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-05",
+        highlights: "制备了一系列不同 Cu/Ni 比的 Cu 改性 Ni-Al2O3 催化剂（xCu/Ni-Al2O3），用 BET、XRD、SEM、H2-TPR、H2-TPD、TG、原位 XPS 做了系统表征，并在连续固定床反应器中考察 N,N-二甲基苯胺（DMA）选择性加氢制 N,N-二甲基环己胺（DMCHA）。当 Cu/Ni 摩尔比为 0.1 时活性组分在 Al2O3 上高度分散，比表面积大、孔结构发达，氢脱附能力强、热稳定性提升；Ni 与 Cu 之间的协同电子相互作用同时改善了底物与 H2 的吸附活化，Cu 在 Ni 活性位附近的掺入有效调控了对目标产物的选择性（抑制苯环过度加氢与脱甲基副反应）。在 5 MPa H2、130 °C、LHSV 0.1 h-1、氢胺体积比 5500:1 的优化条件下，DMA 转化率 99.5%、DMCHA 选择性 97.6%，并给出了固定床稳定性测试。工艺参数（压力、温度、空速、氢胺比）逐一扫描，非贵金属体系、直接对标工业连续固定床加氢生产。",
+        shortcomings: "空速极低（LHSV 仅 0.1 h-1）且氢胺体积比高达 5500:1，意味着单位催化剂产能偏低、氢气循环量巨大，工业经济性与能耗需重新核算；稳定性测试时长有限，未给出数百小时级失活曲线、积碳与 Ni 烧结/流失的定量分析；缺少本征动力学与传质判据（Weisz-Prater、Mears 等）判定是否存在内外扩散控制，也未提供床层压降、径向温度分布与放大传热数据；期刊为 RSC Advances，影响力弱于同方向的顶刊工作。",
+        oneliner: "通过 Cu 修饰 Ni-Al2O3（Cu/Ni=0.1）利用 Cu-Ni 协同电子效应调控吸附与选择性，在连续固定床反应器中实现 N,N-二甲基苯胺加氢制 N,N-二甲基环己胺 99.5% 转化率与 97.6% 选择性，为芳胺加氢制脂环胺提供了非贵金属、可连续化的固定床工艺方案。",
+        keywords: ["固定床", "连续流", "选择性加氢", "非贵金属催化剂", "铜镍双金属", "工艺优化", "空速", "芳胺加氢"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续固定床 选择性加氢 N,N-二甲基苯胺 铜镍催化剂")
+      }
+    ]
+  },
+  {
     date: "2026-08-04",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
