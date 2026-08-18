@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-18",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41983043",
+        title: "Continuous-flow carbonyl hydrogenation under subatmospheric to atmospheric hydrogen pressure enabled by robust heterogeneous Pt-Fe catalysts",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41983043/",
+        doi: "https://doi.org/10.3762/bjoc.22.43",
+        journal: "Beilstein Journal of Organic Chemistry (2026), 22, 43, open access (PMC13071934)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-18",
+        highlights: "开发了一种负载于二甲基聚硅氧烷（dimethylpolysilane）/氧化铝复合载体上的双金属 Pt-Fe 纳米颗粒催化剂，并装填成连续流固定床柱用于羰基（酮/醛）加氢制醇。关键突破是可在室温、亚常压至常压氢气（subatmospheric to atmospheric H2）下稳定运行——酮类加氢通常需高温高压，本文把氢气分压降到亚常压仍保持活性，显著降低设备与能耗门槛；底物谱覆盖位阻很大的酮/醛，且金属种类组合与 Pt/Fe 比例强烈影响性能，给出了系统的金属比筛选。长期连续流运行验证了多相催化剂的高耐久性（无失活/浸出），契合工业连续化需求。发表于 OA 期刊 Beilstein J Org Chem。",
+        shortcomings: "反应体系为有机合成中的羰基（酮/醛）加氢制醇，属于精细化工模型反应，并非高压 H2 气液固三相的工业加氢工况，传热与气液分布等反应器工程参数未系统展开；催化剂以复合有机-无机载体（二甲基硅油类）为主，其在有机溶剂中的溶胀、长期机械强度与床层压降演化数据有限；选择性只针对羰基→醇这一单一转化，未涉及更复杂的多官能团竞争加氢或含氮/含硫底物的中毒与选择性调控；缺少本征动力学、Weisz-Prater/Mears 传质判据及放大传热数据，从实验室柱床到工业放大的路径未验证。",
+        oneliner: "用二甲基聚硅氧烷/氧化铝复合载体固载双金属 Pt-Fe 纳米颗粒装填连续流固定床，在室温、亚常压至常压氢气下实现酮/醛（含大位阻底物）的高效加氢并长期稳定运行，以低压氢气策略显著降低连续流羰基加氢的设备与能耗门槛，解决该反应长期依赖高温高压的痛点。",
+        keywords: ["连续流", "固定床", "加氢", "羰基还原", "双金属催化剂", "铂铁", "低压氢气", "催化剂稳定性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 羰基加氢 Pt-Fe双金属催化剂 低压氢气 固定床")
+      },
+      {
+        id: "pmid-41537008",
+        title: "Furfural Valorization to γ-Valerolactone over Zr/Sn Zeolite-Supported Catalysts in a Liquid-Phase Continuous Flow Reactor",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41537008/",
+        doi: "https://doi.org/10.1021/acs.energyfuels.5c05628",
+        journal: "Energy & Fuels (2025), DOI 10.1021/acs.energyfuels.5c05628, open access (PMC12797859)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-18",
+        highlights: "首次在单一液相连续流反应器中考察 Sn 与 Zr 协同将呋喃甲醛（FU）级联转化为 γ-戊内酯（GVL）：采用脱铝 Y 沸石（HY）负载 Sn、Zr 的双金属催化剂，利用醇（2-丙醇）作为氢供体进行催化转移加氢（catalytic transfer hydrogenation），避免高压分子氢，更经济环保。Sn:Zr 原子比 1:1 时性能最佳，180 °C、停留时间 10 min、以 2-丙醇为氢源获得约 45% 的 GVL 收率；文章系统给出长期稳定性测试、失活分析，并开发了高效的催化剂再生协议——再生后多次循环转化与选择性接近新鲜催化剂（FU 转化率 >90%）。还用时空收率（space time yield）与文献连续流/间歇体系做了横向对比，工程参考价值高。OA（PMC12797859）。",
+        shortcomings: "采用催化转移加氢（以 2-丙醇为氢供体）而非高压 H2 气相加氢，与工业高压加氢路线存在差异，氢源成本与副产丙酮的分离未充分讨论；GVL 收率约 45% 仍有较大提升空间，级联反应中副产物控制与全碳收率未给出；反应温度 180 °C、停留 10 min 属中等强度，未系统考察压降、径向温度分布与放大传热；仅以呋喃甲醛单一模型底物验证，对其他平台分子（如乙酰丙酸、糠醇）及真实生物质水解液的适用性未展开；沸石载体成本与规模化制备一致性也需评估。",
+        oneliner: "用脱铝 Y 沸石负载 Sn/Zr 双金属催化剂在液相连续流反应器中以 2-丙醇为氢供体将呋喃甲醛级联转移加氢为 γ-戊内酯（约 45% 收率），并配套长期稳定性测试与再生协议实现多循环近新鲜催化性能，以连续流催化转移加氢同时解决高压氢风险与催化剂可再生利用两大难题。",
+        keywords: ["连续流", "液相反应器", "催化转移加氢", "呋喃醛", "γ-戊内酯", "沸石载体", "双金属催化剂", "催化剂再生", "选择性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 呋喃醛 γ-戊内酯 催化转移加氢 沸石 催化剂再生")
+      }
+    ]
+  },
+  {
     date: "2026-08-05",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
