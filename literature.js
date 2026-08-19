@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-19",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41743313",
+        title: "Stabilizing Pd Catalysts for Liquid-Phase Hydrogenation of N-Heterocyclic Hydrogen Carriers through Zeolite Encapsulation",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41743313/",
+        doi: "https://doi.org/10.1021/acscatal.5c08818",
+        journal: "ACS Catalysis (2026), 16(4), 3097-3104, open access (PMC12930350)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-19",
+        highlights: "将 Pd 纳米颗粒封装于大孔沸石（尤其是 Pd/Beta）中，在连续流反应器里实现 N-甲基吲哚（N-MID，一种 N-杂环氢载体）的液相加氢；对照 Pd/Al2O3、Pd/SiO2 在反应过程中明显烧结、粒径长大，Pd/Beta 能把 Pd 颗粒稳定维持在 <2 nm，机理上归结为沸石孔腔抑制了 N-MID 对 Pd 的螯合与迁移。流反应器工况为 1 wt% N-MID/十二烷、35 bar H2、373 K、1.8 mL/h，催化剂还可经焙烧+还原再生恢复活性。发表于催化顶刊 ACS Catal，直接针对连续流液相加氢中金属纳米颗粒烧结失活这一核心工程痛点。",
+        shortcomings: "研究对象是 N-甲基吲哚这类氢载体的吸/脱氢循环，并非典型工业加氢产物合成，工程价值主要体现在催化剂抗烧结与稳定性机理层面；流反应器实验采用较低浓度（1 wt%）底物、35 bar 高压，未给出高时空收率（WHSV）下的产能数据、床层压降与径向温度分布；缺少本征动力学模型与放大传热/传质判据；仅以 N-MID 单一模型底物验证，对其他含氮杂环（如喹啉、吲哚）及真实油品的普适性未展开；沸石封装对孔道内传质扩散的限制未量化。",
+        oneliner: "将 Pd 纳米颗粒封装于大孔沸石（Pd/Beta）中，在连续流反应器实现 N-甲基吲哚液相加氢时把 Pd 颗粒稳定维持在 <2 nm、抑制烧结失活（对照 Pd/Al2O3、Pd/SiO2 明显长大），以沸石孔腔限域解决连续流液相加氢中金属催化剂烧结这一核心工程难题。",
+        keywords: ["固定床", "连续流", "加氢", "钯催化剂", "沸石封装", "抗烧结", "催化剂稳定性", "氢载体"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 加氢 钯催化剂 沸石封装 抗烧结 固定床")
+      },
+      {
+        id: "pmid-41306011",
+        title: "Effective and Selective Hydrogenation of Methyl Acrylate to Methyl Propionate on Single-Atom Nickel Catalyst",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41306011/",
+        doi: "https://doi.org/10.1002/chem.202502973",
+        journal: "Chemistry (Weinheim) (2026), 32(26), e02973, open access (PMC13356342)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-19",
+        highlights: "以 Ni 掺杂 ZIF-8 为前驱体、经热解构建具 Ni─N4 配位结构的单原子镍催化剂（Ni-SAC@CN），在固定床反应器中实现丙烯酸甲酯（MA）加氢制丙酸甲酯（MP）。用 HAADF-STEM、H2-TPR、XRD、XAFS 系统表征并优化出最佳 Ni0.1-SAC@CN；在 80 °C、1.0 MPa、n(H2)/n(MA)=5 条件下 TOF 高达 200.8 h-1、选择性 100%。最契合本平台的是：文章专门考察了空速 WHSV 对活性的影响，并给出内/外扩散消除判据、H2 与 MA 反应级数、Arrhenius 活化能等本征动力学，原位 IR 揭示机理。非贵金属单原子、固定床、选择性+动力学齐备，工程参考价值高。OA（PMC13356342）。",
+        shortcomings: "反应为单一 C=C 加氢（丙烯酸甲酯→丙酸甲酯）的模型反应，体系相对简单，未涉及多官能团竞争加氢、含氮/含硫底物的选择性调控与中毒；固定床长期稳定性（数百小时失活曲线、单原子 Ni 流失/团聚）数据缺失；未给出床层压降、绝热温升与放大传热；单原子 Ni 的普遍性与大规模制备一致性（ZIF-8 前驱体成本与批间重现）需评估；虽已测 WHSV，但未与工业实际产能（如千吨级）做衔接核算。",
+        oneliner: "用 Ni 掺杂 ZIF-8 热解构建 Ni─N4 单原子镍催化剂（Ni-SAC@CN），在固定床反应器以 100% 选择性、TOF 200.8 h-1 实现丙烯酸甲酯加氢制丙酸甲酯，并系统给出 WHSV、内/外扩散消除、反应级数与活化能等本征动力学数据，为非贵金属单原子催化剂的固定床连续加氢及工艺放大提供可直接复用的动力学依据。",
+        keywords: ["固定床", "连续流", "加氢", "单原子催化剂", "镍催化剂", "选择性", "动力学", "空速", "非贵金属"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 单原子镍 选择性加氢 动力学 空速")
+      }
+    ]
+  },
+  {
     date: "2026-08-18",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
