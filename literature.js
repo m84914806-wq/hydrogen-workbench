@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-20",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-39064923",
+        title: "Catalytic Performance of CuZnAl Hydrotalcite-Derived Materials in the Continuous-Flow Chemoselective Hydrogenation of 2-Methyl-2-pentanal toward Fine Chemicals and Pharmaceutical Intermediates",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/39064923/",
+        doi: "https://doi.org/10.3390/molecules29143345",
+        journal: "Molecules (2024), 29(14), 3345, open access (PMC11279871)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-20",
+        highlights: "考察三种不同 CuZnAl 摩尔比的水滑石衍生（混合氧化物）材料，在液相连续流反应器中用于 2-甲基-2-戊烯醛（MPEA）的化学选择性加氢。系统表征（ICP-OES、TPR、in situ XRD、XPS、NH3/CO2-TPD、TEM）贯穿催化剂各阶段；活性与 Cu0/Cu+ 比例相关，可借温度/压力调控选择性：≤338 K 时所有催化剂对镇静药物前体 2-甲基戊醛（MPAA）保持 100% 选择性（低转化），而高温高压（378 K、6×10^6 Pa）下另一目标产物、香料中间体 2-甲基-2-戊烯-1-醇（MPEO）选择性显著升至 54%（对应 60% 底物转化），机理联系 Cu+ 表面优势、氢溢流与体系酸碱性质。文中给出 358 K/4×10^6 Pa 下 6 h 长期稳定性测试。发表于 OA 期刊 Molecules，非贵金属、水滑石衍生、连续流、化学选择性齐备，贴合本平台催化剂+选择性+放大的主线。",
+        shortcomings: "连续流长期测试仅 6 h，未给出数十/数百小时级失活曲线，积碳与 Cu 烧结/流失无定量数据，催化剂寿命与再生未验证；未提供 WHSV/空速、床层压降、绝热温升与放大传热/传质判据（无 Weisz-Prater、Mears 内外扩散消除论证）；底物仅为 2-甲基-2-戊烯醛单一模型底物，多官能团竞争加氢与真实复配体系的普适性未展开；反应压力达 6×10^6 Pa（约 60 bar）仍偏高，且 MPEO 54% 选择性对应 60% 转化意味着整体收率受限，距工业高收率目标尚远；水滑石前驱体制备与批间重现性、规模化成本未评估。",
+        oneliner: "用三种 CuZnAl 摩尔比的水滑石衍生混合氧化物在液相连续流反应器中实现 2-甲基-2-戊烯醛的化学选择性加氢：≤338 K 时 100% 选择性生成镇静药前体 2-甲基戊醛，378 K/60 bar 下把香料中间体 2-甲基-2-戊烯-1-醇选择性调至 54%，以 Cu0/Cu+ 比例与氢溢流/酸碱性质调控选择性，为非贵金属连续流加氢催化剂的构效-选择性协同提供可直接借鉴的依据。",
+        keywords: ["连续流", "固定床", "加氢", "化学选择性", "水滑石", "铜锌铝催化剂", "精细化工", "药物中间体"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 化学选择性加氢 水滑石 CuZnAl 2-甲基-2-戊烯醛 药物中间体")
+      },
+      {
+        id: "pmid-39322621",
+        title: "Stable and Versatile Pd Precursors for the Preparation of Robust Pd Catalysts Under Continuous-Flow",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/39322621/",
+        doi: "https://doi.org/10.1002/cssc.202401859",
+        journal: "ChemSusChem (2025), 18(4), e202401859 (Wiley)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-20",
+        highlights: "开发了一种空气稳定、可高效将细分散 Pd 金属负载到载体上的新型 Pd 前驱体（Pd-80），由四（三苯基膦）钯经热促进有氧氧化制备，并用 NMR、SEM、XPS、溶剂弛豫 NMR、DLS 系统表征其物理化学性质。以 Pd-80 与堇青石（cordierite）粉末室温氯仿中搅拌即得 Pd/堇青石催化剂，可在连续流加氢中氢化炔烃、叠氮、硝基、烯烃、Cbz/Bn 保护基、芳香酮、环氧苯乙烯等多种可还原官能团；硝基苯衍生物连续流加氢生成相应苯胺时，活性维持超过 250 h、TON 高达 61,090。直接针对连续流多相催化中 Pd 易浸出/失活的痛点，给出空气稳定前驱体→简易固载→长期稳定的完整链条，多孔陶瓷堇青石载体也利于工程化装填。",
+        shortcomings: "虽给出 250 h 连续运行与 TON 61,090，但缺该运行下的逐时转化/选择性曲线、Pd 浸出量定量 ICP 分析以及床层压降演化；官能团普适性以间歇/连续混合展示，连续流下的底物谱与空速（WHSV）定量、放大传热/传质数据未系统给出；堇青石负载量、Pd 颗粒尺寸分布与反应级数/动力学未提供；以氯仿为分散介质、室温搅拌浸渍的工艺在规模化与溶剂安全（氯代烃）上存在成本与环保考量；未与固定床柱床压降、工业放大倍数挂钩。",
+        oneliner: "通过开发空气稳定的新型 Pd 前驱体（Pd-80）在室温下简易固载到堇青石，构建出可在连续流加氢中稳定氢化炔/叠氮/硝基/烯烃/保护基等多类官能团、并保持 >250 h 活性（TON 61,090）的 Pd/堇青石催化剂，以稳定前驱体+易固载策略破解连续流多相催化中 Pd 易失活/浸出的工程难题。",
+        keywords: ["连续流", "固定床", "加氢", "钯催化剂", "催化剂前驱体", "堇青石载体", "催化剂稳定性", "选择性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 加氢 钯催化剂 前驱体 堇青石 催化剂稳定性")
+      }
+    ]
+  },
+  {
     date: "2026-08-19",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
