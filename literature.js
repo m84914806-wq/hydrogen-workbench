@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-21",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41050603",
+        title: "Wool-supported Pd and Rh nanoparticles for selective hydrogenation of maleic acid to succinic acid in batch and flow systems",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41050603/",
+        doi: "https://doi.org/10.1039/d5ra05365j",
+        journal: "RSC Advances (2025), 15(44), 36760-36768, open access (PMC12495411)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-21",
+        highlights: "以低品位羊毛纤维（可再生、可生物降解废料）为载体制备 Pd、Rh 纳米颗粒（约 5 nm、球形分散），经 SEM/TEM/XPS/XRD 系统表征；在间歇与连续流两种模式下考察马来酸（MA）选择性加氢制琥珀酸（SA）。间歇条件下室温、水溶液、H2 鼓泡、3 mol% 金属担载即 2 h 完全转化且 100% 选择性；进一步在固定床连续流反应器中，Rh/WF 以硫酸肼为替代氢源（常温水溶液）75 min 完全转化 MA→SA；催化剂坚固可循环、活性无损失。把「废料羊毛载体+贵金属纳米颗粒+固定床连续流」结合，直接对标绿色、可连续、易回收的液相加氢工艺，并提供从间歇到固定床的放大路径与反应器设计讨论（填充柱可长期使用至催化剂耗尽、无需分离、无机械搅拌应力）。全文 OA 可获取（PMC12495411）。",
+        shortcomings: "反应为单一 C=C 加氢（马来酸→琥珀酸）的模型反应，未涉及多官能团竞争加氢、含氮/含硫底物的选择性调控与中毒；固定床连续流长期稳定性仅以 75 min 完全转化展示，缺数百小时级失活曲线、金属浸出量（ICP）定量与床层压降演化；以硫酸肼为氢源属化学氢供体/催化转移加氢，并非高压 H2 气液固三相工业加氢工况，氢源成本、副产物分离与放大气液分布未展开；羊毛载体在有机溶剂、高温高压下的溶胀/机械强度与批间重现性需评估；虽给出负载量/温度扫描，但未与 WHSV、本征动力学、Weisz-Prater/Mears 传质判据及工业放大倍数挂钩。",
+        oneliner: "以低品位羊毛纤维固载 Pd/Rh 纳米颗粒（约 5 nm）构建出可在间歇与固定床连续流两种模式下实现马来酸 100% 选择性加氢制琥珀酸的绿色催化剂，Rh/WF 在固定床以硫酸肼为氢源 75 min 完全转化且可循环无失活，用可再生废料载体+固定床连续流把液相加氢的绿色化与易回收性落到实处。",
+        keywords: ["固定床", "连续流", "加氢", "选择性", "钯催化剂", "铑催化剂", "羊毛载体", "琥珀酸", "绿色化学"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("羊毛负载钯铑纳米颗粒 固定床连续流 加氢 马来酸 琥珀酸")
+      },
+      {
+        id: "pmid-40406927",
+        title: "Trinuclear [FeIII2-MgII] compounds with aminopyridines as precursors for supported C=C bond hydrogenation catalysts at atmospheric pressure in a plug-flow reactor",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/40406927/",
+        doi: "https://doi.org/10.1039/d5dt00653h",
+        journal: "Dalton Transactions (2025), 54(23), 9329-9337, DOI 10.1039/d5dt00653h (RSC)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-21",
+        highlights: "以杂金属铁(III)配合物为「非铂」加氢催化剂前驱体，合成系列新戊酸根桥联的 {FeIII–MgII} 三核化合物（β-ampy/γ-ampy 氨基吡啶配体），经 X 射线单晶、Mössbauer、磁性测量系统表征其结构（三核 {Fe2MgO} 单元、高自旋 Fe3+）；将配合物 1/2 负载于 γ-Al2O3 制得催化剂，在常压氢气、流动式（plug-flow）反应器中测试苯乙烯（VB）与双环戊二烯（DCPD）C=C 加氢，配合物 1 所得催化剂效率令人满意、相应加氢产物收率转化率达 80%。核心贡献是「分子前驱体→氧化物载体催化剂」的精准构筑路径与常压连续流加氢验证，为非贵金属、非 Pt 的连续流 C=C 加氢提供新前驱体思路，且反应在常压进行、显著降低设备门槛。",
+        shortcomings: "主打贡献在配合物前驱体合成与结构表征，催化性能仅为常压流动反应器中苯乙烯/双环戊二烯加氢「转化率达 80%」的中等水平，未给出选择性（副反应如深度加氢/异构化）、空速（WHSV）、长期稳定性与失活曲线、金属浸出/流失定量；未涉及床层压降、径向温度分布与放大传热等反应器工程参数；苯乙烯/双环戊二烯仅为模型烯烃，对含官能团底物（如含 O/N/S 的烯烃）的兼容性与选择性调控未展开；γ-Al2O3 负载量、活性位结构（Fe 价态在反应中的演化）与构效关系未充分关联，从分子前驱体到工业放大催化剂的路径仍需大量验证。",
+        oneliner: "通过合成 {FeIII–MgII} 三核氨基吡啶配合物前驱体并负载于 γ-Al2O3，构建出可在常压氢气、plug-flow 流动反应器中用于苯乙烯与双环戊二烯 C=C 加氢的非铂催化剂（转化率最高 80%），以「分子前驱体→载体催化剂」的精准构筑为连续流非贵金属加氢提供新路径。",
+        keywords: ["连续流", "柱塞流反应器", "加氢", "非贵金属催化剂", "铁催化剂", "前驱体", "常压", "苯乙烯"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("铁镁三核配合物 前驱体 固定床连续流 加氢 苯乙烯 常压")
+      }
+    ]
+  },
+  {
     date: "2026-08-20",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
