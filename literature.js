@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-22",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-42540193",
+        title: "Cu-Ni x O y /SiO2 Catalysts for Hydrogenation of Dimethyl Oxalate to Ethylene Glycol: Regulation of Coprecipitation Process and Structure-Activity Relationship Study",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/42540193/",
+        doi: "https://doi.org/10.1021/acsomega.6c05343",
+        journal: "ACS Omega (2026), 11(29), DOI 10.1021/acsomega.6c05343, open access (PMC13425310)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-22",
+        highlights: "以共沉淀法制备 SiO2 负载的 Cu-NiₓOᵧ 杂化纳米结构催化剂，系统优化沉淀温度与加料顺序（室温先氨水、后加 Cu 前驱体得 Cu/SiO2-FA-RT）。在固定床反应器中考察草酸二甲酯（DMO）加氢制乙二醇（EG）：Cu-NiₓOᵧ/SiO2 取得 98.9% DMO 转化率与 89.2% EG 选择性，优于单一 Cu/SiO2-FA-RT；稳定性测试显示活性与选择性几乎无衰减、积碳仅 0.07 wt%。机理归于 Cu-NiₓOᵧ 紧密接触界面调控活性表面电子/几何性质、抑制积碳。文中用 LHSV（0.8 h-1）、H2 压力 2.6 MPa、185 °C、H2/DMO=60/1 等固定床工况参数，并用 XRD/HAADF-STEM/H2-TPR/XPS/DRIFT-IR 系统表征，非贵金属、固定床、选择性+稳定性齐备，直接对标本平台催化剂+选择性+放大主线。发表于 OA 期刊 ACS Omega（PMC13425310）。",
+        shortcomings: "反应为草酸二甲酯→乙二醇（煤/合成气制 EG 路线）这一特定体系，未涉及含氮/含硫底物的竞争加氢与中毒；空速仅 LHSV 0.8 h-1（基于 15 wt% DMO 甲醇溶液），单位催化剂产能偏低，未给出 WHSV 与本征动力学（反应级数、Arrhenius）、Weisz-Prater/Mears 内外扩散判据；连续固定床长期稳定性虽给出但时长有限，缺数百小时级失活曲线、Cu 烧结/流失定量、床层压降与放大传热数据；EG 选择性 89.2% 仍有提升空间，副产物（如乙醇酸甲酯）分布与调控未充分展开；SiO2 载体在甲醇溶剂中长期溶胀/机械强度与放大装填均一性需验证。",
+        oneliner: "用共沉淀法制备 SiO2 负载 Cu-NiₓOᵧ 杂化纳米结构催化剂，在固定床反应器中以 98.9% 转化率、89.2% 乙二醇选择性实现草酸二甲酯加氢，稳定性测试中活性/选择性几乎无衰减且积碳仅 0.07 wt%，以 Cu-NiₓOᵧ 紧密接触界面调控电子/几何性质并抑制积碳，为非贵金属固定床加氢催化剂的构效与稳定放大提供可直接借鉴的依据。",
+        keywords: ["固定床", "连续流", "加氢", "草酸二甲酯", "乙二醇", "铜镍双金属", "选择性", "催化剂稳定性", "积碳"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 草酸二甲酯 加氢制乙二醇 铜镍双金属 选择性")
+      },
+      {
+        id: "pmid-42441287",
+        title: "Evaluation of Ag-, Fe- and Ni-exchanged mordenite for the reduction of 4-nitrophenol under different reduction pathways",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/42441287/",
+        doi: "https://doi.org/10.1039/d6ra01638c",
+        journal: "RSC Advances (2026), DOI 10.1039/d6ra01638c, open access (PMC13335188)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-22",
+        highlights: "水热合成丝光沸石（MOR）并经 Ag⁺/Fe³⁺/Ni²⁺ 离子交换改性，XRD/XPS/BET/XRF/FTIR/UV-Vis/SEM 系统表征确认骨架完整、金属在孔道内高分散。以 4-硝基酚（4-NP）还原为模型，对比 NaBH4 化学还原与 H-Cube Pro（ThalesNano）连续流催化加氢（电解水产 H2）两条路径：连续流加氢下 AgMOR、NiMOR、FeMOR 分别达 89%、92%、60% 转化，明确展示连续流操作优势与金属-载体相互作用对性能的关键作用，并给出 H-Cube 流动反应器示意图与 AgMOR 循环再利用数据。直接对标本平台「连续流固定床加氢」主题，且分子筛载体利于工程化装填、电解水产氢降低高压 H2 门槛，全文 OA（PMC13335188）。",
+        shortcomings: "连续流加氢仅以 4-硝基酚单一模型底物验证，未涉及多官能团竞争加氢、含氮/含硫真实底物的选择性调控与中毒；H-Cube Pro 为实验室级流动反应器（电解水产氢、低压），缺固定床工业放大的床层压降、径向温度分布与放大倍数验证；长期稳定性仅以 NaBH4 批次循环展示，缺数十/数百小时级连续在线失活曲线、金属浸出量（ICP）定量；未提供 WHSV/空速、本征动力学与传质判据；Ag/Fe/Ni-MOR 在有机溶剂与较高压力下的适用性、沸石交换量批间重现性与成本未评估；转化率高但副产物（4-NP→4-AP 外的过度还原产物）选择性未量化。",
+        oneliner: "通过水热合成丝光沸石并经 Ag/Fe/Ni 离子交换改性，在 H-Cube Pro 连续流催化加氢反应器（电解水产 H2）中实现 4-硝基酚还原，AgMOR、NiMOR、FeMOR 分别达 89%、92%、60% 转化，以分子筛载体+连续流操作展示金属-载体相互作用对加氢性能的关键作用，为连续流固定床加氢提供易工程化、低压氢的催化剂候选。",
+        keywords: ["连续流", "固定床", "加氢", "4-硝基酚", "分子筛", "银催化剂", "金属载体相互作用", "选择性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 加氢 4-硝基酚 银分子筛 固定床 选择性")
+      }
+    ]
+  },
+  {
     date: "2026-08-21",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
