@@ -1,39 +1,39 @@
 // 连续流固定床加氢 · 每日文献推送（每日 10:00 自动化检索并覆写）
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
-{
+  {
     date: "2026-08-24",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
       {
-        id: "pmid-42473320",
-        title: "Ionic liquid overlayers stabilize ligand-coordinated oxide-supported single-atom Pd heterogeneous catalysts for partial hydrogenation of acetylene",
-        pubmed: "https://pubmed.ncbi.nlm.nih.gov/42473320/",
-        doi: "https://doi.org/10.1039/d5fd00164a",
-        journal: "Faraday Discussions (2026), DOI 10.1039/d5fd00164a (RSC), not open access",
+        id: "pmid-39254682",
+        title: "Organic synthesis in flow mode by selective liquid-phase hydrogenation over heterogeneous non-noble metal catalysts",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/39254682/",
+        doi: "https://doi.org/10.1039/d4ob00873a",
+        journal: "Organic & Biomolecular Chemistry (2024), DOI 10.1039/d4ob00873a (RSC)",
         verified: true,
         verifiedLinkType: "pubmed",
         verifiedAt: "2026-08-24",
-        highlights: "以配位策略在氧化物（二氧化铈）上构筑单原子 Pd 催化剂，并进一步覆盖超薄离子液体（IL）层显著提升稳定性：Pd 担载量最高可达 0.8 wt% 且保持单原子分散；在流动反应器（flow reactor）中用于乙炔选择性部分加氢制乙烯，IL 覆盖层拓宽了操作温度窗口、增强抗烧结能力，且不阻碍 C2 分子到达 Pd 活性位、反而改善反应选择性。机理上归于离子液体与二氧化铈的动态界面为 Pd 配位小有机配体提供了优异环境，形成高效 Pd(II) 选择性加氢活性物种。直接对标本平台「单原子催化剂 + 连续流 + 选择性」主线，离子液体修饰也是工业固定床单原子催化剂抗失稳的实用手段。",
-        shortcomings: "研究对象为乙炔选择性部分加氢（乙烯工业除炔）这一特定体系，未给出连续流下的长期稳定性曲线（如数百小时失活/烧结定量）与床层压降；单原子 Pd 仅 0.8 wt% 担载、体积活性偏低，缺 WHSV/空速、本征动力学与传质判据；离子液体层在长期高温高压氢气下的黏度演化、流失与对气液传质的影响未量化；未涉及含氮/含硫真实底物的中毒与多官能团选择性调控；Faraday Discussions 为 RSC 旗下会议型期刊、非 OA，全文获取需订阅。",
-        oneliner: "在二氧化铈负载的单原子 Pd 催化剂上覆盖超薄离子液体层，于流动反应器中实现乙炔选择性部分加氢制乙烯，在保持单原子分散（最高 0.8 wt% Pd）的同时拓宽操作温度窗口并增强抗烧结与选择性，以离子液体-氧化物动态界面稳定 Pd(II) 活性物种，为连续流单原子催化剂的抗失稳工程化提供可借鉴策略。",
-        keywords: ["连续流", "单原子催化剂", "钯催化剂", "离子液体", "选择性加氢", "乙炔", "乙烯", "抗烧结"],
-        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("离子液体 单原子钯 乙炔 选择性加氢 流动反应器")
+        highlights: "这是一篇系统综述，聚焦在连续流（flow mode）条件下、以多相非贵金属（Ni、Cu、Co 等）催化剂进行液相加氢的方法。重点讨论在双/多官能团有机物中「选择性还原单一官能团」——即 NO2、C=C、C=O、C=N、C≡N 在其它取代基存在下被分别还原，并给出若干涉及加氢的级联（cascade）合成路线。相较过去二十年以贵金属为主导的流动加氢研究，本文明确指出非贵金属催化剂因低成本、高丰度更利于实际应用，为连续流加氢的降本与绿色化提供清晰路线图。直接对标本平台「连续流 + 选择性加氢 + 非贵金属催化剂」主线。",
+        shortcomings: "本质为综述、无新实验数据，各选择性加氢示例停留在概览层面，缺乏统一可比的工程参数（WHSV/LHSV、压力、温度、空速、床层压降）；所涉及的流动反应器类型（固定床 packed-bed vs 微反应器 microreactor）未逐例交代，难以直接用于本平台 WHSV 核算；非贵金属催化剂在连续流中的失活、选择性权衡与再生仍未被根本解决；对放大经济性与工业装填一致性的讨论较弱。",
+        oneliner: "一篇系统综述，汇总了多相非贵金属（Ni/Cu/Co）催化剂在连续流液相加氢中的应用，重点阐述在多官能团有机物中「选择性还原单一官能团」（NO2/C=C/C=O/C=N/C≡N）及级联合成路线，为连续流加氢的低成本、绿色化提供方法学路线图。",
+        keywords: ["连续流", "液相加氢", "选择性加氢", "非贵金属催化剂", "镍催化剂", "铜催化剂", "化学选择性", "综述"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 液相加氢 非贵金属催化剂 选择性加氢 综述")
       },
       {
-        id: "pmid-40322260",
-        title: "Kinetic study on the hydrogenation of dimethyl succinate to γ-butyrolactone",
-        pubmed: "https://pubmed.ncbi.nlm.nih.gov/40322260/",
-        doi: "https://doi.org/10.1039/d5ra01226k",
-        journal: "RSC Advances (2025), 15(18), 14307-14314, open access (PMC12046981)",
+        id: "pmid-40568928",
+        title: "Kinetic Investigation of the Asymmetric Hydrogenation of Benzylphenylephrone in Continuous Flow",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/40568928/",
+        doi: "https://doi.org/10.2533/chimia.2025.441",
+        journal: "Chimia (2025), 79(6), 441-448, DOI 10.2533/chimia.2025.441, open access",
         verified: true,
         verifiedLinkType: "pubmed",
         verifiedAt: "2026-08-24",
-        highlights: "采用自主研发的铜基催化剂（CuZnAl）与微型固定床反应器（micro-fixed bed reactor）系统考察温度、压力、氢酯比对丁二酸二甲酯（DMS）加氢制 γ-丁内酯（GBL）的影响；基于实验数据建立本征动力学模型，用标准回归得到反应速率常数与活化能，模型与实验吻合良好并通过验证与敏感性分析确认稳健，可直接用于工艺优化。文中给出微固定床装置示意图，并系统消除内扩散（催化剂粒径大于 20 目）与外扩散（线速度大于 18.97×10⁻² m·s⁻¹），基于 Langmuir–Hinshelwood / Hougen–Watson 机理（氢气解离吸附）提出反应网络与动力学表达式；反应在 210 °C 以上、1.6 MPa 以下、氢酯比小于 100 的低压条件下进行，呼应低压本征动力学研究匮乏的痛点。全文 OA（PMC12046981），且来自中科院过程所 + 中石化大连院，直接对标本平台「固定床反应器 + 本征动力学 + WHSV/放大」主线。",
-        shortcomings: "反应为 DMS→GBL 单一路线酯加氢模型，反应网络虽含 BDO/THF 等副产物但未充分展开多产物选择性调控；动力学仅低压（小于 1.6 MPa）单点条件，未覆盖工业更高压力与更广温度窗口，模型外推性需验证；微固定床为实验室级，缺数百小时级失活曲线、催化剂积碳/烧结定量与床层压降/放大传热数据，未提供 WHSV 与工业产能衔接核算；铜基催化剂在真实油品/含杂质体系中的寿命与再生未评估；活化能与速率常数仅基于有限拟合，机理假设（解离吸附）未用原位表征充分佐证。",
-        oneliner: "采用自主研发 CuZnAl 铜基催化剂与微型固定床反应器，通过消除内/外扩散并建立基于 Langmuir–Hinshelwood 机理的本征动力学模型（得速率常数与活化能），系统量化温度、压力、氢酯比对丁二酸二甲酯加氢制 γ-丁内酯的影响，在低压条件下给出可直接用于工艺优化的稳健动力学，为固定床酯加氢的工艺放大与 WHSV 核算提供可靠依据。",
-        keywords: ["微固定床", "连续流", "加氢", "本征动力学", "铜催化剂", "丁二酸二甲酯", "γ-丁内酯", "工艺放大"],
-        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("丁二酸二甲酯 加氢 γ-丁内酯 微固定床 动力学")
+        highlights: "报道了一套全自动化、mL 级连续流工艺，用于苯基苯丙酮（benzylphenylephrone）不对称加氢生成 (R)-benzylphenylephrine（BPE，一种拟交感神经药 API 中间体）。采用均相铑（Rh）催化剂、最高 65 bar 高压，转化 >96%、收率最高 95%、对映体过量（ee）最高 91%，停留时间 <5 min、底物/催化剂摩尔比（S/C）=750；并在连续流微反应器中开展动力学研究、建立与实验高度吻合的动力学模型。直接对标本平台「连续流 + 动力学 + 反应器工程」主线，且论文为 OA（Free article）。",
+        shortcomings: "使用均相 Rh 催化剂，存在成本高、产物与催化剂分离困难、金属浸出风险；操作压力最高 65 bar，对设备等级与成本要求较高；底物范围较窄（仅单一 API 中间体模型）；为 mL 级微反应器，缺固定床工业放大的床层压降、径向温度分布与放大倍数验证；未给出长期催化剂稳定性与失活曲线；本工作为均相催化不对称加氢路线，并非本工作台中心关注的「多相固定床 H2 气相加氢」方案。",
+        oneliner: "提出一套全自动化 mL 级连续流不对称加氢工艺，以均相 Rh 催化剂在最高 65 bar 下将苯基苯丙酮转化为 (R)-benzylphenylephrine（转化 >96%、收率 95%、ee 91%、停留 <5 min），并在连续流微反应器中建立与实验吻合的动力学模型，展示了快速、可重复的 API 中间体连续制造。",
+        keywords: ["连续流", "不对称加氢", "动力学", "微反应器", "铑催化剂", "药物中间体", "工艺开发", "选择性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 不对称加氢 动力学 微反应器 铑催化剂 药物中间体")
       }
     ]
   },
