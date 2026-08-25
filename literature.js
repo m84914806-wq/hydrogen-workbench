@@ -2,6 +2,43 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-25",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41677507",
+        title: "Selective Acetylene Hydrogenation: Influence of Carbon Supports on the Stabilization of Pd4S-like Active Sites",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41677507/",
+        doi: "https://doi.org/10.3390/nano16030157",
+        journal: "Nanomaterials (Basel) (2026), 16(3), 157, open access (PMC12899367)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-25",
+        highlights: "系统考察碳载体本性与钯前驱体对乙炔选择性加氢的双重影响：在四种碳材料（高温热处理碳纤维 HHT、碳纳米管 CNT、活性炭 AC、高比表面石墨 G）上分别用硫酸盐或氯化物前驱体制备 6 个 Pd 催化剂，全部在连续固定床反应器（continuous fixed-bed reactor）中评价。结果显示 HHT 负载催化剂乙烯选择性与长期稳定性最佳，硫酸盐前驱体普遍优于氯化物；XPS 证实性能提升源于亚化学计量硫化物物种（S2-）与金属 Pd 相互作用形成 Pd4S 样活性位，而非单纯的 Pd 分散度差异，高石墨化的 HHT 纤维更利于表面硫保留。文中给出 40 °C 下乙烷/乙烯/C4 选择性与乙炔转化率的 time-on-stream 演化曲线，并配合 TEM/EDX/XPS/Raman 对反应后样品做全面表征。载体-前驱体-活性位三者的构效关系清晰，直接对标本平台「固定床 + 催化剂 + 选择性」主线，全文 OA（PMC12899367）。",
+        shortcomings: "乙炔选择性加氢属气相脱除微量乙炔的模型反应（乙烯精制场景），未涉及液相/气液固三相加氢与多官能团竞争加氢的选择性调控；未提供 WHSV/空速、床层压降、绝热温升与内外扩散判据（Weisz-Prater/Mears），难以直接用于本平台的 WHSV 时空收率核算；长期稳定性以 time-on-stream 曲线展示但缺数百小时级失活曲线，以及 Pd 烧结、硫物种流失的定量（ICP/XPS 定量）数据；仍依赖贵金属 Pd，未讨论回收与经济性；碳载体（尤其 HHT 纤维、CNT）的机械强度、装填均一性与工业放大成本未评估，绿油（green oil）生成与再生协议也未展开。",
+        oneliner: "通过对比四种碳载体与硫酸盐/氯化物两类钯前驱体，在连续固定床反应器中开展乙炔选择性加氢，揭示高石墨化 HHT 碳纤维载体利于表面硫保留并稳定 Pd4S 样活性位，从而取得最高乙烯选择性与最佳长期稳定性，为固定床选择性加氢催化剂的「载体-前驱体-活性位」协同设计提供可直接借鉴的依据。",
+        keywords: ["固定床", "连续流", "选择性加氢", "乙炔", "钯催化剂", "碳载体", "硫化钯", "催化剂稳定性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续固定床 乙炔选择性加氢 钯催化剂 碳载体 硫化钯")
+      },
+      {
+        id: "pmid-42360121",
+        title: "Selective Nitrone Synthesis via Cascade Hydrogenative Coupling of Nitro Compounds and Aldehydes Catalyzed by Single-Atom Platinum on N,P-Doped Carbon",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/42360121/",
+        doi: "https://doi.org/10.1021/jacs.6c08609",
+        journal: "Journal of the American Chemical Society (2026), 148(26), 27762-27770, DOI 10.1021/jacs.6c08609 (ACS)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-25",
+        highlights: "报道 N,P 共掺杂碳负载的单原子铂催化剂（Pt single-atom on N,P-doped carbon），高效催化硝基化合物与醛的级联加氢偶联（cascade hydrogenative coupling），一步高选择性合成硝酮（nitrones），共制得 40 种结构多样的硝酮，覆盖芳香族与脂肪族底物以及若干生物活性化合物的重要中间体。与易导致过度还原的 Pt 纳米颗粒催化剂形成鲜明对照，单原子 Pt 平台官能团兼容性极宽——可容忍同分子内可还原的 C=C、C=O 键与芳基卤，展现了单原子位点在「级联加氢」这一尚少被探索方向上的独特反应性；更关键的是催化剂在连续流体系（continuous-flow system）中表现出稳健耐久性，给出原子经济、可持续的硝酮连续制造路线。发表于化学顶刊 JACS，直接对标本平台「连续流 + 单原子催化剂 + 选择性控制」主线。",
+        shortcomings: "论文主线是合成方法学（底物谱与选择性），连续流部分仅作为耐久性验证，未给出催化剂装填量、空速（WHSV/LHSV）、停留时间、床层压降与逐时转化率/选择性曲线等固定床反应器工程参数，无法直接用于 WHSV 时空收率与催化剂单耗核算；依赖贵金属 Pt 单原子，N,P 掺杂碳载体的规模化制备一致性、Pt 回收与成本未评估；单原子位点在长周期流动运行下的团聚/浸出缺 ICP 定量与失活曲线；目标产物硝酮属精细化工/药物中间体，产能规模小，未涉及放大传热传质、绝热温升与气液分布；亦未提供本征动力学（反应级数、活化能）与内外扩散消除判据。",
+        oneliner: "用 N,P 共掺杂碳负载单原子铂催化硝基化合物与醛的级联加氢偶联，高选择性合成 40 种硝酮（可耐受 C=C/C=O/芳基卤等可还原官能团、显著抑制纳米颗粒催化剂常见的过度还原），并在连续流体系中验证催化剂的稳健耐久性，为单原子催化剂驱动的连续流级联加氢提供了原子经济且可持续的方法学。",
+        keywords: ["连续流", "级联加氢", "单原子催化剂", "铂催化剂", "选择性", "硝基化合物", "硝酮", "官能团兼容性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 级联加氢 单原子铂 硝基化合物 硝酮 选择性")
+      }
+    ]
+  },
+
+  {
     date: "2026-08-24",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
