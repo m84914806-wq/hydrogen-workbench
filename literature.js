@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-26",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41983231",
+        title: "Hydrocracking of Waste Plastic Pyrolysis Oil and Light Cycle Oil (PPO/LCO) Blends in a Trickle-Bed Reactor: Catalyst Assessment and Operating-Condition Screening",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41983231/",
+        doi: "https://doi.org/10.1021/acs.energyfuels.6c00240",
+        journal: "Energy & Fuels (2026), DOI 10.1021/acs.energyfuels.6c00240, open access (PMC13072571)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-26",
+        highlights: "在滴流床（trickle-bed，气液固三相固定床）反应器中，以废塑料裂解油（PPO）与催化裂化轻循环油（LCO）掺混物（20:80 质量比）为原料，考察 PtPd/HZSM-5、PtPd/HY、NiW/HY 三种催化剂的加氢裂化制车用燃料性能。工况为 400 °C、60 bar、H2/进料体积比 2000:1、空时 0.23 g·h·gfeed⁻¹、在线时间 8 h；PtPd/HY 凭借中等酸强度、更强加氢能力与微孔结构取得 81 wt% 汽油馏分选择性，并进一步考察压力（80 bar 加剧过裂化）与 PPO 掺混比（升至 40 wt% 促进轻组分但抑制重质馏分与汽油生成）的影响，给出催化剂再生评价。直接对标本平台「固定床/滴流床 + 加氢 + 反应器工况筛选」主线，全文 OA（PMC13072571）。",
+        shortcomings: "研究对象是废塑料裂解油/重油组分的加氢裂化（heavy refinery hydrocracking），属 C-C 裂化与加氢并重的重油改质，并非本平台关注的中低压精细化学品选择性加氢；反应苛刻（400 °C、60–80 bar），与甲醇溶剂、常压/中压的温和液相加氢路线差异大；未提供床层压降、径向温度分布、绝热温升与传热/传质（Weisz-Prater/Mears）判据；虽提到再生，但缺数百小时级连续失活曲线、金属流失与积碳动力学定量；汽油选择性 81 wt% 仅以产物分布表示，未给出 WHSV/时空收率与本征动力学（反应级数、Arrhenius）；NiW/HY 含 W 战略金属，成本与可持续性未评估。",
+        oneliner: "在滴流床（气液固三相固定床）反应器中以 PPO/LCO 掺混油为原料筛选 PtPd/HZSM-5、PtPd/HY、NiW/HY 三种催化剂的加氢裂化性能，确定 PtPd/HY 凭借中等酸强与强加氢能力取得 81 wt% 汽油选择性，并厘清压力与 PPO 掺混比对过裂化及重质馏分转化的影响，为废塑料油连续固定床加氢改质与工况优化提供可直接借鉴的数据。",
+        keywords: ["滴流床", "固定床", "加氢裂化", "连续流", "废塑料油", "催化剂筛选", "操作工况", "汽油选择性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 滴流床 加氢裂化 废塑料油 固定床 催化剂筛选")
+      },
+      {
+        id: "pmid-41432387",
+        title: "Selective Hydrogenation of Heteroarenes Using Supported Ruthenium Phosphide Nanoparticle Catalysts",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41432387/",
+        doi: "https://doi.org/10.1021/jacs.5c16144",
+        journal: "Journal of the American Chemical Society (2026), 148(1), 766-777, open access (PMC12814184)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-26",
+        highlights: "以有机金属法在咪唑基负载型离子液体相（SILP）上合成并固载钌磷化物纳米颗粒 Ru_xP100-x@SILP，可于温和湿化学条件下制备并系统调控 Ru/P 比；该催化剂对喹啉、吲哚、苯并呋喃、苯并噻吩等杂芳烃的选择性加氢（保留芳环、仅氢化杂环）表现出高活性、高选择性与强稳健性，且明确「在间歇与连续流条件下均可应用」。连续流实例以 6-氯喹啉为底物：Ru50P50@SILP（250 mg）与玻璃珠稀释装填，50 °C/20 bar 或 90 °C/50 bar，停留时间 1.14 min、流速 0.7 mL/min，并成功合成 cuspareine、salsolidine 等药物分子与含同位素标记的合成子。发表于化学顶刊 JACS，直接对标本平台「连续流 + 选择性加氢 + 催化剂 + 药物中间体」主线，全文 OA（PMC12814184）。",
+        shortcomings: "连续流部分仅以 6-氯喹啉单一模型底物展示（停留时间 1.14 min、0.7 mL/min），未给出催化剂装填量对应的 WHSV、床层压降、长期稳定性与失活曲线、Ru 流失/磷溶出定量；杂芳烃选择性部分加氢的目标产物为药物合成砌块，产能规模小，未涉及放大传热/传质、绝热温升与气液分布；依赖贵金属 Ru 与 SILP 载体，Ru50P50@SILP 的规模化制备一致性、Ru 回收与成本未评估；本征动力学（反应级数、活化能）与内外扩散消除判据未提供；虽强调稳健性，但缺数十/数百小时级连续在线运行数据。",
+        oneliner: "用有机金属法在 SILP 上构建钌磷化物纳米颗粒 Ru_xP100-x@SILP，对喹啉/吲哚/苯并呋喃/苯并噻吩等杂芳烃实现保留芳环的选择性部分加氢，并在连续流固定床（6-氯喹啉，停留 1.14 min）中验证其稳健性，进一步用于 cuspareine、salsolidine 等药物分子合成，为连续流选择性杂芳烃加氢提供高活性高选择性催化剂方案。",
+        keywords: ["连续流", "固定床", "选择性加氢", "杂芳烃", "钌磷化物", "离子液体", "药物中间体", "催化剂稳定性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 选择性加氢 杂芳烃 钌磷化物 离子液体 药物中间体")
+      }
+    ]
+  },
+  {
     date: "2026-08-25",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
