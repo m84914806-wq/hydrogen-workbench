@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-27",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41361027",
+        title: "Breaking the yield-selectivity trade-off in polystyrene waste valorization via tandem depolymerization and hydrogenolysis",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41361027/",
+        doi: "https://doi.org/10.1038/s41565-025-02069-x",
+        journal: "Nature Nanotechnology (2026), 21(1), 87-94, DOI 10.1038/s41565-025-02069-x (Springer Nature)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-27",
+        highlights: "以 Co3O4 负载 Ru 单原子（RuSA/Co3O4）催化气相氢解，核心工程思想是「把解聚与氢解解耦」——在加压双段固定床反应器（pressurized dual-stage fixed-bed reactor）中，聚苯乙烯先于 475 °C 加氢热解（hydropyrolysis），气相产物再串入 275 °C 第二段固定床做气相氢解（0.4 MPa H2、停留时间仅 2.4 s），从而打破甲苯「收率-选择性」互斥：甲苯选择性 99%、收率 83.5 wt%、反应速率 1320 mmol·gcat⁻¹·h⁻¹。催化剂在 100 h 连续运行中维持 >99% 转化与选择性、TON 达 24747，并可直接处理多种真实废聚苯乙烯。更难得的是配套给出全生命周期评价（碳足迹较化石路线降低 53%）与技术经济分析（最低销售价 0.61 美元/kg，低于 1 美元/kg 行业基准）。发表于 Nature Nanotechnology，对本平台最有价值的是「多段固定床串联 + 低压短停留 + 单位催化剂产率 + 长周期稳定性 + TEA 经济性」这一条完整的从反应器构型到经济性的闭环。",
+        shortcomings: "反应体系为废塑料气相氢解制甲苯（C-C 氢解 + 高温热解），并非本平台关注的中低压液相选择性加氢，475 °C 热解段能耗高、与甲醇溶剂温和加氢路线差异大；单原子 Ru 属贵金属，Ru 回收、单原子载体规模化制备一致性与批间重现性未评估；双段固定床未给出床层压降、径向温度分布、绝热温升与气固传热/传质判据（Weisz-Prater/Mears），2.4 s 停留时间对应的空速换算与放大准则也未展开；连续运行 100 h 虽稳定，但缺数百至上千小时的失活曲线、积碳与 Ru 团聚/流失的 ICP 定量；TEA 与 LCA 基于模型假设，未经中试验证；真实废塑料中的杂质（卤素、添加剂、颜料）对单原子位点的中毒作用仅作定性说明。",
+        oneliner: "在加压双段固定床反应器中把聚苯乙烯的加氢热解（475 °C）与 Ru 单原子催化的气相氢解（275 °C、0.4 MPa H2、停留 2.4 s）解耦串联，实现甲苯 99% 选择性、83.5 wt% 收率与 1320 mmol·gcat⁻¹·h⁻¹ 速率、100 h 连续运行无衰减（TON 24747），并以碳足迹降低 53%、最低销售价 0.61 美元/kg 的 LCA/TEA 论证经济可行性，为多段固定床连续加氢工艺的构型设计与放大经济性评估提供完整范本。",
+        keywords: ["固定床", "连续流", "氢解", "单原子催化剂", "钌催化剂", "选择性", "放大", "技术经济分析", "废塑料"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("双段固定床 氢解 单原子钌 聚苯乙烯 甲苯 连续流 技术经济")
+      },
+      {
+        id: "pmid-42094728",
+        title: "Pt-Y supported on magnesium-aluminium composite oxide catalysts for highly selective synthesis of 1,2-pentanediol from furfuryl alcohol under mild conditions",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/42094728/",
+        doi: "https://doi.org/10.1039/d6ra02263d",
+        journal: "RSC Advances (2026), 16(26), 23314-23325, open access (PMC13143263)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-08-27",
+        highlights: "报道 MgO-AlO(OH) 复合氧化物（MAO）负载的 Pt-Y 双金属催化剂，用于糠醇（FFA）选择性氢解制 1,2-戊二醇（1,2-PeD），在极温和条件（140 °C、0.8 MPa H2、水为溶剂）下即可完全转化 FFA、1,2-PeD 选择性 80.3%（110 mol 产物·mol Pt⁻¹·h⁻¹），显著优于单金属对照。AC-HAADF-STEM 与 XPS 证实形成 Pt-Y 混合团簇并发生 Pt→Y 电子转移，该电子调控与 MAO 载体可调碱性协同，抑制呋喃环过度加氢、促进目标 C-O 键活化；原位 FT-IR 显示引入 Y 后 FFA 以 O-H 与 C-O-C 竖直吸附构型吸附，从而利于选择性开环。与本平台高度契合的是文中同时给出：固定床反应器示意图（Scheme 1）、H2 压力与 FFA 浓度的反应级数、120-150 °C 的 Arrhenius 活化能，以及固定床连续流长周期稳定性——140 °C、0.8 MPa H2、液相 0.01 mL·min⁻¹、气相 8 mL·min⁻¹、2.5 wt% FFA 水溶液、1 g 催化剂，连续运行 200 h 以上无明显失活。全文 OA（PMC13143263）。",
+        shortcomings: "长周期实验的空速极低——按液相 0.01 mL·min⁻¹、2.5 wt% FFA、1 g 催化剂折算 WHSV 仅约 0.015 g_FFA·g_cat⁻¹·h⁻¹，单位催化剂产能远低于工业要求，200 h 稳定性是在此极低负荷下取得，高空速下的选择性与失活行为未验证；1,2-PeD 选择性 80.3% 仍有约 20% 碳流向过度加氢/开环副产物，副产物分布与分离未展开；依赖贵金属 Pt（辅以稀土 Y），Pt 回收、成本与 MAO 载体规模化制备一致性未评估；未提供床层压降、径向温度分布、绝热温升与内外扩散消除判据（Weisz-Prater/Mears），动力学参数主要来自间歇釜（50 mg 催化剂、6 h）而非固定床本征测定；水相体系中 MgO-AlO(OH) 载体的长期水热稳定性与 Mg 溶出缺 ICP 定量；仅以糠醇单一底物验证，对真实生物质水解液杂质的耐受性未考察。",
+        oneliner: "用 MgO-AlO(OH) 复合氧化物负载 Pt-Y 双金属团簇，借 Pt→Y 电子转移与载体碱性协同抑制呋喃环过度加氢、定向活化 C-O 键，在 140 °C/0.8 MPa 的温和水相条件下实现糠醇完全转化与 80.3% 的 1,2-戊二醇选择性，并在固定床连续流反应器中连续运行 200 h 以上无明显失活，为温和条件下的连续流选择性氢解催化剂设计与长周期稳定性验证提供了可复用范例。",
+        keywords: ["固定床", "连续流", "选择性氢解", "双金属催化剂", "铂催化剂", "糠醇", "1,2-戊二醇", "生物质", "催化剂稳定性", "动力学"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 糠醇 选择性氢解 1,2-戊二醇 铂钇双金属 催化剂稳定性")
+      }
+    ]
+  },
+  {
     date: "2026-08-26",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
