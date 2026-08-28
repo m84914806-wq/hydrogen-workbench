@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-28",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "doi-10.1021-acs.oprd.5c00519",
+        title: "Innovative Approaches to a Scalable Catalytic Flow Reaction: A Focus on Selective Nitro-Group Hydrogenation in a Fixed-Bed System",
+        pubmed: "https://doi.org/10.1021/acs.oprd.5c00519",
+        doi: "https://doi.org/10.1021/acs.oprd.5c00519",
+        journal: "Organic Process Research & Development (2026), 30(3), 795-805, DOI 10.1021/acs.oprd.5c00519 (ACS, open access)",
+        verified: true,
+        verifiedLinkType: "doi",
+        verifiedAt: "2026-08-28",
+        highlights: "在固定床连续流反应器中以 Co/Al2O3 非贵金属催化剂实现硝基化合物的化学选择性加氢，核心工程价值在于把「催化剂粒径工程 + 压降控制 + 放大」整合进同一工作：载体选用粒径均匀、分布窄的球形 Al2O3（d50≈343 μm、跨度 d10–d90 284–441 μm），使反应器直径/颗粒直径比 D/d≈29，显著削弱壁效应与偏流，从而把床层压降 ΔP 降到接近零并防止催化剂粉化造成的堵塞。针对卤代硝基芳烃（Pd/Pt 催化剂易脱卤的痛点），Co/Al2O3 对各类取代基（位置、电子效应）的硝基芳烃均给出高化学选择性；以对氯硝基苯加氢制对氯苯胺为例，80 °C 下保持完全转化、选择性 >97% 并稳定运行 180 h，ΔP 几乎不变。文章进一步给出多规模固定床装置（实现逐级 stepwise scale-up），并用 Ergun 方程估算放大到商业规模时 ΔP 仍可 <1 bar，是本平台「固定床压降 + 放大 + 催化剂单耗」主线不可多得的工程范本。发表于 Org Process Res Dev（药物工艺旗舰期刊），对 API 连续制造的工业相关性高。",
+        shortcomings: "研究对象为硝基芳烃加氢制芳胺（制药 API 关键步骤），并非本平台聚焦的含溶剂/甲醇中低压液相选择性加氢的通用场景，温度 80 °C 较温和但依赖 H2 加压、未给出绝热温升与本征动力学（反应级数、Arrhenius）定量；180 h 稳定性出色但缺数百至上千小时级的失活曲线、Co 烧结/流失与 Al2O3 载体水热稳定性（ICP/中毒）数据；虽用 Ergun 估算 ΔP，但实验压降仅 180 h 窗口、未提供径向温度分布与放大热点的实测，也未给出 WHSV/空速与催化剂单耗的核算；依赖纯 Co 体系对深度加氢/含 N、S 杂环底物的普适性未展开，经济性（vs Pd/Pt 的成本—性能权衡）仅定性讨论；文中明确点出温度梯度与启停策略为后续研究，说明放大热管理尚未闭环。",
+        oneliner: "用粒径均匀、分布窄的球形 Al2O3 负载 Co 催化剂（d50≈343 μm、D/d≈29）装填固定床，在 80 °C 下实现对氯硝基苯等硝基芳烃高化学选择性加氢（>97%、完全转化）并稳定连续运行 180 h 且床层压降近乎为零，结合多规模装置与 Ergun 方程论证可放大至商业规模 ΔP<1 bar，为固定床连续加氢的催化剂粒径工程、压降控制与 stepwise 放大提供可直接复用的 API 制造工程范本。",
+        keywords: ["固定床", "连续流", "选择性加氢", "硝基化合物", "钴催化剂", "API连续制造", "压降", "放大"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 选择性加氢 硝基 钴催化剂 压降 放大 API")
+      },
+      {
+        id: "doi-10.1021-acs.iecr.5c03941",
+        title: "Continuous Hydrogenation of Glucose in a Micropacked Bed Reactor",
+        pubmed: "https://doi.org/10.1021/acs.iecr.5c03941",
+        doi: "https://doi.org/10.1021/acs.iecr.5c03941",
+        journal: "Industrial & Engineering Chemistry Research (2026), 65(5), 2521-2528, DOI 10.1021/acs.iecr.5c03941 (ACS)",
+        verified: true,
+        verifiedLinkType: "doi",
+        verifiedAt: "2026-08-28",
+        highlights: "以微填充床反应器（micropacked bed reactor, μPBR）实现葡萄糖连续加氢制山梨醇，是固定床反应器工程 + 本征动力学 + 长周期稳定性的完整范例。用 Ru/C 催化剂在温和条件（100 °C、1 MPa）下取得完全转化与 99.0% 山梨醇选择性，时空收率（STY）高达 1.25 g_sorb/(g_cat·h)；最贴合本平台的是：连续运行 500 h 无明显失活、周转数 TON 达 53,144（远超文献报道的 9–3350），并系统建立本征动力学、用 Weisz 模数评估内扩散影响（排除内扩散控制），还把体系拓展到多种糖底物验证底物兼容性。全文直接给出空速/收率/稳定性/动力学的可核算数据，对应本工作台 WHSV 时空收率与催化剂单耗两大模块。发表于 Industrial & Engineering Chemistry Research（化工旗舰期刊）。",
+        shortcomings: "反应为葡萄糖→山梨醇这一单一 C=O 加氢模型体系（生物质制糖醇），并非本平台关注的含氮/含硫原料的中低压选择性加氢，反应体系偏温和（100 °C/1 MPa）、与甲醇溶剂、含卤/含硝基底物的兼容性未涉及；微填充床以极小尺寸颗粒装填，虽改善传质但单位体积催化剂装填密度与工业放大的压降、径向分布、热点需另行论证，文中未给床层压降实测与放大传热数据；500 h 稳定性优秀但缺更长时间（数千小时）失活曲线、Ru 流失/团聚与 C 载体氧化的 ICP 定量；动力学模型未给出与 WHSV 直接挂钩的产能核算与催化剂单耗经济性；多种糖底物的选择性/收率仅简要列出，副产物（甘露醇等）分布与调控未充分展开。",
+        oneliner: "用微填充床反应器（μPBR）配合 Ru/C 催化剂在 100 °C、1 MPa 的温和条件下实现葡萄糖连续加氢制山梨醇（完全转化、99.0% 选择性、STY 1.25 g_sorb/(g_cat·h)），连续运行 500 h 无明显失活、TON 达 53,144，并建立本征动力学与 Weisz 模数内扩散判据、验证多种糖底物兼容性，为固定床连续加氢的动力学建模、时空收率与长周期稳定性评估提供可直接复用的工程数据。",
+        keywords: ["微填充床", "连续流", "加氢", "葡萄糖", "山梨醇", "钌催化剂", "动力学", "时空收率", "催化剂稳定性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 微填充床 加氢 葡萄糖 山梨醇 钌催化剂 动力学 时空收率")
+      }
+    ]
+  },
+  {
     date: "2026-08-27",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
