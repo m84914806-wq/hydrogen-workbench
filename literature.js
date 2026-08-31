@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-08-31",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "doi-10.1055-a-2793-1620",
+        title: "Synthesis of a Key Linezolid Intermediate via Fixed-Bed Continuous-Flow Hydrogenation: Insights into Catalyst Grade Selection and Optimum Reaction Conditions for Scale-Up",
+        pubmed: "https://doi.org/10.1055/a-2793-1620",
+        doi: "https://doi.org/10.1055/a-2793-1620",
+        journal: "Sustainability & Circularity NOW (2026), 03, a27931620, DOI 10.1055/a-2793-1620 (Thieme, open access CC BY)",
+        verified: true,
+        verifiedLinkType: "doi",
+        verifiedAt: "2026-08-31",
+        highlights: "以固定床连续流加氢制备利奈唑胺（Linezolid，高用量抗菌药）关键前体 3-氟-4-吗啉代苯胺，是制药 API 连续制造的工程范本，直接对应本工作台主线。底物 4-(2-氟-4-硝基苯基)吗啉经催化加氢还原硝基，重点考察催化剂牌号选择（Pd/C 与 Raney Ni）及时间、温度、溶剂、浓度的协同效应；最贴合本平台的是用「time-on-stream」长期运行实验量化催化剂稳定性与寿命，并给出空间-时收率（space-time yield, STY）：最优条件下产物 >99.5%、1 的近定量分离收率，STY 达 1.65 kg/L/h，而传统间歇法仅 0.0058 kg/L/h（提升约 280 倍）。文章还明确讨论如何「安全且可放大」地实现该转化、抑制脱卤杂质生成，对固定床放大与催化剂单耗核算极具参考价值。发表于 Thieme 开源期刊（CC BY），数据可复用。",
+        shortcomings: "研究对象为单一利奈唑胺前体（4-氟硝基芳烃→氟代苯胺）这一特定 API 中间体，并非本平台关注的含甲醇溶剂的中低压通用液相选择性加氢场景；反应体系偏温和，文中未给出绝热温升、本征动力学（反应级数、Arrhenius）及 WHSV/空速与催化剂单耗的定量核算；time-on-stream 稳定性虽给出，但缺数百至上千小时级失活曲线、Pd 流失/烧结或 Raney Ni 比表面衰减的 ICP/BET 数据；催化剂牌号（grade）对比停留在宏观产率，未深入载体粒径分布、金属分散度与压降（ΔP）的关联，也未用 Ergun 方程做放大压降估算；溶剂/浓度优化未涉及甲醇体系，对含卤/含水原料的普适性与经济性（vs Pd 成本）仅定性讨论。",
+        oneliner: "在固定床连续流反应器中以 Pd/C 与 Raney Ni 催化剂牌号筛选实现 4-(2-氟-4-硝基苯基)吗啉→3-氟-4-吗啉代苯胺（利奈唑胺前体）的选择性硝基加氢，最优条件产物 >99.5%、近定量分离收率、空间-时收率 1.65 kg/L/h（间歇法仅 0.0058），并以 time-on-stream 实验量化长期稳定性与放大可行性，为 API 连续流加氢的催化剂选型、稳定性评价与放大提供可直接复用的工程数据。",
+        keywords: ["固定床", "连续流", "选择性加氢", "硝基化合物", "利奈唑胺", "钯碳催化剂", "雷尼镍", "放大", "时空收率", "API连续制造"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 选择性加氢 利奈唑胺 硝基 钯碳 雷尼镍 放大 时空收率")
+      },
+      {
+        id: "doi-10.3390-catal16080669",
+        title: "Resin-Based Spherical Activated Carbon-Supported Pt-Pd Catalysts for Continuous Liquid-Phase Hydrogenation of Nitrobenzene",
+        pubmed: "https://doi.org/10.3390/catal16080669",
+        doi: "https://doi.org/10.3390/catal16080669",
+        journal: "Catalysts (2026), 16(8), 669, DOI 10.3390/catal16080669 (MDPI, open access)",
+        verified: true,
+        verifiedLinkType: "doi",
+        verifiedAt: "2026-08-31",
+        highlights: "以树脂基球形活性炭（RSAC）为载体构建结构化 Pt-Pd/C 催化剂，解决连续固定床液相加氢中常见的局部过热、催化剂烧结与磨损问题，直接对应本工作台「催化剂结构化 + 连续流稳定性 + 选择性」主线。在微填充床反应器（micro-packed bed）中以乙醇为溶剂（硝基苯 0.08 mol·L⁻¹）实现硝基苯→苯胺的连续液相加氢：间歇初筛中 Pt-Pd/C（Pt 2.59 wt%、Pd 0.33 wt%）表观 TOF 达 6594 h⁻¹、苯胺选择性 >99.9%；连续操作中约 2 h 达稳态，随后 70 h 内维持硝基苯转化约 87%、苯胺选择性近定量（~99%）且无系统衰减。RSAC 载体兼具机械强度与连续流动适用性，为选择性连续制苯胺提供了结构化稳健体系。发表于 MDPI Catalysts（开源），数据完整可核算。",
+        shortcomings: "反应体系为模型底物硝基苯→苯胺（单一 C-N 还原），并非本平台关注的含甲醇溶剂、含卤/含杂环原料的中低压选择性加氢，87% 转化率下未进一步追平完全转化所需的空速/催化剂装填与压降权衡；70 h 稳定性窗口偏短，缺数百至上千小时级失活曲线、Pt/Pd 流失/烧结的 ICP/TEM 定量及 RSAC 载体水热稳定性数据；文章未给出绝热温升、本征动力学（反应级数、Arrhenius）与 WHSV/时空收率的经济性核算；稳态 2 h 启停、放热热点与径向温度分布、以及放大到工业尺寸的 Ergun 压降估算均未展开；Pd 用量极低（0.33 wt%）虽降本，但 Pt 属贵金属，整体成本—性能权衡与回收仅简要提及。",
+        oneliner: "用树脂基球形活性炭（RSAC）负载 Pt-Pd/C 结构化催化剂在微填充床反应器中实现硝基苯连续液相加氢制苯胺，间歇初筛 TOF 达 6594 h⁻¹、选择性 >99.9%，连续操作约 2 h 达稳态后维持 70 h（~87% 转化、近定量选择性）无衰减，以高机械强度载体破解固定床连续流中的烧结与磨损难题，为结构化催化剂的连续加氢稳定性与放大提供范本。",
+        keywords: ["微填充床", "连续流", "液相加氢", "硝基苯", "铂钯催化剂", "活性炭载体", "选择性", "催化剂稳定性", "结构化催化剂"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 微填充床 液相加氢 硝基苯 铂钯 活性炭载体 选择性 催化剂稳定性")
+      }
+    ]
+  },
+  {
     date: "2026-08-28",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
