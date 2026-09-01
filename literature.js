@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-09-01",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-41083548",
+        title: "Reac-Discovery: an artificial intelligence-driven platform for continuous-flow catalytic reactor discovery and optimization",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41083548/",
+        doi: "https://doi.org/10.1038/s41467-025-64127-1",
+        journal: "Nature Communications (2025), DOI 10.1038/s41467-025-64127-1, open access (PMC12518858)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-09-01",
+        highlights: "提出 Reac-Discovery 数字平台，把催化反应器的参数化设计、高分辨 3D 打印制造与自驱动实验室优化整合为闭环：Reac-Gen 用参数化数学方程生成周期性开孔结构（POC）并做几何-拓扑分析；Reac-Fab 用机器学习校验可打印性、3D 打印并以离子液体功能化；Reac-Eval 用实时核磁共振（NMR）监测与自驱动平台并行多反应器评价，以人工神经网络（ANN）同时优化工艺参数与拓扑描述符。以两个多相催化案例验证：苯乙酮加氢（Pd 纳米颗粒固载于离子液体功能化 3D 打印聚合物结构）与 CO2 环加成；苯乙酮加氢用 ANN 把空速（关联 WHSV）、温度、气/液流速、底物浓度与拓扑参数（比表面积、孔隙率、弯曲度、装填率）映射为收率与时空收率（STY），最优 Lidinoid S15L0 几何预测 STY 达 352 g·L⁻¹·h⁻¹ 并经实验验证。直接对标本平台「反应器工程 + 结构化固定床 + WHSV/时空收率 + 放大」主线，且发表于 Nature Communications，把 AI 驱动的连续流反应器发现范式与 3D 打印结构化催化剂床层推向可量化的 STY 优化。",
+        shortcomings: "苯乙酮加氢仅作为反应器发现平台的示范反应，并非本平台关注的含溶剂/甲醇中低压选择性加氢；Pd 纳米颗粒属贵金属、离子液体功能化聚合物载体在有机溶剂中的长期溶胀与机械强度未系统评估；3D 打印反应器为实验室尺度（毫米级特征），工业放大的床层均一性、压降、径向温度分布与传热/传质（Weisz-Prater/Mears）判据未展开；STY 优化依赖 ANN 黑箱，缺乏本征动力学（反应级数、Arrhenius）与内外扩散消除的直接论证；预测 STY 仅以 4 个几何做实验验证，长期稳定性（数百小时失活/压降演化）与催化剂再生协议缺失；CO2 环加成案例与本平台主线无关。",
+        oneliner: "提出 Reac-Discovery 数字平台，整合参数化设计（Reac-Gen）、可打印性校验与 3D 打印（Reac-Fab）及实时 NMR 监测的自驱动优化（Reac-Eval），以人工神经网络把苯乙酮加氢的工艺与拓扑参数映射为时空收率（STY），实验验证最优 3D 打印结构化反应器 STY 达 352 g·L⁻¹·h⁻¹，为连续流结构化固定床反应器的 AI 驱动发现与 STY 量化放大提供范式。",
+        keywords: ["连续流", "反应器工程", "加氢", "3D打印", "结构化反应器", "机器学习", "时空收率", "钯催化剂"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 反应器 3D打印 结构化反应器 机器学习 时空收率 加氢 优化")
+      },
+      {
+        id: "pmid-40852220",
+        title: "Hydrogenation of Quinolines and Aldehydes Catalyzed by a Pyrolyzed, Augmented Cobalt-Salen Complex",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/40852220/",
+        doi: "https://doi.org/10.1021/acsomega.5c04940",
+        journal: "ACS Omega (2025), DOI 10.1021/acsomega.5c04940, open access (PMC12368676)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-09-01",
+        highlights: "以放大的 salcomine 型均相钴-沙仑（Co-salen）配合物前驱体湿浸渍于 SiO2 后可控热解，制备出易操作、稳定的 Co@SiO2 复合催化剂（XPS/HAADF-STEM/EDX 确认 Co 以金属态存在）。该催化剂可多相催化喹啉与醛的加氢：喹啉选择性生成 1,2,3,4-四氢喹啉、醛加氢为伯醇，并展示良好的官能团兼容性。最贴合本平台的是催化剂同时在间歇高压釜与连续流反应系统（ThalesNano H-Cube Mini Plus，通过水电解现场制氢）两种模式下评价，均取得良好收率与官能团耐受性，给出从间歇到连续流的迁移路径与反应器示意。非贵金属 Co、连续流、选择性加氢齐备，直接对标本平台「连续流 + 非贵金属 + 选择性加氢」主线，全文 OA（PMC12368676）。",
+        shortcomings: "连续流部分仅以 H-Cube Mini Plus（实验室级、电解水现场制氢、低压）验证喹啉/醛加氢，未给出固定床工业放大的床层压降、径向温度分布与放大倍数；缺长期稳定性曲线（数百小时失活、Co 烧结/流失的 ICP 定量）与 WHSV/空速、本征动力学（反应级数、Arrhenius）及内外扩散消除判据；喹啉加氢选择性仅以 1,2,3,4-四氢喹啉收率表示，对深度加氢（十氢喹啉）与副产物的选择性调控未充分展开；SiO2 载体在有机溶剂与较高压力下的长期机械/化学稳定性、Co 浸出与回收经济性未评估；非贵金属 Co 体系对含氮杂芳烃的氮中毒失活仅简要提及，未系统考察。",
+        oneliner: "用放大的 Co-salen 配合物前驱体湿浸渍 SiO2 后可控热解制备稳定易操作的 Co@SiO2 复合催化剂，实现喹啉与醛的选择性多相加氢（喹啉→1,2,3,4-四氢喹啉、醛→伯醇），并在间歇高压釜与 ThalesNano H-Cube 连续流系统（电解水现场制氢）两种模式下验证其良好收率与官能团兼容性，为非贵金属连续流选择性加氢提供可操作的催化剂方案。",
+        keywords: ["连续流", "固定床", "加氢", "喹啉", "钴催化剂", "非贵金属", "选择性", "杂芳烃"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 喹啉加氢 钴催化剂 非贵金属 选择性")
+      }
+    ]
+  },
+  {
     date: "2026-08-31",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
