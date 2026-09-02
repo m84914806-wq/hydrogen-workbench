@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-09-02",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-40413195",
+        title: "Boosting the activity in the liquid-phase hydrogenation of S-containing nitroarenes by dual-site Pt/CeO2 catalysts design",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/40413195/",
+        doi: "https://doi.org/10.1038/s41467-025-59920-x",
+        journal: "Nature Communications (2025), DOI 10.1038/s41467-025-59920-x, open access (PMC12103592)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-09-02",
+        highlights: "直面液相硝基芳烃加氢的工业级痛点——底物自带硫基团（噻唑、苯并噻唑、噻吩）时负载金属纳米颗粒极易中毒失活。作者提出「双活性位」解耦策略：构建高缺陷 CeO2（富活性氧空位 Ov）负载 Pt 亚纳米团簇的 Pt/CeO2 催化剂，让硝基还原发生在载体的氧空位上、而金属 Pt 只承担 H2 解离并通过氢溢流（spillover）把 H 输送到 Ov 位点。由于硫基团的强化学吸附只封堵 Pt 表面、并不抑制 Ov 上的硝基活化，体系天然耐硫。该反常机理由表征、DFT 建模、动力学（NBT 与 H2 反应级数、表观活化能、KIE、H2-D2 交换）与系统中毒实验（poison/substrate=0.3:1，分别以 TZ/BTZ/TP 为毒物）交叉验证。最优 Pt/CeO2-300 反应速率 3.9 mmol·g_cat⁻¹·h⁻¹、5-氨基苯并噻唑选择性 >99%；最贴合本平台的是连续流固定床条件下（1.4 g 催化剂、5 mM 5-硝基苯并噻唑乙醇溶液、5.4 mL·h⁻¹、80 °C、2 MPa H2）连续在线 250 h，累计产出纯 5-氨基苯并噻唑 >145 kg·kg_Pt⁻¹——这是可直接换算为贵金属单耗的产能指标。还量化了 -NO2 基团对 Pt 表面可接近性与活化位点选择的定量关系（大共轭结构更倾向走氧空位路径）。发表于 Nature Communications，全文 OA。",
+        shortcomings: "连续流长周期实验的空速极低：按 5 mM、5.4 mL·h⁻¹、催化剂 1.4 g 折算，进料速率约 0.027 mmol·h⁻¹（约 4.9 mg·h⁻¹），对应 WHSV 仅约 3.5×10⁻³ g_底物·g_cat⁻¹·h⁻¹，单位催化剂产能远低于工业要求，250 h 稳定性是在此极稀、极低负荷下取得，高浓度/高空速下的选择性与失活行为未验证；固定床未给出床层压降、径向温度分布、绝热温升与内外扩散消除判据（Weisz-Prater/Mears），动力学参数主要来自 10 mg 催化剂的间歇釜（3 mL 乙醇、80 °C、2 MPa）而非固定床本征测定；依赖贵金属 Pt，虽给出 145 kg·kg_Pt⁻¹ 但缺 Pt 浸出/团聚的 ICP 定量与再生协议；底物聚焦含硫硝基芳烃（5-硝基苯并噻唑为主）与若干模型硝基化合物，对含卤、含氮杂环及真实工业粗料的普适性与脱卤副反应未展开；高缺陷 CeO2 的氧空位浓度在长周期还原氛围下的演化与批间重现性、规模化制备一致性未评估。",
+        oneliner: "通过在高缺陷 CeO2 上负载 Pt 亚纳米团簇构建「Pt 解离氢 + 氧空位活化硝基」的双活性位催化剂，把硝基还原从易被硫毒化的金属表面转移到载体氧空位、依靠氢溢流供氢，从而实现含硫硝基芳烃的耐硫液相加氢（速率 3.9 mmol·g_cat⁻¹·h⁻¹、选择性 >99%），并在连续流条件下连续运行 250 h 累计产出 >145 kg·kg_Pt⁻¹ 的 5-氨基苯并噻唑，为含硫底物加氢的抗中毒催化剂设计与贵金属单耗核算提供了机理级依据。",
+        keywords: ["连续流", "固定床", "液相加氢", "选择性", "硝基芳烃", "铂催化剂", "氢溢流", "抗硫中毒", "动力学", "催化剂单耗"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 液相加氢 含硫硝基芳烃 铂铈催化剂 氧空位 氢溢流 抗中毒 选择性")
+      },
+      {
+        id: "pmid-41974786",
+        title: "Alkaline-earth-promoted Pd-Ag/Al2O3 for selective acetylene hydrogenation: green-oil mitigation, ethylene selectivity, and implications for hydrogen spillover",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41974786/",
+        doi: "https://doi.org/10.1038/s41598-026-46044-5",
+        journal: "Scientific Reports (2026), DOI 10.1038/s41598-026-46044-5, open access (PMC13269756)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-09-02",
+        highlights: "针对乙烯装置尾端加氢脱除微量乙炔（保护 Ziegler-Natta 聚合催化剂）这一典型工业固定床工况，制备蛋壳型（eggshell）Pd-Ag/θ-Al2O3 球形催化剂（Pd 仅 0.03 wt%、Ag 0.13 wt%），并以 1 wt% 碱土金属（Mg、Ca、Sr）助剂抑制绿油（green oil）生成、提升乙烯选择性。工程价值集中在三点：其一，蛋壳型活性组分分布 + 球形 θ-Al2O3 载体是工业固定床装填的成熟形态，贵金属用量压到 0.03 wt% 量级，直接对应催化剂单耗核算；其二，固定床实测工况明确（10 bar、40–60 °C、H2 预还原），并给出乙炔转化率与乙烯选择性随 time-on-stream 的演化曲线，助剂催化剂全部达到 ≳96% 乙炔转化并同时提高乙烯选择性、降低积碳；其三，用 XRD、N2 物理吸附、H2-TPR、NH3/CO2-TPD、TPO、SEM-EDS、ICP-OES 建立完整构效关系——助剂稳定 θ-Al2O3 相、提高比表面与中孔率、增强金属-载体相互作用，反应后样品的 TPO 与 SEM 对比直接量化绿油/积碳抑制效果。全文 OA（PMC13269756）。",
+        shortcomings: "反应为气相脱除微量乙炔的模型体系（乙烯精制），与本平台关注的含甲醇溶剂中低压液相选择性加氢差异较大；摘要与主图未给出 GHSV/WHSV、床层压降 ΔP、绝热温升与内外扩散消除判据（Weisz-Prater/Mears），难以直接接入本工作台的空速—时空收率—催化剂单耗核算链；time-on-stream 曲线时长有限，缺数百小时级失活曲线与 Pd/Ag 烧结、流失的 ICP 定量及再生协议；氢溢流机制作者本人明确标注为「基于间接证据的定性讨论、未直接验证」（Fig 8 亦注明 not directly verified），机理层面证据强度弱于同方向顶刊工作；转化率停在 ≳96% 而非近全转化，乙烯选择性仅给相对提升、缺绝对值与 C4/乙烷副产物的定量分布；仍依赖贵金属 Pd（虽超低载量）与 Ag，成本-性能权衡、蛋壳层厚度对内扩散的影响以及批间重现性未评估；期刊为 Scientific Reports，影响力弱于同方向顶刊。",
+        oneliner: "用 1 wt% 碱土金属（Mg/Ca/Sr）助剂改性超低载量蛋壳型 Pd-Ag/θ-Al2O3 球形催化剂（Pd 0.03 wt%、Ag 0.13 wt%），在 10 bar、40–60 °C 的固定床中实现乙炔选择性加氢 ≳96% 转化并同步提高乙烯选择性、抑制绿油与积碳，借助剂稳定 θ-Al2O3 相、增大比表面与中孔率并强化金属-载体相互作用，为工业尾端加氢固定床的贵金属减量与绿油治理提供可直接借鉴的催化剂配方与构效依据。",
+        keywords: ["固定床", "选择性加氢", "乙炔", "钯银催化剂", "蛋壳型催化剂", "绿油抑制", "乙烯选择性", "碱土助剂", "积碳", "催化剂单耗"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("固定床 乙炔选择性加氢 钯银催化剂 蛋壳型 绿油 乙烯选择性 碱土助剂")
+      }
+    ]
+  },
+  {
     date: "2026-09-01",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
