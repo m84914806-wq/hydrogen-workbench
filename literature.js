@@ -6,6 +6,42 @@ window.LIT = [
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
       {
+        id: "pmid-41626505",
+        title: "Pilot-Scale Continuous Flow Synthesis of Capsaicinoids and Their Formulation with Cyclodextrins",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/41626505/",
+        doi: "https://doi.org/10.1021/acsomega.5c10910",
+        journal: "ACS Omega (2026), DOI 10.1021/acsomega.5c10910, open access (PMC12854497)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-09-04",
+        highlights: "报道了辣椒素（capsaicin）、二氢辣椒素（dihydrocapsaicin）与壬酰胺（nonivamide）的**首例中试级连续流合成**，采用「肟形成 → 加氢 → N-酰化」连续串联三步工艺，其中加氢工段把香兰素肟（vanillin oxime）等中间体在连续流反应器中还原为香兰胺（vanillylamine，属 C=N/硝基类加氢）。整套工艺在中试规模（pilot-scale）流动装置上完成，并进一步系统研究了辣椒素类与 α/β-环糊精（cyclodextrin）的包合络合（phase-solubility、NMR 主客体 1:1 计量），提升水溶性与安全性。直接对标本平台「连续流 + 放大（中试）+ 多步串联 + 加氢」主线；全文 OA（PMC12854497），工艺可放大路径清晰，对连续流工艺工程参考价值高。",
+        shortcomings: "连续流加氢仅是多步串联中的一环，论文重心在合成路线与环糊精包合制剂，对加氢工段本身的反应器工程数据（催化剂牌号/装填、WHSV、停留时间分布、床层压降、绝热温升、径向温度分布）几乎未展开；底物为香兰素/辣椒素类（食品/香料/药用），与本平台「含甲醇溶剂、含卤/含氮精细化学品硝基加氢」体系差异大；未给出加氢催化剂的长周期失活、金属浸出/烧结与再生协议，也无 WHSV 与本征动力学（反应级数、Arrhenius）及内外扩散消除判据（Weisz-Prater/Mears）；中试装置的真实产能（STY）、催化剂单耗与时空收率未量化；环糊精制剂部分篇幅占比大，反应器放大传热/传质风险未讨论。",
+        oneliner: "在首例中试级连续流装置上以「肟形成 → 加氢 → N-酰化」三步串联合成辣椒素类（capsaicin/dihydrocapsaicin/nonivamide），其中加氢工段将香兰素肟还原为香兰胺，并配套环糊精包合提升水溶性，为连续流多步串联工艺的工程放大与制剂一体化提供可直接借鉴的中试范例。",
+        keywords: ["连续流","中试","放大","加氢","辣椒素","固定床","环糊精","选择性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E4%B8%AD%E8%AF%95%20%E6%94%BE%E5%A4%A7%20%E5%8A%A0%E6%B0%A2%20%E8%BE%A3%E6%A4%92%E7%B4%A0"
+      },
+      {
+        id: "pmid-38660377",
+        title: "Practical Synthesis of 6-Amino-1-hydroxy-2,1-benzoxaborolane: A Key Intermediate of DNDI-6148",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/38660377/",
+        doi: "https://doi.org/10.1021/acs.oprd.4c00031",
+        journal: "Org Process Res Dev (2024), DOI 10.1021/acs.oprd.4c00031, open access (PMC11036395)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-09-04",
+        highlights: "面向抗内脏利什曼病候选药 DNDI-6148 的关键中间体 6-氨基-1-羟基-2,1-苯并氧硼杂环戊烷（6-amino-1-hydroxy-2,1-benzoxaborolane），给出两条由廉价易得原料出发的实用合成路线：① 以 4-甲基苯甲腈经 Hofmann 重排五步（总收率 40%）；② 以 4-硝基甲苯/2-甲基-5-硝基苯胺为起始原料，以**胺基硼酸化（borylation）与连续流加氢**为关键步骤（总收率 46%）。第二条路线因操作条件温和、分离简便而更具可放大性，并实现了 decagram（十克级）规模合成。直接对标本平台「API 连续流加氢 + 放大 + 工艺安全/可放大性」主线；发表于工艺化学顶刊 Org Process Res Dev，全文 OA（PMC11036395）。",
+        shortcomings: "连续流加氢仅作为合成路线中的一步，论文重心在路线经济性与可放大性比较，对加氢工段的反应器工程细节（催化剂牌号/装填方式、WHSV、停留时间、床层压降、绝热温升、温升控制）未充分展开；底物为硼杂芳环硝基化合物（4-硝基甲苯、2-甲基-5-硝基苯胺），与本平台「含甲醇溶剂、含卤/含氮精细化学品选择性加氢」体系不同；未提供加氢本征动力学（反应级数、Arrhenius）与选择性机理、长周期失活/再生及贵金属单耗；OPRD 文章偏工艺路线层面，缺少固定床反应器工程级数据与催化剂寿命曲线；decagram 规模虽具说服力，但未给单位催化剂产能（STY）与时空收率核算。",
+        oneliner: "为抗利什曼病药 DNDI-6148 的关键中间体开发了以「胺基硼酸化 + 连续流加氢」为核心步骤的实用可放大路线（44–46% 总收率、十克级合成），以温和操作与易分离取代难以放大的硝化步骤，是 API 连续流加氢对接工艺放大与工艺安全主线的高质量范例。",
+        keywords: ["连续流","加氢","原料药","中间体","放大","工艺化学","硝基","选择性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%8A%A0%E6%B0%A2%20%E5%8E%9F%E6%96%99%E8%8D%AF%20%E4%B8%AD%E9%97%B4%E4%BD%93%20%E6%94%BE%E5%A4%A7"
+      }
+    ]
+  },
+  {
+    date: "2026-09-04",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
         id: "pmid-40490157",
         title: "Fast and continuous synthesis of biobased adipic acid in micropacked-bed reactors",
         pubmed: "https://pubmed.ncbi.nlm.nih.gov/40490157/",
