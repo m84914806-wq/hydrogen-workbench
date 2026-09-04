@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    date: "2026-09-04",
+    note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    articles: [
+      {
+        id: "pmid-40490157",
+        title: "Fast and continuous synthesis of biobased adipic acid in micropacked-bed reactors",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/40490157/",
+        doi: "https://doi.org/10.1016/j.biortech.2025.132782",
+        journal: "Bioresource Technology (2025), 434, 132782, DOI 10.1016/j.biortech.2025.132782 (Elsevier)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-09-04",
+        highlights: "在微填充床反应器（micropacked-bed reactor）中以 Ni/Al2O3 非贵金属催化剂实现顺,顺-粘康酸（cis,cis-muconic acid，生物质路线制得）加氢制生物基己二酸，直接对标本平台「微填充床 + 连续流 + 非贵金属 + 选择性加氢 + 时空收率」主线。先在间歇釜系统筛选：以粘康酸钠水溶液（170 g/L）为底物取得 99.4% 收率；进而在微填充床连续流中仅 110 s 停留时间、100 g/L 初始浓度下即取得 99.9% 收率，时空收率（STY）高达 21.0 mg·min⁻¹·mL⁻¹，比 Pd（0.178）或 Pt（0.0044）催化剂高 2–4 个数量级——说明用廉价 Ni 替代贵金属在微反应器中可同时实现高收率与极高体积产能。高底物浓度（100–170 g/L 水相）直接对应工业级进料负荷，避免了文献常用「有机溶剂 + 低浓度」导致效率与成本双低的痛点；全文围绕微反应器连续制造，给出催化剂筛选与工况（温度/压力/浓度/停留时间）影响，工程参考价值高。发表于 Bioresource Technology。",
+        shortcomings: "反应为顺,顺-粘康酸→己二酸这一单一 C=C 还原（生物基二元酸加氢），并非本平台关注的含甲醇溶剂、含卤/含氮原料的中低压选择性加氢，水相/碱性钠盐体系与有机溶剂-甲醇路线差异大；Ni/Al2O3 虽廉价，但论文未给出床层压降、径向温度分布、绝热温升与放大传热数据，微填充床放大的颗粒装填均一性与压降演化未展开；长期稳定性以「110 s 停留、100 g/L」窗口下的高收率展示，缺数百小时级失活曲线、Ni 烧结/流失（ICP 定量）与 Al2O3 水热稳定性数据；未给 WHSV/空速与本征动力学（反应级数、Arrhenius）及内外扩散消除判据（Weisz-Prater/Mears）；顺,顺-粘康酸水溶液中杂质（蛋白、色素、盐）对 Ni 催化剂的中毒与催化剂再生协议未评估；间歇阶段 170 g/L 与连续阶段 100 g/L 浓度下的传质差异、以及对真实发酵液粗提物的普适性未考察。",
+        oneliner: "用 Ni/Al2O3 非贵金属催化剂配合微填充床反应器实现顺,顺-粘康酸水相加氢制生物基己二酸，在 100 g/L 初始浓度、110 s 停留时间下取得 99.9% 收率、时空收率高达 21.0 mg·min⁻¹·mL⁻¹（较 Pd/Pt 催化剂高 2–4 个数量级），以廉价金属 + 微反应器连续流同时突破贵金属成本与水相高浓度高效的双重瓶颈，为连续流微填充床加氢的时空收率与催化剂经济性核算提供可直接复用的数据。",
+        keywords: ["微填充床", "连续流", "加氢", "己二酸", "生物基", "镍催化剂", "时空收率", "非贵金属", "选择性"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 微填充床 加氢 生物基己二酸 镍催化剂 时空收率")
+      },
+      {
+        id: "pmid-40861945",
+        title: "Enhanced catalytic performance of transition metal-doped Co/TiO2 for continuous-flow synthesis of borneol from isoborneol",
+        pubmed: "https://pubmed.ncbi.nlm.nih.gov/40861945/",
+        doi: "https://doi.org/10.1039/d5ra03723a",
+        journal: "RSC Advances (2025), DOI 10.1039/d5ra03723a, open access (PMC12376841)",
+        verified: true,
+        verifiedLinkType: "pubmed",
+        verifiedAt: "2026-09-04",
+        highlights: "提出 Cu/Ni 共掺杂 Co/TiO2 双金属催化剂，用于龙脑（borneol，重要药用单萜）的连续流两段式生产：第一段异龙脑（isoborneol）异构化为龙脑、第二段樟脑（camphor）选择性加氢回补龙脑。最关键的是整套工艺在连续流固定床（两阶段串联）中运行，并明确以 WHSV（质量空速）作为核心工况参数：异构段 160 °C、5.5 MPa H2、WHSV 4.2 h⁻¹，加氢段 90 °C、5.5 MPa H2、WHSV 3.0 h⁻¹（低温段为防龙脑在正庚烷中析出堵管维持 2.4 h⁻¹）；优化 1Cu-3Co/TiO2（Cu:Co=1:3 质量比）在总 200 h 连续反应后金属保留率 >99%，樟脑副产物 <0.4%。直接对标本平台「连续流 + 选择性加氢 + WHSV + 非贵金属 + 长周期稳定性 + 放大」主线，且含 H2-TPR、HAADF-STEM、EDS、XPS 完整构效表征与条件扫描（温度/压力/浓度/空速），全文 OA（PMC12376841）。",
+        shortcomings: "主反应为异龙脑→龙脑的异构化（脱氢-加氢平衡），并非纯粹的选择性加氢，真正的加氢段仅是把副产樟脑加氢回异龙脑/龙脑，反应体系（正庚烷溶剂、3–5.5 MPa、160 °C）偏石化/香料路线，与本平台含甲醇溶剂、中低压精细化学品选择性加氢差异较大；虽给出 WHSV，但缺床层压降、绝热温升、径向温度分布与放大传热/传质（Weisz-Prater/Mears）判据，从实验室 25.5 g 催化剂柱床到工业放大的压降与热点未论证；200 h 稳定性以金属保留率 >99% 表征，但缺催化剂比表面/孔结构演化、Co/Cu 价态变化的失活动力学与再生协议；龙脑收率 58%（摩尔）仍受平衡限制，未给出突破热力学平衡的工程手段；依赖 Co 基非贵金属虽降本，但正庚烷溶剂的回收、安全与 VOC 排放及与含水/甲醇体系的切换成本未评估；期刊为 RSC Advances，影响力弱于同方向顶刊。",
+        oneliner: "用 Cu/Ni 共掺杂 Co/TiO2 双金属催化剂在连续流两段式固定床（异龙脑异构化 + 樟脑选择性加氢）中生产药用龙脑，以 WHSV 为核心工况参数（异构段 4.2 h⁻¹、加氢段 3.0 h⁻¹、5.5 MPa H2）取得 58% 龙脑摩尔收率、樟脑副产物 <0.4%，并在总 200 h 连续运行后金属保留率 >99%，为非贵金属连续流加氢/异构平台的空速控制与长周期稳定性提供可直接借鉴的范例。",
+        keywords: ["连续流", "固定床", "加氢", "龙脑", "异龙脑", "钴催化剂", "空速", "选择性", "催化剂稳定性", "非贵金属"],
+        wechat: "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 加氢 龙脑 异龙脑 钴催化剂 空速 选择性")
+      }
+    ]
+  },
+  {
     date: "2026-09-02",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
