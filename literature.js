@@ -2,6 +2,61 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    "date": "2026-09-07",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-39804259",
+        "title": "Intermetallic RNi2Si2 (R = Ca, La, and Y) Catalysts with Electron-Rich Ni Sites for Continuous Flow Selective Hydrogenation of Maleic Anhydride",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39804259/",
+        "doi": "https://doi.org/10.1021/acsami.4c15049",
+        "journal": "ACS Applied Materials & Interfaces (2025), 17(4) 6175-6187, DOI 10.1021/acsami.4c15049 (PubMed-not-MEDLINE, 非 OA)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-07",
+        "highlights": "报道非贵金属金属间化合物 RNi2Si2（R = Ca、La、Y）硅化物催化剂，在连续流固定床反应器中实现马来酸酐（MA）选择性加氢制 γ-丁内酯（GBL）；同为四方结构的 CaNi2Si2 因 Ni 位点完全隔离且电子密度最高，表观活化能仅 98.4 kJ/mol，并借助 Ca 的高氧亲和力优先吸附琥珀酸酐中间体 C=O 键，GBL 化学选择性 >80%；硅化物抗烧结、抗酸腐蚀，连续运行至少 130 h 无明显失活。直接对标本平台「非贵金属催化剂 + 连续流固定床 + 选择性加氢 + 长周期稳定性」主线；全文方法-结果清晰，催化剂量级、工况（温度/压力/空速/停留）与稳定性曲线完整，工程参考价值高。",
+        "shortcomings": "反应为 MA→GBL 单一 C=O 选择性加氢（非本平台关注的含甲醇溶剂、含卤/含氮精细化学品硝基加氢体系），底物与溶剂体系差异大；论文未给出床层压降、径向温度分布、绝热温升与放大传热数据，也未量化 WHSV/空速、本征动力学（反应级数、Arrhenius）及内外扩散消除判据（Weisz-Prater/Mears）；130 h 稳定性虽长，但缺数百小时级失活曲线、Ni 流失（ICP 定量）与催化剂再生协议；未给单位催化剂产能（STY）与贵金属/非贵金属单耗核算；非 OA（PubMed-not-MEDLINE），全文获取需订阅。",
+        "oneliner": "以非贵金属 CaNi2Si2 硅化物为催化剂在连续流固定床反应器中实现马来酸酐高选择性加氢制 γ-丁内酯（化学选择性 >80%、连续运行 ≥130 h 抗烧结抗酸蚀），用电子富集的隔离 Ni 位点兼顾活性与稳定性，为连续流固定床非贵金属选择性加氢催化剂与长周期稳定运行提供可直接借鉴的数据。",
+        "keywords": [
+          "连续流",
+          "固定床",
+          "加氢",
+          "马来酸酐",
+          "选择性",
+          "催化剂",
+          "γ-丁内酯",
+          "非贵金属"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E9%A9%AC%E6%9D%A5%E9%85%B8%E9%85%90%20%E5%8A%A0%E6%B0%A2%20%E9%80%89%E6%8B%A9%E6%80%A7%20%E5%82%AC%E5%8C%96%E5%89%82"
+      },
+      {
+        "id": "pmid-39421637",
+        "title": "Automated Optimization of a Multistep, Multiphase Continuous Flow Process for Pharmaceutical Synthesis",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39421637/",
+        "doi": "https://doi.org/10.1021/acssuschemeng.4c05015",
+        "journal": "ACS Sustainable Chemistry & Engineering (2024), DOI 10.1021/acssuschemeng.4c05015, open access (PMC11481092)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-07",
+        "highlights": "报道以远程自动化贝叶斯优化开发对乙酰氨基酚（paracetamol）的多步多相连续流工艺：第一步为三相非均相催化加氢（填充床反应器，packed bed reactor，4-硝基苯酚→4-氨基苯酚），第二步为均相酰胺化（加热盘管反应器），两步串联（telescoping）并以 2-MeTHF 为绿色溶剂、纯氢气为试剂；以远程自动化控制 + HPLC 在线分析 + 贝叶斯优化算法在最少实验次数内同步优化单步与串联总产率，并显著降低过程质量强度（PMI）。直接对标本平台「连续流固定床加氢 + 多步串联 + 工艺放大/自动化优化 + 绿色溶剂」主线；全文 OA（PMC11481092），Scheme 1 明确给出填充床反应器与串联装置示意图，工艺工程与放大参考价值极高。",
+        "shortcomings": "加氢反应本身（4-硝基苯酚→4-氨基苯酚）仅为两步串联中的第一工段，论文重心在自动化/贝叶斯优化方法与串联工艺开发，对加氢催化剂牌号/装填、WHSV、停留时间分布、床层压降、绝热温升、径向温度分布等反应器工程数据未充分展开；底物为对硝基苯酚（绿色溶剂 2-MeTHF），与本平台「含甲醇溶剂、含卤/含氮精细化学品选择性加氢」体系不同；未提供加氢本征动力学（反应级数、Arrhenius）与长周期失活/再生及贵金属单耗；优化目标为总收率与 PMI，未量化 STY 与催化剂时空收率；酰胺化第二步为均相反应，整体虽为连续流但加氢工段的独立反应器级数据有限。",
+        "oneliner": "以远程自动化贝叶斯优化开发「填充床非均相加氢（4-硝基苯酚→4-氨基苯酚）+ 盘管均相酰胺化」串联的对乙酰氨基酚连续流工艺，用最少实验次数同步优化单步与总产率并显著降低过程质量强度，是连续流固定床加氢对接多步串联、自动化工艺开发与绿色放大主线的高质量范例（全文 OA）。",
+        "keywords": [
+          "连续流",
+          "固定床",
+          "加氢",
+          "对乙酰氨基酚",
+          "自动化",
+          "工艺优化",
+          "放大",
+          "绿色溶剂"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20%E5%AF%B9%E4%B9%99%E9%85%B0%E6%B0%A8%E5%9F%BA%E9%85%9A%20%E8%87%AA%E5%8A%A8%E5%8C%96%20%E5%B7%A5%E8%89%BA%E4%BC%98%E5%8C%96"
+      }
+    ]
+  },
+
+  {
     date: "2026-09-04",
     note: "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     articles: [
