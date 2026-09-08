@@ -2,6 +2,60 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    "date": "2026-09-08",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-40322260",
+        "title": "Kinetic study on the hydrogenation of dimethyl succinate to γ-butyrolactone",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40322260/",
+        "doi": "https://doi.org/10.1039/d5ra01226k",
+        "journal": "RSC Advances (2025), 15(18) 14307-14314, DOI 10.1039/d5ra01226k, open access (PMC12046981)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-08",
+        "highlights": "报道以自研铜基催化剂在微固定床反应器（micro-fixed bed）中系统研究琥珀酸二甲酯（DMS）加氢制 γ-丁内酯（GBL）：考察温度（210–230 °C）、压力、氢酯比对反应性能的影响，并基于实验数据建立本征动力学模型（回归得到速率常数与活化能），模型与实验吻合且经敏感性分析验证稳健；Fig 6 专门给出外扩散影响判定，确认已消除传质限制。全文 OA（PMC12046981），含装置示意图与动力学拟合曲线，方法-结果清晰，动力学参数可直接用于连续流固定床加氢的 WHSV/时空收率核算与放大。直接对标本平台「微固定床 + 本征动力学 + 选择性加氢 + 长周期稳定」主线。",
+        "shortcomings": "底物为二酯 DMS→GBL 的 C=O/C–O 加氢，非本平台关注的含甲醇溶剂、含卤/含氮精细化学品硝基加氢体系，溶剂与产物类别差异大；论文未给出床层压降、径向/轴向温度分布、绝热温升与放大传热数据，也未直接量化 WHSV/空速数值（需自行由数据推算），缺数百小时级失活曲线、催化剂再生协议与贵金属/非贵金属单耗（STY）核算；虽有外扩散消除判据，但未给出 Weisz-Prater/Mears 内扩散判据或本征动力学反应级数、Arrhenius 活化能的完整表达式；微固定床规模小，放大到工业固定床的传热/传质放大关联需另行建立。",
+        "oneliner": "以自研铜基催化剂在微固定床反应器中系统研究琥珀酸二甲酯加氢制 γ-丁内酯，建立经实验验证的本征动力学模型（含温度/压力/氢酯比影响与外扩散消除判据），为连续流固定床加氢的 WHSV/时空收率核算与放大提供可直接复用的动力学参数（全文 OA）。",
+        "keywords": [
+          "连续流",
+          "固定床",
+          "加氢",
+          "动力学",
+          "微固定床",
+          "选择性",
+          "γ-丁内酯",
+          "铜催化剂"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E7%90%A5%E7%8F%80%E9%85%B8%E4%BA%8C%E7%94%B2%E9%85%AF%20%E5%8A%A0%E6%B0%A2%20%CE%B3-%E4%B8%81%E5%86%85%E9%85%AF%20%E5%8A%A8%E5%8A%9B%E5%AD%A6%20%E5%BE%AE%E5%9B%BA%E5%AE%9A%E5%BA%8A%E5%8F%8D%E5%BA%94%E5%99%A8"
+      },
+      {
+        "id": "pmid-40321557",
+        "title": "Molecular-Level Insights into the Reaction Mechanisms of Reductive Etherification for the Production of Synthetic Biofuels",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40321557/",
+        "doi": "https://doi.org/10.1021/acsomega.4c09698",
+        "journal": "ACS Omega (2025), DOI 10.1021/acsomega.4c09698, open access (PMC12044437)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-08",
+        "highlights": "报道 Pd/NbOPO4 填充床（packed-bed）反应器中正丁醇与 4-庚酮还原醚化制 4-丁氧基庚烷（生物燃料醚）：明确给出 WHSV = 13 gFeed·gCat⁻¹·h⁻¹（可直接对标本平台 WHSV/空速模块），工况 200 °C、总压 70 bar、氢分压 54.4 bar、催化剂装量 0.20 g；通过实验 + DFT 阐明反应经载体上的烯醇中间体、再在 Pd 低指数平台位（111)/(100) 加氢的路径，并揭示反应速率随 Pd 粒径增大而升高的粒径效应。全文 OA（PMC12044437），含 WHSV/选择性/速率随粒径变化曲线与势能面。直接对标本平台「填充床 + WHSV + 氢压 + 催化剂粒径效应 + 机理」反应器工程主线。",
+        "shortcomings": "底物为生物质醇/酮的还原醚化（生物燃料醚），非本平台含甲醇溶剂、含卤/含氮精细化学品硝基选择性加氢体系，溶剂与产物类别差异大；研究重心在机理与 Pd 粒径效应，未给出床层压降、径向/轴向温度分布、绝热温升与放大传热数据，无长周期失活曲线、再生协议与催化剂单耗（STY）核算；氢分压高达 54.4 bar、200 °C，操作窗口远宽于精细化学品温和加氢，直接类比受限；石油/生物燃料背景，与药物 API 连续流加氢放大关联较弱；未量化内扩散（Weisz-Prater）消除判据，仅给出 WHSV 与速率趋势。",
+        "oneliner": "以 Pd/NbOPO4 填充床反应器实现正丁醇与 4-庚酮还原醚化制生物燃料醚，明确给出 WHSV = 13 gFeed·gCat⁻¹·h⁻¹ 并结合同位素/DFT 阐明烯醇中间体在 Pd 平台位加氢的路径，是连续流填充床加氢中 WHSV/空速/氢压/催化剂粒径效应与机理研究的高质量范例（全文 OA）。",
+        "keywords": [
+          "连续流",
+          "填充床",
+          "加氢",
+          "还原醚化",
+          "钯催化剂",
+          "WHSV",
+          "生物燃料",
+          "本征动力学"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%A1%AB%E5%85%85%E5%BA%8A%20%E8%BF%98%E5%8E%9F%E9%86%9A%E5%8C%96%20%E9%92%AF%20%E5%8A%A0%E6%B0%A2%20WHSV%20%E7%94%9F%E7%89%A9%E7%87%83%E6%96%99"
+      }
+    ]
+  },
+  {
     "date": "2026-09-07",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     "articles": [
