@@ -2,6 +2,60 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    "date": "2026-09-09",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-40060796",
+        "title": "Insight into the Nature of Nickel Active Sites on the NiAl2O4 Catalyst for Phenanthrene Hydrogenation Saturation",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40060796/",
+        "doi": "https://doi.org/10.1021/acsomega.4c10121",
+        "journal": "ACS Omega (2025), 10(8) 8303-8313, DOI 10.1021/acsomega.4c10121, open access (PMC11886640)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-09",
+        "highlights": "用溶胶-凝胶法制备尖晶石型 NiAl2O4 作为镍前驱体（而非常规浸渍 Ni/Al2O3），在 300 °C、5 MPa、WHSV = 0.52 h⁻¹ 的连续加氢工况下实现菲加氢饱和：转化率 99.7%、全氢菲（perhydrophenanthrene）收率 93.9%，显著优于传统 Ni/Al2O3 的 96.8% / 77.3%；TOF 由 2.46×10⁻³ s⁻¹ 提升至 3.01×10⁻³ s⁻¹。H2-TPR/H2-TPD、NH3-TPD、XPS 联合表征将性能提升归因于更强的 H2 吸附解离能力与缺电子态 Ni 物种（有利于多环芳烃吸附活化），并用反应后 XRD/TEM/XPS/TG 追踪了积碳与颗粒变化。全文 OA（PMC11886640），最大价值在于直接以质量空速 WHSV（h⁻¹）报告工况，与本平台按 WHSV 核算时空收率、催化剂单耗的口径完全一致，且属非贵金属体系，可用于贵金属替代与催化剂成本对比。",
+        "shortcomings": "摘要未明写反应器构型（未出现 fixed-bed / trickle-bed 字样），固定床装置尺寸、床层高径比与颗粒粒径需查正文确认；仅报告单一 WHSV = 0.52 h⁻¹ 工作点，未做空速扫描，也未建立本征动力学（无反应级数、Arrhenius 活化能、Weisz-Prater / Mears 内外扩散判据）；不含床层压降、径向/轴向温度分布与绝热温升数据，无法直接支撑放大传热与压降核算；稳定性仅在反应时间尺度上给出产物分布演化，缺数百小时级失活曲线与再生协议；底物为煤焦油多环芳烃的深度加氢（300 °C / 5 MPa 苛刻工况），与本平台含甲醇溶剂、常温中压的精细化学品硝基加氢差异大；催化剂单耗与氢耗经济性未核算。",
+        "oneliner": "以溶胶-凝胶尖晶石 NiAl2O4 衍生的缺电子 Ni 活性位，在 300 °C / 5 MPa / WHSV 0.52 h⁻¹ 下把菲加氢饱和推到 99.7% 转化、93.9% 全氢菲收率并优于传统 Ni/Al2O3，用 H2-TPD/XPS 证明活性来源于更强的氢解离与缺电子 Ni，为非贵金属固定床加氢提供了可按 WHSV 直接对标的性能基准（全文 OA）。",
+        "keywords": [
+          "固定床",
+          "加氢",
+          "WHSV",
+          "质量空速",
+          "镍催化剂",
+          "非贵金属",
+          "多环芳烃",
+          "转化率"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20WHSV%20%E8%B4%A8%E9%87%8F%E7%A9%BA%E9%80%9F%20%E9%95%8D%E5%82%AC%E5%8C%96%E5%89%82%20%E8%8F%B2%E5%8A%A0%E6%B0%A2%E9%A5%B1%E5%92%8C%20NiAl2O4"
+      },
+      {
+        "id": "pmid-40079318",
+        "title": "Catalytic Production of Aromatic Amines from Nitroaromatics-Addressing a Critical Challenge in Environmental Remediation",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40079318/",
+        "doi": "https://doi.org/10.1002/chem.202500281",
+        "journal": "Chemistry - A European Journal (2025), Apr, DOI 10.1002/chem.202500281, Review, 非 OA（Wiley 全文）",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-09",
+        "highlights": "系统综述硝基芳烃（NACs）连续流加氢制芳胺的全链条，正是本平台主线工艺的专题总结：明确以流动模式相对间歇釜在效率、可放大性与本质安全上的优势为主轴；专门一节比较填充床（packed-bed）与微反应器等流动反应器构型在强化传热/传质上的取舍；系统梳理双金属纳米颗粒、金属有机框架（MOF）等催化材料对稳定性与选择性的改善路径；并讨论反应动力学与传质速率的控制因素、催化剂失活机理，以及放大到工业规模时反应器设计的复杂性；末尾展望光催化/生物催化混合体系。收录 212 篇参考文献，可当作硝基加氢固定床选型与文献索引直接使用。",
+        "shortcomings": "综述性质、无原创实验数据，无法直接取用具体的 WHSV、床层压降、绝热温升或催化剂单耗数值，只能作选型与机理层面的参考；未提出统一的放大关联式或压降/传热计算范式；对气液固三相滴流床的水力学（持液量、润湿效率、Ergun 压降、脉动流边界）讨论有限，对本平台压降模块支撑偏弱；缺少氢气成本、催化剂寿命与单耗等经济性核算；对光催化/生物催化混合体系的展望与工业固定床加氢的工程相关性较弱；期刊全文非 OA，需机构订阅（PubMed 页可正常打开摘要与关键词）。",
+        "oneliner": "一篇聚焦硝基芳烃连续流加氢制芳胺的系统综述，横向比较填充床与微反应器等流动反应器构型的传热传质取舍、双金属与 MOF 催化材料的稳定性/选择性策略，并点明催化剂失活与放大反应器设计是当前主要瓶颈，可作为固定床硝基加氢选型与放大的文献索引。",
+        "keywords": [
+          "硝基芳烃",
+          "加氢",
+          "填充床",
+          "微反应器",
+          "反应器设计",
+          "传质",
+          "放大",
+          "催化剂失活"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E7%A1%9D%E5%9F%BA%E8%8A%B3%E7%83%83%20%E5%8A%A0%E6%B0%A2%20%E8%8A%B3%E8%83%BA%20%E5%A1%AB%E5%85%85%E5%BA%8A%20%E5%BE%AE%E5%8F%8D%E5%BA%94%E5%99%A8%20%E5%8F%8D%E5%BA%94%E5%99%A8%E8%AE%BE%E8%AE%A1%20%E6%94%BE%E5%A4%A7"
+      }
+    ]
+  },
+  {
     "date": "2026-09-08",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     "articles": [
