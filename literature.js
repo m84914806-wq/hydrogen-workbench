@@ -2,6 +2,60 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    "date": "2026-09-10",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-42712789",
+        "title": "Space-velocity-governed chemoselective pseudo-oxidation: a convergent flow platform for the synthesis of evocalcet",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42712789/",
+        "doi": "https://doi.org/10.1039/d6ra06640b",
+        "journal": "RSC Advances (2026), DOI 10.1039/d6ra06640b, open access (PMC13551264)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-10",
+        "highlights": "东京大学小林（Kobayashi）团队报道「全氢介导（hydrogen-mediated）连续流」合成钙受体激动剂 evocalcet 的平台，核心创新是把摩尔基准空间速度（SV, h⁻¹）当作可编程的化学选择性旋钮：在高 SV 下（如 22 h⁻¹）酚衍生物选择性部分加氢得到环己酮、Cbz 脱保护不伤苄位；低 SV 下避免过度加氢/过氧化。关键脱水脱氢 N-芳基化用 DMPSi-Pd(II)/AC-CP(1) 催化剂（Pd 载于活性炭，预填纤维素/分子筛层），最高 90% 收率；三段氢介导转化串联得到 evocalcet 甲酯 79%，水解得高纯 evocalcet。全文 OA（PMC13551264），最大价值在于把「空间速度 SV 比停留时间 τ 更能决定流动反应化学选择性」量化，并直接以 SV（h⁻¹）报告工况——与本平台按 WHSV/空间速度核算时空收率与选择性的口径完全吻合，且属 Pd/活性炭固定床式流动反应器、直接对标连续流 API 合成与放大主线。",
+        "shortcomings": "反应为氢介导的氧化还原（含 N-芳基化「伪氧化」与部分加氢、Cbz 脱保护），并非经典硝基/烯烃气相加氢，与本平台含甲醇溶剂的精细化学品氢化直接对标性略弱；催化剂为 Pd/活性炭（贵金属），未给出床层压降、轴向/径向温度分布与绝热温升，也无 WHSV 与催化剂单耗的经济性核算；虽以 SV（h⁻¹）报告，但底物浓度低（0.01–0.09 M）、停留仅数分钟，属毫摩尔级流动合成而非工业吨级，放大到本平台 1000 t/a 仍需外推；未报告数百小时级失活与再生，催化剂寿命未知；SV 主导选择性的微观机制（传质/吸附竞争）主要靠经验趋势，缺严格本征动力学模型。",
+        "oneliner": "以摩尔基准空间速度 SV（h⁻¹）作为可编程化学选择性旋钮，在 Pd/活性炭氢介导连续流平台上实现 evocalcet 的三段串联合成（N-芳基化 90%、部分加氢制环己酮、Cbz 脱保护），证明 SV 比停留时间更能决定流动反应选择性，为非贵金属固定床连续流 API 合成与 WHSV/选择性放大提供了直接对标案例（全文 OA）。",
+        "keywords": [
+          "连续流",
+          "加氢",
+          "空间速度",
+          "选择性",
+          "钯催化剂",
+          "药物合成",
+          "放大",
+          "流动反应器"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%8A%A0%E6%B0%A2%20%E7%A9%BA%E9%97%B4%E9%80%9F%E5%BA%A6%20%E9%80%89%E6%8B%A9%E6%80%A7%20%E9%92%AF%E5%82%AC%E5%8C%96%E5%89%82%20%E8%8D%AF%E7%89%A9%E5%90%88%E6%88%90%20evocalcet"
+      },
+      {
+        "id": "pmid-42358712",
+        "title": "From Batch to Continuous Operation: Hydrogenation of Bicarbonate to Formate at Multiphase Boundaries in a Continuous Stirred-Tank Reactor",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42358712/",
+        "doi": "https://doi.org/10.1021/jacsau.6c00388",
+        "journal": "JACS Au (2026), 6(6) 3386-3393, DOI 10.1021/jacsau.6c00388, open access (PMC13292002)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-10",
+        "highlights": "东京工业大学 Urakawa 团队把碳酸氢盐（KHCO₃，由 CO₂ 制得）三相（气-液-液）加氢制甲酸盐从间歇推向连续搅拌釜（CSTR）操作：50 bar H₂、Ru 配合物催化剂、用视窗釜优化搅拌保证高效混合；建立「慢反应 regime + 逆反应」动力学模型，准确预测停留时间-收率关系并通过停留时间优化拿到高甲酸盐收率；加入抗氧化剂三(2,4-二叔丁基苯基)亚磷酸酯抑制残留氧污染（流动体系常见难题）；催化剂循环与相分离成功集成进流动装置，证明工艺可行性与可放大性。全文 OA（PMC13292002），价值在于「批→连续」的转化范式与 CSTR 停留时间/动力学/混合工程，对连续加氢的放大与过程强化有方法论参考。",
+        "shortcomings": "为均相 Ru 配合物催化（非本平台关注的固定床非均相催化），且反应器为连续搅拌釜 CSTR（非填充床/固定床），与本平台气固液固定床硝基加氢的直接对标性有限；底物是 CO₂ 衍生的碳酸氢盐制甲酸盐（氢载体/燃料），非精细化学品选择性加氢；催化剂为贵金属均相配合物，单耗与成本口径不同于非贵金属固定床；未涉及床层压降、绝热温升、WHSV 等本平台核心模块；50 bar 高压、三相体系混合与传质复杂，放大到工业固定床仍需额外工程。适合作为「连续操作/动力学建模/放大」方法论的横向参考，而非直接数值对标。",
+        "oneliner": "将 KHCO₃ 三相 Ru 催化加氢制甲酸盐从间歇转为连续搅拌釜（CSTR）操作，建立含逆反应的动力学模型以通过停留时间优化收率，并把催化剂循环与相分离集成进流动装置，示范了「批→连续」加氢的放大路径（全文 OA），可作为连续加氢过程强化与动力学建模的方法论参考。",
+        "keywords": [
+          "连续流",
+          "加氢",
+          "连续搅拌釜",
+          "动力学模型",
+          "停留时间",
+          "放大",
+          "催化剂循环",
+          "二氧化碳利用"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%8A%A0%E6%B0%A2%20%E8%BF%9E%E7%BB%AD%E6%90%85%E6%8B%8C%E9%87%9C%20%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B%20%E5%81%9C%E7%95%99%E6%97%B6%E9%97%B4%20%E6%94%BE%E5%A4%A7%20%E5%82%AC%E5%8C%96%E5%89%82%E5%BE%AA%E7%8E%AF%20%E4%BA%8C%E6%B0%A7%E5%8C%96%E7%A2%B3%E5%88%A9%E7%94%A8"
+      }
+    ]
+  },
+  {
     "date": "2026-09-09",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     "articles": [
