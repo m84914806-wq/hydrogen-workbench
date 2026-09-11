@@ -2,6 +2,42 @@
 // window.LIT: 数组，按日期倒序；每天 2 篇高质量文献，链接均经检索确认可打开。
 window.LIT = [
   {
+    "date": "2026-09-11",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-39748105",
+        "title": "MIL-53(Al)-derived bimetallic Pd-Co catalysts for the selective hydrogenation of 1,3-butadiene at low temperature",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39748105/",
+        "doi": "https://doi.org/10.1038/s41598-024-84707-3",
+        "journal": "Scientific Reports (2025), DOI 10.1038/s41598-024-84707-3, open access (PMC11695626)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-11",
+        "highlights": "以 MIL-53(Al) 金属有机框架为铝源前驱体、经 500–800 °C 不同温度衍生出高比表面 Al2O3，再用共浸渍法负载 Pd–Co 双金属纳米颗粒（8.5–12.4 nm 高度分散），在固定床流动反应器（20 mL/min 1,3-丁二烯/N2 + 10 mL/min H2）中评价低温（40 °C）1,3-丁二烯选择性加氢制丁烯。系统考察温度、Pd/Co 含量、空速（space velocity，最优 900 L/(h·gcat)）与煅烧温度的影响，PdCo/MIL-53(Al)-A700 借助 Pd–Co 协同作用显著优于单金属 Pd；并给出 147 h 在线稳定性（反应后 XRD/TEM 表征）与 200 °C N2 流中三次再生后活性/选择性保持。全文 OA（PMC11695626），核心贡献是「MOF 衍生载体 + 双金属协同 + 固定床空速/稳定性/再生」，直接对标本平台选择性加氢 + 催化剂稳定性 + 空速主线，且 1,3-丁二烯加氢与乙炔/炔烃选择性加氢同属工业固定床净化场景。",
+        "shortcomings": "反应为 1,3-丁二烯→丁烯这一气相选择性加氢（乙烯裂解装置尾端净化），与本平台含甲醇溶剂、中低压液相精细化学品选择性加氢体系差异大；虽报告空速 900 L/(h·gcat)（体积空速 GHSV 口径），但未给出质量空速 WHSV（g/g/h）与 LHSV，直接对接本平台 WHSV 时空收率需换算；缺床层压降、径向温度分布、绝热温升与放大传热数据，以及内/外扩散消除判据（Weisz-Prater/Mears）；147 h 稳定性以实验室 5 mg 催化剂小柱取得，缺工业级装量下的长周期与压降演化、积碳/烧结 ICP 定量；双金属 Pd–Co 仍含贵金属 Pd，成本与回收未评估；丁烯位置选择性（1-丁烯 vs 顺/反-2-丁烯）仅以「总丁烯选择性」报告，未给各异构体收率。",
+        "oneliner": "以 MIL-53(Al) MOF 衍生 Al2O3 为载体共浸渍负载 Pd–Co 双金属纳米颗粒，在固定床流动反应器中于 40 °C、空速 900 L/(h·gcat) 实现 1,3-丁二烯高选择性加氢制丁烯，借助 Pd–Co 协同显著优于单金属 Pd，并展示 147 h 在线稳定性与三次再生后活性保持，为工业固定床选择性加氢的 MOF 衍生载体设计与长周期稳定提供可直接借鉴的范例（全文 OA）。",
+        "keywords": ["连续流", "固定床", "选择性加氢", "1,3-丁二烯", "钯钴双金属", "空间速度", "催化剂稳定性", "再生"],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 选择性加氢 1,3-丁二烯 钯钴双金属 空间速度 催化剂稳定性 再生")
+      },
+      {
+        "id": "pmid-39126808",
+        "title": "Mechanistic insights on the preparation of 5-methyl-2-hexanone by hydrogenation of 5-methyl-3-hexen-2-one using Pd/Al2O3 catalysts",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39126808/",
+        "doi": "https://doi.org/10.1016/j.jcis.2024.07.251",
+        "journal": "Journal of Colloid and Interface Science (2025), DOI 10.1016/j.jcis.2024.07.251",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-11",
+        "highlights": "报道 Pd/γ-Al2O3 催化剂在温和条件（常压、80 °C）下选择性加氢 5-甲基-3-己烯-2-酮（MIAK 前体）制 5-甲基-2-己酮（MIAK，重要聚合溶剂），核心是「选择性加氢 C=C 而非 C=O」的构效与机理。用人工神经网络（ANN）量化反应条件影响权重，排序为反应压力 > 反应温度 > 液时空速（LHSV），明确把 LHSV 作为关键工况参数；进一步以密度泛函（DFT）计算揭示 5-甲基-3-己烯-2-酮的 C=C 与 C=O 双键选择性加氢路径，并建立基于 LHHW（Langmuir–Hinshelwood–Hougen–Watson）假设的动力学模型，与实验吻合良好、预测性强。全文把「选择性（C=C vs C=O）+ 空速 LHSV + 本征动力学 + DFT 机理」整合，直接对标本平台「选择性加氢 + WHSV/空速 + 动力学建模」主线，且属 Pd/氧化铝非均相固定床体系，工程参考价值高。",
+        "shortcomings": "摘要与公开元数据未显式点明反应器构型为连续流固定床（仅以「液时空速 LHSV」间接表明为固定床流动操作），床层装填、压降与放大传热数据需查正文确认；底物为单一 α,β-不饱和酮（MIAK 前体）的选择性加氢模型，与本平台含甲醇溶剂、含卤/含氮精细化学品硝基加氢体系不同；常压 80 °C 温和但 LHSV 量级与单位催化剂产能（STY）未直接给出，缺数百小时级失活曲线、Pd 烧结/流失（ICP）与再生协议；动力学 LHHW 模型未给出与 WHSV 直接挂钩的经济性核算与催化剂单耗；Pd 属贵金属，回收与成本仅定性；期刊为 J Colloid Interface Sci（胶体/界面方向），反应器工程深度弱于化工旗舰期刊。",
+        "oneliner": "用 Pd/γ-Al2O3 在常压 80 °C 下选择性加氢 5-甲基-3-己烯-2-酮制 5-甲基-2-己酮（优先 C=C 而非 C=O），以 ANN 量化条件影响权重（压力>温度>LHSV）、DFT 揭示双键选择性加氢机理，并建立 LHHW 本征动力学模型，把「选择性 + 空速 + 动力学 + 机理」整合，为固定床选择性加氢的 WHSV/空速与动力学建模提供可直接复用的范例。",
+        "keywords": ["连续流", "固定床", "选择性加氢", "5-甲基-3-己烯-2-酮", "5-甲基-2-己酮", "钯催化剂", "空速", "动力学"],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent("连续流 固定床 选择性加氢 5-甲基-3-己烯-2-酮 5-甲基-2-己酮 钯催化剂 空速 动力学")
+      }
+    ]
+  },
+  {
     "date": "2026-09-10",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     "articles": [
