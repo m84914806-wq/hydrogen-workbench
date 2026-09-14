@@ -1,4 +1,57 @@
+// 连续流固定床加氢 · 每日文献推送（每日 10:00 自动化检索并覆写）
 window.LIT = [
+  {
+    "date": "2026-09-14",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-42237710",
+        "title": "Mo-Catalyzed Direct Nitrogen-to-Amine Conversion in Flow via Active N-H Species",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42237710/",
+        "doi": "10.1021/jacs.6c06260",
+        "journal": "J Am Chem Soc. 2026",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-14",
+        "highlights": "钼基催化剂（商业 Mo、MoO2、MoO3）表面 N-H 活性物种可实现 N2 直接转化为胺（绕过 NH3 中间体）：在连续流系统中以甲醇/乙醇/正丙醇等为氢/烷基源，>95% 转化、225 °C 即具低温活性（较工业丝光沸石 MOR 催化剂操作温度低约 100 °C），底物适用性广且具可放大性。是「连续流 + 催化加氢 + 放大」在氮固定/胺合成方向的代表。",
+        "shortcomings": "以醇为氢/烷基源，产物为混合胺、对单一胺的选择性与分离未充分展开；N2 直接胺化机理仍依赖 NHx 中间体推断，连续流具体床型（是否固定床）、空速、停留时间、H2 分压等工程参数未在摘要给出；与本平台「有机底物选择性加氢 + WHSV/催化剂单耗」主线相比更偏氮固定新方法。",
+        "oneliner": "以钼基催化剂在连续流反应器中实现 N2 直接加氢胺化制胺，低温（225 °C）活性较工业催化剂降约 100 °C，提供一条可放大的无氨胺合成路线。",
+        "keywords": [
+          "连续流",
+          "加氢",
+          "氮固定",
+          "胺化",
+          "钼催化剂",
+          "选择性",
+          "放大"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E9%92%BC%E5%82%AC%E5%8C%96%E5%89%82%20%E6%B0%AE%E6%B0%94%20%E5%8A%A0%E6%B0%A2%E5%88%B6%E8%83%BA%20%E6%B5%81%E5%8A%A8%E5%8F%8D%E5%BA%94%E5%99%A8"
+      },
+      {
+        "id": "pmid-40237538",
+        "title": "Highly Active and Air-Stable Iron Phosphide Catalyst for Reductive Amination of Carbonyl Compounds Enabled by Metal-Support Synergy",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40237538/",
+        "doi": "10.1021/jacs.4c18611",
+        "journal": "J Am Chem Soc. 2025",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-14",
+        "highlights": "磷化铁纳米晶负载氧化锆（Fe2P NC/ZrO2）非贵金属催化剂用于醛/酮还原胺化：空气稳定、活性为常规铁纳米颗粒催化剂的 313 倍，底物适用广、可回收，并在克级与连续流工艺中验证可放大性；Fe2P 与 ZrO2 金属-载体协同加速席夫碱氨解。为贵金属（Pt/Rh）替代与绿色胺合成提供可放大方案。",
+        "shortcomings": "还原胺化使用 H2 + NH3，连续流仅在摘要中提及、未给出固定床/空速/停留时间/压力等工程细节；磷化铁「空气稳定」指干粉状态，长期水相连续流下的磷溶出、氧化或活性衰减未讨论；未报告床层压降、绝热温升或 WHSV/STY 等本平台核心放大参数。",
+        "oneliner": "磷化铁/氧化锆非贵金属催化剂在连续流中实现醛酮还原胺化，活性较常规铁催化剂高 313 倍且空气稳定，为贵金属替代与绿色胺合成提供可放大方案。",
+        "keywords": [
+          "连续流",
+          "加氢",
+          "还原胺化",
+          "磷化铁",
+          "非贵金属",
+          "催化剂",
+          "放大"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E7%A3%B7%E5%8C%96%E9%93%81%20%E8%BF%98%E5%8E%9F%E8%83%BA%E5%8C%96%20%E5%8A%A0%E6%B0%A2%20%E5%82%AC%E5%8C%96%E5%89%82"
+      }
+    ]
+  },
   {
     "date": "2026-09-11",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
