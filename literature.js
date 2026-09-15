@@ -1,6 +1,58 @@
 // 连续流固定床加氢 · 每日文献推送（每日 10:00 自动化检索并覆写）
 window.LIT = [
   {
+    "date": "2026-09-15",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-42473320",
+        "title": "Ionic liquid overlayers stabilize ligand-coordinated oxide-supported single-atom Pd heterogeneous catalysts for partial hydrogenation of acetylene",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42473320/",
+        "doi": "10.1039/d5fd00164a",
+        "journal": "Faraday Discuss. 2026 (non-OA)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-15",
+        "highlights": "CeO2 负载、配体配位的单原子 Pd 催化剂，再覆一层超薄离子液体（IL）显著提高稳定性：最高可在 0.8 wt% Pd 负载下保持单原子分散，并在流动反应器中实现乙炔→乙烯的选择性部分加氢；IL 层拓宽了操作温度窗口、抑制 Pd 烧结，同时不阻碍 C2 分子到达活性位、反而改善选择性。直接对应本平台「选择性 + 固定床/连续流 + 催化剂长周期稳定性」主线，是单原子加氢催化剂工程化的代表。",
+        "shortcomings": "Faraday Discuss 论文、非 OA（无 PMC 全文），摘要未给出具体转化率/选择性数值，仅作定性描述；反应器细节（床型、空速/停留时间、H2 分压、压力）未在摘要披露；乙炔选择性加氢属炼油精制场景，与精细化工/API 加氢题材略有差异，但单原子+IL 稳定化方法可迁移借鉴。",
+        "oneliner": "在 CeO2 负载单原子 Pd 上覆超薄离子液体层，于流动反应器中实现乙炔选择性部分加氢制乙烯，拓宽操作温窗并抑制 Pd 烧结，为高选择性单原子加氢催化剂的稳定性提供方案。",
+        "keywords": [
+          "单原子催化剂",
+          "钯",
+          "乙炔",
+          "选择性加氢",
+          "离子液体",
+          "连续流",
+          "固定床"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E5%8D%95%E5%8E%9F%E5%AD%90%E9%92%AF%20%E7%A6%BB%E5%AD%90%E6%B6%B2%E4%BD%93%20%E4%B9%99%E7%82%94%20%E9%80%89%E6%8B%A9%E6%80%A7%E5%8A%A0%E6%B0%A2%20%E8%BF%9E%E7%BB%AD%E6%B5%81"
+      },
+      {
+        "id": "pmid-41099077",
+        "title": "Pharmaceuticals Made with Hydrogen: A Sustainable and Efficient Approach Using Flow Synthesis",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41099077/",
+        "doi": "10.1002/chem.202502889",
+        "journal": "Chemistry. 2026 (OA, PMC13411209)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-15",
+        "highlights": "小林修团队综述：以氢气 + 非均相催化剂 + 连续流构建更可持续、高效的药物制造策略；开发高效 Pt/C 与聚硅烷改性 Pd 用于原子经济的 C─N 键形成（还原胺化），以及聚硅烷固载 Rh-Pt 双金属催化剂在温和条件下选择性芳环加氢；并把上述技术无缝集成到多步连续流合成多奈哌齐（donepezil）。直接对标本平台「API 连续流加氢 + 放大 + 多步串联 + 催化剂」主线，是连续流加氢用于药物合成的专题索引。",
+        "shortcomings": "属综述/观点性文章，而非原创动力学数据；具体工艺指标（STY、WHSV、催化剂寿命、压降）以示意图引用自原始论文，未在本文给出完整数据集；聚焦药物合成，对重型固定床反应器工程着墨较少；Rh-Pt 双金属仍使用贵金属。",
+        "oneliner": "综述以氢气+非均相催化剂+连续流构建可持续药物制造策略，开发 Pt/C、聚硅烷固载 Pd/Rh-Pt 催化 C-N 键形成与芳环选择性加氢，并集成至多步连续流合成多奈哌齐。",
+        "keywords": [
+          "连续流",
+          "加氢",
+          "药物合成",
+          "多步合成",
+          "非均相催化",
+          "还原胺化",
+          "选择性"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%8D%AF%E7%89%A9%20%E8%BF%9E%E7%BB%AD%E6%B5%81%E5%90%88%E6%88%90%20%E5%8A%A0%E6%B0%A2%20%E5%A4%9A%E6%AD%A5%20%E5%B0%8F%E6%9E%97%E4%BF%AE"
+      }
+    ]
+  },
+  {
     "date": "2026-09-14",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     "articles": [
