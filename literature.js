@@ -1,6 +1,58 @@
 // 连续流固定床加氢 · 每日文献推送（每日 10:00 自动化检索并覆写）
 window.LIT = [
   {
+    "date": "2026-09-16",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-39285830",
+        "title": "Sequential-Flow Synthesis of Donepezil: A Green and Sustainable Strategy Featuring Heterogeneous Catalysis and Hydrogenation",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39285830/",
+        "doi": "10.1002/chem.202402128",
+        "journal": "Chemistry. 2024 (non-OA)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-16",
+        "highlights": "东京大学小林修团队以廉价易得前体，用「仅含多相催化加成与缩合」的原子经济路线，在连续流（sequential-flow）中一步完成阿尔茨海默病药物多奈哌齐（donepezil）合成，全程仅副产水；核心为加氢（heterogeneous catalytic hydrogenation）步骤，并通过在线（in-line）处理主反应流、消除抑制催化剂性能的抑制因子。直接对标本平台「API 连续流加氢 + 非均相催化 + 绿色合成 + 放大」主线，是多步连续流 API 合成中加氢步骤工程化的范例。",
+        "shortcomings": "属合成路线/方法学论文，摘要未给出具体催化剂牌号、H2 压力/温度/空速/停留时间等定量工艺窗口；未报告催化剂寿命或长期稳定性；下游缩合步骤非加氢，对「固定床反应器工程」的直接数据支撑有限；Wiley Chemistry 期刊 non-OA，无 PMC 全文。",
+        "oneliner": "以非均相催化加氢为核心的连续 sequential-flow 路线，从廉价前体一步合成多奈哌齐、仅副产水，并通过在线处理消除加氢催化剂抑制因子，为 API 连续流加氢放大提供绿色方案。",
+        "keywords": [
+          "连续流",
+          "加氢",
+          "非均相催化",
+          "多奈哌齐",
+          "药物合成",
+          "绿色化学",
+          "放大"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%A4%9A%E5%A5%88%E5%93%8C%E9%BD%90%20%E5%8A%A0%E6%B0%A2%20%E9%9D%9E%E5%9D%87%E7%9B%B8%E5%82%AC%E5%8C%96%20%E8%8D%AF%E7%89%A9%E5%90%88%E6%88%90"
+      },
+      {
+        "id": "pmid-40005094",
+        "title": "Reaction Behavior and Kinetic Model of Hydroisomerization and Hydroaromatization of Fluid Catalytic Cracking Gasoline",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40005094/",
+        "doi": "10.3390/molecules30040783",
+        "journal": "Molecules. 2025 (OA, PMC11858373)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-16",
+        "highlights": "中科院/中国石油团队以固定床加氢微反应器（fixed-bed hydrogenation microreactor）考察模型物 1-己烯与 FCC 汽油的加氢升级，催化剂为 La-Ni-Zn/H-ZSM-5；在 300–380 °C、1.0 MPa、液时空速 LSHV 1.5–3.0 h⁻¹、H2/油 300:1(v/v) 下运行，并建立七集总（seven-lump）动力学模型（Levenberg–Marquardt 拟合，产物收率预测相对误差 <5%）。直接对标本平台「固定床连续加氢 + 空速(WHSV/LSHV) + 集总动力学 + 反应器设计」主线，是固定床加氢反应器工程与动力学的训练样例。",
+        "shortcomings": "对象为 FCC 汽油加氢升级（石脑油精制），与精细化工/API 加氢题材差异较大；反应温度高（300–380 °C）、属石油馏分加氢而非选择性官能团加氢；集总动力学服务于炼油装置优化，对固定床压降/绝热温升等本平台模块的迁移需谨慎；催化剂评价体系偏宏观产物分布。",
+        "oneliner": "在固定床加氢微反应器中以 La-Ni-Zn/H-ZSM-5 对 FCC 汽油加氢升级，在 1.0 MPa、LSHV 1.5–3.0 h⁻¹ 下运行并建立七集总动力学模型（预测误差<5%），为固定床加氢反应器设计与动力学建模提供方法学参考。",
+        "keywords": [
+          "固定床",
+          "加氢",
+          "动力学模型",
+          "空速",
+          "集总模型",
+          "反应器工程",
+          "FCC汽油"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20%E5%8A%A8%E5%8A%9B%E5%AD%A6%20%E7%A9%BA%E9%80%9F%20FCC%E6%B1%BD%E6%B2%B9%20%E6%A8%A1%E5%9E%8B"
+      }
+    ]
+  },
+  {
     "date": "2026-09-15",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     "articles": [
