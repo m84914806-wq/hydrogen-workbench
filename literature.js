@@ -1,6 +1,58 @@
 // 连续流固定床加氢 · 每日文献推送（每日 10:00 自动化检索并覆写）
 window.LIT = [
   {
+    "date": "2026-09-17",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-40080385",
+        "title": "A d-Electron Deficient Pd Trimer for Exceptional Pyridine Hydrogenation Activity and Selectivity",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40080385/",
+        "doi": "10.1002/anie.202503926",
+        "journal": "Angew Chem Int Ed Engl. 2025 (non-OA)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-17",
+        "highlights": "Pd 三聚体限域生长于有序介孔载体，d 电子缺电子（约 -0.42）精准调控吸附构型；2-苯基吡啶→2-苯基哌啶近全转化且选择性高；批式 8 循环 + 液相连续流 800 h 活性/选择性几乎无衰减，直接对标本平台「连续流加氢 + 催化剂稳定性 + 选择性」主线，是非贵金属替代之外的高稳定贵金属范例。",
+        "shortcomings": "连续流实验为液相、未明确反应器构型（固定床/填充柱）与空速（WHSV/LHSV）、H2 压力/温度等定量工艺窗口；论文聚焦 Pd 三聚体活性位本质（d 电荷、系综结构），工程放大与压降数据缺失；原料为模型吡啶（2-苯基吡啶），对真实药物/精细化工底物的适用性需进一步验证。",
+        "oneliner": "有序介孔载体内限域生长 d 电子缺电子 Pd 三聚体，实现 2-苯基吡啶高选择性加氢制 2-苯基哌啶，批式 8 循环 + 液相连续流 800 h 活性/选择性无衰减，为连续流选择性加氢提供高稳定贵金属催化剂范例。",
+        "keywords": [
+          "Pd三聚体",
+          "吡啶加氢",
+          "连续流",
+          "选择性加氢",
+          "固定床",
+          "催化剂稳定性",
+          "钯"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=Pd%E4%B8%89%E8%81%9A%E4%BD%93%20%E5%90%A1%E5%95%B6%20%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%8A%A0%E6%B0%A2%20%E9%80%89%E6%8B%A9%E6%80%A7"
+      },
+      {
+        "id": "pmid-40533416",
+        "title": "Bio-Based Phenol from Cashew Nutshells by Catalytic Hydrocardanol Trans-Alkylation Using H-ZSM-5 Zeolite",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/40533416/",
+        "doi": "10.1002/cssc.202500401",
+        "journal": "ChemSusChem. 2025 (non-OA, Wiley)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-17",
+        "highlights": "腰果壳液副产物 cardanol（不饱和长链烷基酚）先加氢饱和为 hydrocardanol，再经 H-ZSM-5（SiO2/Al2O3=80）与甲苯受体的转烷基化制生物基苯酚；在固定床连续流反应器中实现 >95% 苯酚收率、碳平衡 >99%，饱和侧链抑制自烷基化副反应。直接对标本平台「固定床连续加氢 + 生物质增值 + 选择性」主线，是农业废弃物→大宗酚的连续流加氢-催化串联范例。",
+        "shortcomings": "摘要重点在转烷基化步骤，cardanol 加氢（固定床 H2 气相加氢）的工艺窗口（温度/压力/空速/催化剂牌号/稳定性周期）未充分披露，主要反应器数据为转烷基化段；加氢催化剂与固定床长期压降/失活数据缺失；选题偏生物质炼制，与精细化工/API 固定床加氢的直接迁移需谨慎。",
+        "oneliner": "腰果壳液 cardanol 经固定床连续流加氢饱和为 hydrocardanol，再借 H-ZSM-5 与甲苯转烷基化制生物基苯酚，固定床中实现 >95% 苯酚收率、碳平衡 >99%，为农业废弃物增值的连续流加氢-催化串联提供路线。",
+        "keywords": [
+          "腰果壳液",
+          "固定床",
+          "加氢",
+          "生物基苯酚",
+          "连续流",
+          "选择性",
+          "生物质增值"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%85%B0%E6%9E%9C%E5%A3%B3%E6%B6%B2%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20%E7%94%9F%E7%89%A9%E5%9F%BA%E8%8B%AF%E9%85%9A%20%E8%BF%9E%E7%BB%AD%E6%B5%81"
+      }
+    ]
+  },
+  {
     "date": "2026-09-16",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     "articles": [
