@@ -5,50 +5,50 @@ window.LIT = [
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
     "articles": [
       {
-        "id": "pmid-39597235",
-        "title": "Fibrillated Films for Suspension Catalyst Immobilization-A Kinetic Study of the Nitrobenzene Hydrogenation",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39597235/",
-        "doi": "10.3390/ma17225411",
-        "journal": "Materials (Basel). 2024;17(22):5411 (Free PMC article / OA)",
+        "id": "pmid-38547014",
+        "title": "Operando Nuclear Magnetic Resonance (NMR) Studies of a Trickle-bed Reactor Using D-T2 Correlations",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38547014/",
+        "doi": "10.2533/chimia.2024.129",
+        "journal": "Chimia (Aarau). 2024;78(3):129-134 (Free article / OA)",
         "verified": true,
         "verifiedLinkType": "pubmed",
         "verifiedAt": "2026-09-20",
-        "highlights": "将 Pd/C 悬浮催化剂固载于柔性纤维化薄膜（厚度 100–400 µm），在硝基苯→苯胺加氢中对比自由粉末催化剂；于微反应器（Taylor 流、约 5 s 停留）与间歇釜双模式评价，揭示薄膜厚度对传质与比活性的影响，并开发多孔/三明治结构消除内扩散限制，达到与粉末相当的比活性且机械稳定、可免过滤重复使用——为连续流结构化催化剂（规避浆态过滤）提供量化方案。",
-        "shortcomings": "体系为低温（−8–20 °C）低压（5 barg H2）硝基苯模型反应，未给出 WHSV/空速等高工况工程参数；厚膜传质限制仍需结构优化，PTFE 环境友好替代仍在研发；底物单一（仅硝基苯），对多官能团/精细化工底物的适用性未证。",
-        "oneliner": "通过将 Pd/C 催化剂固载于柔性纤维化薄膜并在微反应器（Taylor 流、约 5 s 停留）中评价硝基苯加氢，量化膜厚度对传质与活性的影响、开发多孔/三明治结构消除内扩散限制，为连续流免过滤结构化催化剂提供动力学与工程依据。",
+        "highlights": "在滴流床（气-液-固三相）反应器中，用 operando 核磁共振（NMR）的全局 1H 谱与空间分辨 D-T2 相关技术，原位监测 0.5 wt% Pd/Al2O3 催化苯甲腈（benzonitrile）H2 加氢（→ 苄胺 + 甲苯）；稳态转化率 63%，对苄胺选择性 65%、甲苯 25%；首次量化床层轴向局部转化/选择性差异达 31%，揭示固定床内传质-反应的非均匀性，为过程模拟模型提供直接实验依据。",
+        "shortcomings": "仅以苯甲腈单一模型底物、低 Pd 负载催化剂演示方法，工艺窗口（压力/温度/空速/氢胺比）未系统优化；苄胺选择性仅 65%，副产甲苯显示过度加氢明显；方法依赖 T2 弛豫时间不能过短的体系，适用范围受限；属方法学论文，未给出催化剂寿命或放大数据。",
+        "oneliner": "通过在滴流床反应器中耦合全局与空间分辨 operando NMR（D-T2 相关），原位量化苯甲腈 H2 加氢过程中床层轴向转化与选择性的非均匀性（局部差异达 31%），为固定床加氢反应器的传质-反应建模提供直接实验手段。",
         "keywords": [
-          "结构化催化剂",
-          "微反应器",
-          "硝基苯加氢",
-          "传质",
-          "动力学",
-          "连续流",
-          "固定床"
+          "滴流床",
+          "固定床",
+          "operando NMR",
+          "加氢",
+          "苯甲腈",
+          "选择性",
+          "反应器工程"
         ],
-        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%BE%AE%E5%8F%8D%E5%BA%94%E5%99%A8%20%E7%A1%9D%E5%9F%BA%E8%8B%AF%20%E5%8A%A0%E6%B0%A2%20%E7%BB%93%E6%9E%84%E5%8C%96%E5%82%AC%E5%8C%96%E5%89%82"
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E6%BB%B4%E6%B5%81%E5%BA%8A%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20%E8%8B%AF%E7%94%B2%E8%85%88%20operando%20NMR"
       },
       {
-        "id": "pmid-38639574",
-        "title": "Selective Hydrogenation of Diethyl Malonate to 1,3-Propanediol Over Ga-Promoted Cu/SiO2 Catalysts With Enhanced Activity and Stability",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38639574/",
-        "doi": "10.1002/asia.202400292",
-        "journal": "Chem Asian J. 2024;19(11):e202400292 (non-OA)",
+        "id": "pmid-42751293",
+        "title": "A modular plug-and-play reaction platform for operando SEM investigations under fixed-bed conditions",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/42751293/",
+        "doi": "10.1039/d6cy00143b",
+        "journal": "Catal Sci Technol. 2026 Sep 10 (Online ahead of print). doi:10.1039/d6cy00143b (Free PMC article / OA)",
         "verified": true,
         "verifiedLinkType": "pubmed",
         "verifiedAt": "2026-09-20",
-        "highlights": "Ga 促进 Cu/SiO2 双金属催化剂，在连续流反应器（160 °C、8 MPa H2）将丙二酸二乙酯（DEM）选择性加氢制 1,3-丙二醇（1,3-PDO），实现 100% 转化、76.6% 选择性，并在连续流中稳定运行 180 h；Ga 引入提升 Cu–Ga 相互作用、增加 Cu+ 比例与 Lewis 酸位，Cu0–Cu+ 协同增强酯羰基活化加氢。",
-        "shortcomings": "主要聚焦催化剂构效（Cu/Ga 比例、还原态），连续流工况仅给温度/压力/时长，未报告 WHSV/空速、氢酯比、压降或催化剂单耗；DEM 为模型酯，真实生物质路线耦合未经考察；1,3-PDO 选择性 76.6% 仍有副产物需分离。",
-        "oneliner": "通过 Ga 促进 Cu/SiO2 双金属催化剂在连续流反应器（160 °C、8 MPa H2）中高稳定（180 h）地将丙二酸二乙酯加氢制 1,3-丙二醇（100% 转化、76.6% 选择性），揭示 Cu0–Cu+ 协同活化酯羰基的构效关系。",
+        "highlights": "受固定床反应器“受控气流、气固高效接触、均匀加热、定量性能分析”设计原则启发，构建了一套模块化、即插即用的 operando 扫描电镜（SEM）反应平台（PPR），兼容 SEM 真空约束；以 CuO 还原与锌孔雀石/尖晶石催化剂上 CO2 加氢为基准反应，在活化、反应、失活全过程实现电子显微成像与定量性能分析的耦合，揭示此前常规 SEM 无法触及的催化洞察（如催化剂纳米结构随反应时间演化、压力对产物分布的影响）。",
+        "shortcomings": "两项基准反应均为 H2 参与的还原/加氢过程，但核心演示为 CuO 还原与 CO2 加氢（属 CO2 利用而非典型有机不饱和键加氢），未以烯烃/硝基/腈等有机底物的选择性加氢为对象；平台通量小、停留/空速等工程参数未量化，距实际固定床连续流加氢工艺放大尚有距离；更偏反应器表征方法学而非催化剂/工艺开发。",
+        "oneliner": "借鉴固定床反应器设计原则构建模块化 operando SEM 反应平台，在活化-反应-失活全过程耦合电子显微成像与定量性能分析（以 CuO 还原与 CO2 加氢为基准），为固定床催化剂的原位结构-性能研究提供此前难以实现的观测手段。",
         "keywords": [
-          "连续流加氢",
-          "丙二酸二乙酯",
-          "1,3-丙二醇",
-          "铜催化剂",
-          "双金属",
-          "稳定性",
-          "固定床"
+          "固定床",
+          "operando SEM",
+          "反应器工程",
+          "加氢",
+          "原位表征",
+          "催化剂",
+          "连续流"
         ],
-        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20%E4%B8%99%E4%BA%8C%E9%85%B8%E4%BA%8C%E4%B9%99%E9%85%AF%201%2C3-%E4%B8%99%E4%BA%8C%E9%86%87"
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E5%9B%BA%E5%AE%9A%E5%BA%8A%20operando%20SEM%20%E5%8F%8D%E5%BA%94%E5%99%A8%20%E5%8A%A0%E6%B0%A2%20%E5%8E%9F%E4%BD%8D%E8%A1%A8%E5%BE%81"
       }
     ]
   },
