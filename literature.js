@@ -1,5 +1,59 @@
 // 连续流固定床加氢 · 每日文献推送（每日 10:00 自动化检索并覆写）
+
 window.LIT = [
+  {
+    "date": "2026-09-21",
+    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
+    "articles": [
+      {
+        "id": "pmid-38071868",
+        "title": "Converting waste tires into p-cymene through hydropyrolysis and selective gas-phase hydrogenation/dehydrogenation",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38071868/",
+        "doi": "10.1016/j.wasman.2023.12.009",
+        "journal": "Waste Manag. 2024 Feb 15;174:282-289. doi:10.1016/j.wasman.2023.12.009 (Elsevier, not OA)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-21",
+        "highlights": "提出将废轮胎经水热解（hydropyrolysis）与催化气相加氢/脱氢串联的两段固定床工艺，把废橡胶转化为高值对伞花烃（p-cymene）；系统比较三种酸性载体（SBA-15 等）负载催化剂对柠檬烯（limonene，水热解产物）加氢/脱氢的影响；在最优条件（水热解 425 ℃、加氢段 400 ℃、催化剂/原料比 C/F=10:1、0.15 MPa）下，Pd/SBA-15 上 p-cymene 相对含量达 79.1%。属典型气固固定床加氢/脱氢反应器工程案例，直接对标本平台「固定床 + 工艺参数（温度/压力/剂料比）优化 + 选择性」主线。",
+        "shortcomings": "文章以产物相对含量（79.1%）评价，未报道绝对收率、空速（WHSV/LHSV）或催化剂质量时空产率（STY），难以直接换算催化剂单耗；仅 Pd/SBA-15 一种贵金属体系，未做长周期稳定性（time-on-stream）与失活/再生评价；反应压力仅 0.15 MPa 属近常压，与高压固定床加氢工况差异较大；废轮胎组分复杂，产物分布对原料波动敏感，离工业放大尚有距离。",
+        "oneliner": "在两段固定床反应器中串联废轮胎水热解与 Pd/SBA-15 催化气相选择性加氢/脱氢，于 400 ℃、0.15 MPa、C/F=10:1 下将柠檬烯转化为对伞花烃（相对含量 79.1%），为废橡胶高值化提供了一条固定床加氢反应器路径。",
+        "keywords": [
+          "固定床",
+          "加氢",
+          "废轮胎",
+          "对伞花烃",
+          "选择性",
+          "反应器工程",
+          "生物质增值"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20%E5%BA%9F%E8%BD%AE%E8%83%8E%20%E5%AF%B9%E4%BC%9E%E8%8A%B1%E7%83%83%20%E9%80%89%E6%8B%A9%E6%80%A7%20%E5%8F%8D%E5%BA%94%E5%99%A8%E5%B7%A5%E7%A8%8B"
+      },
+      {
+        "id": "pmid-38863684",
+        "title": "Promoter Effect of Pt on Zr Catalysts to Increase the Conversion of Furfural to gamma-Valerolactone Using Batch and Continuous Flow Reactors: Influence of the Way of the Incorporation of the Pt Sites",
+        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38863684/",
+        "doi": "10.1021/acs.energyfuels.4c01174",
+        "journal": "Energy Fuels. 2024 May 24;38(11):9849-9861. doi:10.1021/acs.energyfuels.4c01174 (Free PMC article / OA)",
+        "verified": true,
+        "verifiedLinkType": "pubmed",
+        "verifiedAt": "2026-09-21",
+        "highlights": "以生物质衍生糠醛（furfural）经两段加氢级联制 γ-戊内酯（GVL），制备海泡石（sepiolite）负载 Pt 和/或 Zr 催化剂，发现 Zr 基与 Pt 基催化剂物理混合（10Zr/Sep + 1Pt/Sep）产生强协同效应，180 ℃、16 h 下 GVL 收率约 50%，显著优于单金属或共浸渍双金属催化剂；关键亮点在于同时在间歇釜与连续流反应器评价并对比两种操作模式（连续流条件 [FF]=67 mM、τ=10 min、180 ℃、m_cat=0.5 g），给出批量与连续流的关联性——直接对标本平台「连续流 vs 间歇、停留时间 τ、催化剂装量、WHSV/时空收率」主线。",
+        "shortcomings": "GVL 收率约 50% 仍偏低（另有较多副产），催化剂以物理混合方式使用，装填与连续流工程化（压降、轴向分布）未深入；连续流仅给出单点 τ=10 min 工况，未系统扫描空速/温度窗口做本征动力学；溶剂为 2-丙醇（兼作氢供体/转移加氢介质），严格说并非纯 H2 气相加氢，氢源与机理需结合正文判别；未报道催化剂寿命与再生。",
+        "oneliner": "以海泡石负载 Pt/Zr 物理混合催化剂在 180 ℃ 实现糠醛→γ-戊内酯两段加氢级联（收率约 50%），并首次在间歇釜与连续流反应器（τ=10 min、m_cat=0.5 g）间系统对比操作模式，揭示批量与连续流结果的关联性，为生物质衍生平台分子的连续流加氢提供反应器工程参照。",
+        "keywords": [
+          "连续流",
+          "固定床",
+          "加氢",
+          "糠醛",
+          "γ-戊内酯",
+          "选择性",
+          "停留时间",
+          "催化剂"
+        ],
+        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20%E7%B3%A0%E9%86%9B%20%CE%B3-%E6%88%8A%E5%86%85%E9%85%AF%20%E9%80%89%E6%8B%A9%E6%80%A7%20%E5%81%9C%E7%95%99%E6%97%B6%E9%97%B4"
+      }
+    ]
+  },
   {
     "date": "2026-09-20",
     "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed 检索，链接均经核验可打开）",
@@ -1570,60 +1624,6 @@ window.LIT = [
           "放大"
         ],
         "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%203D%E6%89%93%E5%8D%B0%20%E5%A1%AB%E5%85%85%E5%BA%8A%20%E5%8A%A0%E6%B0%A2%20%E7%A1%9D%E5%9F%BA%E8%8A%B3%E7%83%83"
-      }
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "note": "每日自动推送 · 连续流固定床加氢方向高质量文献（PubMed）",
-    "articles": [
-      {
-        "id": "pmid-38783856",
-        "title": "Copper-Catalyzed Continuous-Flow Transfer Hydrogenation of Nitroarenes to Anilines: A Scalable and Reliable Protocol",
-        "pubmed": "https://pubmed.ncbi.nlm.nih.gov/38783856/",
-        "doi": "https://doi.org/10.1021/acs.oprd.3c00144",
-        "journal": "Organic Process Research & Development (2024), open access (PMC11110069)",
-        "verified": true,
-        "verifiedLinkType": "pubmed",
-        "verifiedAt": "2026-07-29",
-        "highlights": "以 Celite 负载铜纳米颗粒（CuNPs/Celite）为固定床填料，在连续流填充床反应器（PBR）中实现硝基芳烃向苯胺的选择性转移加氢；无需高压氢气和贵金属，硝基苯转化率 >99%，可连续稳定运行长达 145 h。产物经固相萃取即可分离，E-factor 分析显示绿色高效。",
-        "shortcomings": "采用乙二醇/水合肼等氢供体进行转移加氢（非真实 H2 气相加氢），与工业高压加氢工艺路线存在差异；底物谱以模型硝基苯类为主，多硝基/稠环底物的适用性以及放大下的传热与压降未深入讨论。",
-        "oneliner": "用 Celite 负载铜纳米颗粒构建连续流固定床，以转移加氢方式实现硝基芳烃 >99% 转化并稳定运行 145 h，提供了无需高压氢气与贵金属的绿色放大方案。",
-        "keywords": [
-          "固定床",
-          "连续流",
-          "转移加氢",
-          "硝基芳烃",
-          "铜催化剂",
-          "选择性",
-          "放大",
-          "绿色化学"
-        ],
-        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E8%BD%AC%E7%A7%BB%E5%8A%A0%E6%B0%A2%20%E7%A1%9D%E5%9F%BA%E8%8A%B3%E7%83%83%20%E5%9B%BA%E5%AE%9A%E5%BA%8A%20%E9%93%9C%E5%82%AC%E5%8C%96%E5%89%82"
-      },
-      {
-        "id": "doi-10.1039-D4RE00049H",
-        "title": "Novel TPMS carbon-based monolithic catalysts by three-dimensional printing for enhancement of nitrobenzene hydrogenation reaction",
-        "pubmed": "https://doi.org/10.1039/D4RE00049H",
-        "doi": "https://doi.org/10.1039/D4RE00049H",
-        "journal": "Reaction Chemistry & Engineering (2024), 9(7), 1816-1823, open access (RSC)",
-        "verified": true,
-        "verifiedLinkType": "doi",
-        "verifiedAt": "2026-07-29",
-        "highlights": "采用数字光处理（DLP）3D 打印制备螺旋陀螺（gyroid, TPMS）碳基整体式催化剂，装入固定床微反应器用于硝基苯加氢；常温常压下转化率达 99%、选择性 98.2%，气液下行停留时间仅 0.83 min。整体式结构无死区、孔隙率高，高流速下传质优于颗粒催化剂。",
-        "shortcomings": "整体式催化剂以碳基为主、未负载高活性金属（主要靠碳本征活性或后续修饰），对更具挑战的选择性加氢普适性有限；12 mm 内径仍为实验室规模，工业放大下的床层均一性与压降仍需验证。",
-        "oneliner": "用 3D 打印 TPMS 碳基整体式催化剂构建固定床微反应器，在常温常压下实现硝基苯 99% 转化与 98.2% 选择性，以结构化催化剂改善高流速下的传质。",
-        "keywords": [
-          "固定床",
-          "连续流",
-          "加氢",
-          "硝基苯",
-          "3D打印",
-          "整体式催化剂",
-          "传质",
-          "选择性"
-        ],
-        "wechat": "https://weixin.sogou.com/weixin?type=2&query=%E8%BF%9E%E7%BB%AD%E6%B5%81%20%E5%8A%A0%E6%B0%A2%20%E7%A1%9D%E5%9F%BA%E8%8B%AF%203D%E6%89%93%E5%8D%B0%20%E6%95%B4%E4%BD%93%E5%BC%8F%E5%82%AC%E5%8C%96%E5%89%82%20%E5%9B%BA%E5%AE%9A%E5%BA%8A"
       }
     ]
   }
